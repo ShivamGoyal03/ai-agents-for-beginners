@@ -10,7 +10,7 @@ This lesson will cover:
 
 ## Learning Goals
 
-After completing this lesson you will know how to:
+After completing this lesson, you will know how to:
 
 - Identify and mitigate risks when creating AI Agents.
 - Implement security measures to ensure that data and access are properly managed.
@@ -18,23 +18,23 @@ After completing this lesson you will know how to:
 
 ## Safety
 
-Let's first look at building safe agentic applications. Safety means that the AI agent performs as designed.  As builders of agentic applications, we have methods and tools to maximize safety:
+Let's first look at building safe agentic applications. Safety means that the AI agent performs as designed. As builders of agentic applications, we have methods and tools to maximize safety:
 
-### Building a Meta Prompting System
+### Building a System Message Framework
 
- If you have ever built an AI application using Large Language Models (LLMs), you know the importance of designing a robust system prompt or system message. These prompts establish the meta rules, instructions, and guidelines for how the LLM will interact with the user and data.
+If you have ever built an AI application using Large Language Models (LLMs), you know the importance of designing a robust system prompt or system message. These prompts establish the meta rules, instructions, and guidelines for how the LLM will interact with the user and data.
 
 For AI Agents, the system prompt is even more important as the AI Agents will need highly specific instructions to complete the tasks we have designed for them.
 
-To create scalable system prompts, we can use a meta prompting system for building one or more agents in our application:
+To create scalable system prompts, we can use a system message framework for building one or more agents in our application:
 
-![Building a Meta Prompting System](./images/building-a-metaprompting-system.png)
+![Building a System Message Framework](./images/system-message-framework.png)
 
-#### Step 1: Create a Meta or Template Prompt
+#### Step 1: Create a Meta System Message 
 
- The meta prompt will be used by an LLM to generate the system prompts for the agents we create. We design it as a template so that we can efficiently create multiple agents if needed.
+The meta prompt will be used by an LLM to generate the system prompts for the agents we create. We design it as a template so that we can efficiently create multiple agents if needed.
 
-Here is an example of a meta prompt we would give to the LLM:
+Here is an example of a meta system message we would give to the LLM:
 
 ```plaintext
 You are an expert at creating AI agent assistants. 
@@ -50,14 +50,14 @@ The next step is to create a basic prompt to describe the AI Agent. You should i
 Here is an example:
 
 ```plaintext
-You are a travel agent for Contoso Travel with that is great at booking flights for customers. To help customers you can perform the following tasks: lookup available flights, book flights, ask for preferences in seating and times for flights, cancel any previously booked flights and alert customers on any delays or cancellations of flights.  
+You are a travel agent for Contoso Travel that is great at booking flights for customers. To help customers you can perform the following tasks: lookup available flights, book flights, ask for preferences in seating and times for flights, cancel any previously booked flights and alert customers on any delays or cancellations of flights.  
 ```
 
-#### Step 3: Provide Basic Prompt to LLM
+#### Step 3: Provide Basic System Message to LLM
 
-Now we can optimize this prompt by providing the meta prompt as the system prompt and our basic prompt.
+Now we can optimize this system message by providing the meta system message as the system message and our basic system message.
 
-This will produce a prompt that is better designed for guiding our AI agents:
+This will produce a system message that is better designed for guiding our AI agents:
 
 ```markdown
 **Company Name:** Contoso Travel  
@@ -111,9 +111,9 @@ This AI assistant is designed to streamline the flight booking process for custo
 
 #### Step 4: Iterate and Improve
 
-The value of this meta prompting system is to be able to scale creating prompts from multiple agents easier as well as improving your prompts over time. It is rare you will have a prompt that works the first time for your complete use case. Being able to make small tweaks and improvements by changing the basic prompt and running it through the system will allow you to compare and evaluate results.
+The value of this system message framework is to be able to scale creating system messages from multiple agents easier as well as improving your system messages over time. It is rare you will have a system message that works the first time for your complete use case. Being able to make small tweaks and improvements by changing the basic system message and running it through the system will allow you to compare and evaluate results.
 
-## Understanding Threats  
+## Understanding Threats
 
 To build trustworthy AI agents, it is important to understand and mitigate the risks and threats to your AI agent. Let's look at only some of the different threats to AI agents and how you can better plan and prepare for them.
 

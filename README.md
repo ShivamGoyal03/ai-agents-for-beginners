@@ -10,6 +10,18 @@
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/pulls/?WT.mc_id=academic-105485-koreyst)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com?WT.mc_id=academic-105485-koreyst)
 
+### Language Support
+[![English](https://img.shields.io/badge/English-brightgreen.svg?style=flat-square)](Readme.md)
+[![Chinese Simplified](https://img.shields.io/badge/Chinese_Simplified-brightgreen.svg?style=flat-square)](./translations/zh/README.md)
+[![Chinese Traditional](https://img.shields.io/badge/Chinese_Traditional-brightgreen.svg?style=flat-square)](./translations/tw/README.md)     
+[![Chinese Hong Kong](https://img.shields.io/badge/Chinese_Hong_Kong-brightgreen.svg?style=flat-square)](./translations/hk/README.md) 
+[![French](https://img.shields.io/badge/French-brightgreen.svg?style=flat-square)](./translations/fr/README.md)
+[![Japanese](https://img.shields.io/badge/Japanese-brightgreen.svg?style=flat-square)](./translations/ja/README.md) 
+[![Korean](https://img.shields.io/badge/Korean-brightgreen.svg?style=flat-square)](./translations/ko/README.md)
+[![Portuguese Brazilian](https://img.shields.io/badge/Portuguese_Brazilian-brightgreen.svg?style=flat-square)](./translations/pt/README.md)
+[![Spanish](https://img.shields.io/badge/Spanish-brightgreen.svg?style=flat-square)](./translations/es/README.md)
+[![German](https://img.shields.io/badge/German-brightgreen.svg?style=flat-square)](./translations/de/README.md)  
+
 [![GitHub watchers](https://img.shields.io/github/watchers/microsoft/ai-agents-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/ai-agents-for-beginners/watchers/?WT.mc_id=academic-105485-koreyst)
 [![GitHub forks](https://img.shields.io/github/forks/microsoft/ai-agents-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/ai-agents-for-beginners/network/?WT.mc_id=academic-105485-koreyst)
 [![GitHub stars](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners.svg?style=social&label=Star)](https://GitHub.com/microsoft/ai-agents-for-beginners/stargazers/?WT.mc_id=academic-105485-koreyst)
@@ -31,7 +43,7 @@ Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/e
 
 Each lesson in this course includes code examples, which can be found in the code_samples folder. You can [fork this repo](https://github.com/microsoft/ai-agents-for-beginners/fork) to create your own copy.  
 
-The code example in these exercise, utilise Azure AI Foundry and GitHub Model Catalogs for interacting with Language Models:
+The code example in these exercises, utilize Azure AI Foundry and GitHub Model Catalogs for interacting with Language Models:
 
 - [Github Models](https://aka.ms/ai-agents-beginners/github-models) - Free / Limited
 - [Azure AI Foundry](https://aka.ms/ai-agents-beginners/ai-foundry) - Azure Account Required
@@ -48,7 +60,7 @@ For more information on running the code for this course, go to the [Course Setu
 
 Do you have suggestions or found spelling or code errors? [Raise an issue](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst) or [Create a pull request](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst)
 
-If you get stuck or have any questions about bulding AI Agents, join our [Azure AI Community Discord](https://discord.gg/kzRShWzttr).
+If you get stuck or have any questions about building AI Agents, join our [Azure AI Community Discord](https://discord.gg/kzRShWzttr).
 
 ## 📂 Each lesson includes
 
@@ -66,7 +78,7 @@ If you get stuck or have any questions about bulding AI Agents, join our [Azure 
 | Understanding Agentic Design Patterns  | [Link](./03-agentic-design-patterns/README.md)  |
 | Tool Use Design Pattern                | [Link](./04-tool-use/README.md)                    |
 | Agentic RAG                            | [Link](./05-agentic-rag/README.md)                 |
-| Building Trustworty AI Agents          | [Link](./06-building-trustworthy-agents/README.md) |
+| Building Trustworthy AI Agents          | [Link](./06-building-trustworthy-agents/README.md) |
 | Planning Design Pattern                | [Link](./07-planning-design/README.md)             |
 | Multi-Agent Design Pattern             | [Link](./08-multi-agent/README.md)                 |
 | Metacognition Design Pattern           | [Link](./09-metacognition/README.md)               |
