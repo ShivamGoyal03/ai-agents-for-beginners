@@ -1,3 +1,9 @@
+
+[![Intro to AI Agents](./images/lesson-1-thumbnail.png)](https://youtu.be/3zgm60bXmQk?si=QA4CW2-cmul5kk3D)
+
+> _(Click the image above to view video of this lesson)_
+
+
 # Introduction to AI Agents and Agent Use Cases
 
 Welcome to the "AI Agents for Beginners" course! This course provides fundamental knowledge and applied samples for building AI Agents.
@@ -93,5 +99,12 @@ This course is divided into some of the current popular Agentic patterns.
 
 Agentic Frameworks allow developers to implement agentic patterns through code. These frameworks offer templates, plugins, and tools for better AI Agent collaboration. These benefits provide abilities for better observability and troubleshooting of AI Agent systems.
 
-In this course, we will explore the research-driven AutoGen framework and the production ready Agent framework from Semantic Kernel.
+In this course, we will explore the research-driven AutoGen framework and the production-ready Agent framework from Semantic Kernel.
 
+## Previous Lesson
+
+[Course Setup](../00-course-setup/README.md)
+
+## Next Lesson
+
+[Exploring Agentic Frameworks](../02-explore-agentic-frameworks/README.md)
