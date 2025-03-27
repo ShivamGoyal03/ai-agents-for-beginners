@@ -11,7 +11,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com?WT.mc_id=academic-105485-koreyst)
 
 ### Language Support
-[![English](https://img.shields.io/badge/English-brightgreen.svg?style=flat-square)](Readme.md)
+[![English](https://img.shields.io/badge/English-brightgreen.svg?style=flat-square)](README.md)
 [![Chinese Simplified](https://img.shields.io/badge/Chinese_Simplified-brightgreen.svg?style=flat-square)](./translations/zh/README.md)
 [![Chinese Traditional](https://img.shields.io/badge/Chinese_Traditional-brightgreen.svg?style=flat-square)](./translations/tw/README.md)     
 [![Chinese Hong Kong](https://img.shields.io/badge/Chinese_Hong_Kong-brightgreen.svg?style=flat-square)](./translations/hk/README.md) 
@@ -21,6 +21,8 @@
 [![Portuguese Brazilian](https://img.shields.io/badge/Portuguese_Brazilian-brightgreen.svg?style=flat-square)](./translations/pt/README.md)
 [![Spanish](https://img.shields.io/badge/Spanish-brightgreen.svg?style=flat-square)](./translations/es/README.md)
 [![German](https://img.shields.io/badge/German-brightgreen.svg?style=flat-square)](./translations/de/README.md)  
+[![Persian](https://img.shields.io/badge/Persian-brightgreen.svg?style=flat-square)](./translations/fa/README.md) 
+[![Polish](https://img.shields.io/badge/Polish-brightgreen.svg?style=flat-square)](./translations/pl/README.md) 
 
 [![GitHub watchers](https://img.shields.io/github/watchers/microsoft/ai-agents-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/ai-agents-for-beginners/watchers/?WT.mc_id=academic-105485-koreyst)
 [![GitHub forks](https://img.shields.io/github/forks/microsoft/ai-agents-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/ai-agents-for-beginners/network/?WT.mc_id=academic-105485-koreyst)
@@ -88,7 +90,7 @@ If you get stuck or have any questions about building AI Agents, join our [Azure
 
 | Language             | Code | Link to Translated README                               | Last Updated |
 |----------------------|------|---------------------------------------------------------|--------------|
-| Chinese (Simplified) | zh   | [Chinese Translation](./translations/zh/README.md)      | 2025-02-13   |
+| Chinese (Simplified) | zh   | [Chinese Translation](./translations/zh/README.md)      | 2025-03-24   |
 | Chinese (Traditional)| tw   | [Chinese Translation](./translations/tw/README.md)      | 2025-02-13   |
 | Chinese (Hong Kong)  | hk   | [Chinese (Hong Kong) Translation](./translations/hk/README.md) | 2025-02-13   |
 | French               | fr   | [French Translation](./translations/fr/README.md)       | 2025-02-13   |
@@ -97,6 +99,8 @@ If you get stuck or have any questions about building AI Agents, join our [Azure
 | Portuguese           | pt   | [Portuguese Translation](./translations/pt/README.md)   | 2025-02-13   |
 | Spanish              | es   | [Spanish Translation](./translations/es/README.md)      | 2025-02-13   |
 | German               | de   | [German Translation](./translations/de/README.md)       | 2025-02-13   |
+| Persian              | fa   | [Persian Translation](./translations/fa/README.md)       | 2025-03-26   |
+| Polish               | pl   | [Polish Translation](./translations/pl/README.md)       | 2025-03-26  |
 
 ## 🎒 Other Courses
 
