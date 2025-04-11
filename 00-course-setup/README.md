@@ -23,7 +23,7 @@ You should now have your own forked version of this course in the following link
 
 ## Retrieve Your GitHub Personal Access Token (PAT)
 
-Currently, this course uses the Github Models Marketplace to offer free access to Large Language Models(LLMs) that will be used to create AI Agents.
+Currently, this course uses the Github Models Marketplace to offer free access to Large Language Models (LLMs) that will be used to create AI Agents.
 
 To access this service, you will need to create a GitHub Personal Access Token.
 
@@ -54,6 +54,13 @@ Open that file and paste the token you created into the `GITHUB_TOKEN=` field of
 - `AZURE_OPENAI_SERVICE` - On the **Overview** page of your project in the **Included capabilities** tab for **Azure OpenAI Service**.
 - `AZURE_OPENAI_API_VERSION` - On the [API version lifecycle](https://learn.microsoft.com/azure/ai-services/openai/api-version-deprecation#latest-ga-api-release?WT.mc_id=academic-105485-koreyst) webpage within the **Latest GA API release** section.
 - `AZURE_OPENAI_ENDPOINT` - On the **Details** tab of your model deployment within **Endpoint** (i.e. **Target URI**)
+- `GLOBAL_LLM_SERVICE` - On the **Overview** page of your project within **Project details**.
+- `AZURE_OPENAI_API_KEY` - On the **Overview** page of your project within **Project details**.
+- `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME` - On the **Overview** page of your project within **Project details**.
+- `AZURE_OPENAI_CHAT_DEPLOYMENT_NAME` - On the **Overview** page of your project within **Project details**.
+- `PROJECT_CONNECTION_STRING` - On the **Overview** page of your project within **Project details**.
+- `AZURE_SEARCH_SERVICE_ENDPOINT` - On the **Overview** page of your project within **Project details**.
+- `AZURE_SEARCH_API_KEY` - On the **Overview** page of your project within **Project details**.
 
 ## Install Required Packages
 
