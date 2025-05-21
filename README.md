@@ -90,23 +90,11 @@ If you have product feedback or errors whilst building visit our [Azure AI Found
 | AI Agents in Production                  | [Link](./10-ai-agents-production/README.md)        | [Video](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | AI Agents with MCP                       | [Link](./11-mcp/README.md)                         |                                                            | [Link](https://aka.ms/mcp-for-beginners)                                               |
 
-## 🌐 Multi-Language Support
+### 🌐 Multi-Language Support
 
-| Language             | Code | Link to Translated README                               | Last Updated |
-|----------------------|------|---------------------------------------------------------|--------------|
-| Chinese (Simplified) | zh   | [Chinese Translation](./translations/zh/README.md)      | 2025-03-24   |
-| Chinese (Traditional)| tw   | [Chinese Translation](./translations/tw/README.md)      | 2025-03-28   |
-| Chinese (Hong Kong)  | hk   | [Chinese (Hong Kong) Translation](./translations/hk/README.md) | 2025-03-28   |
-| French               | fr   | [French Translation](./translations/fr/README.md)       | 2025-03-28   |
-| Japanese             | ja   | [Japanese Translation](./translations/ja/README.md)     | 2025-03-28   |
-| Korean               | ko   | [Korean Translation](./translations/ko/README.md)       | 2025-03-28   |
-| Portuguese           | pt   | [Portuguese Translation](./translations/pt/README.md)   | 2025-03-28   |
-| Spanish              | es   | [Spanish Translation](./translations/es/README.md)      | 2025-03-28   |
-| German               | de   | [German Translation](./translations/de/README.md)       | 2025-03-28   |
-| Persian              | fa   | [Persian Translation](./translations/fa/README.md)       | 2025-03-28   |
-| Polish               | pl   | [Polish Translation](./translations/pl/README.md)       | 2025-03-28  |
-| Hindi               | hi   | [Hindi Translation](./translations/hi/README.md)       | 2025-04-05   |
+#### Supported via GitHub Action (Automated & Always Up-to-Date)
 
+[French](./translations/fr/README.md) | [Spanish](./translations/es/README.md) | [German](./translations/de/README.md) | [Persian (Farsi)](./translations/fa/README.md) | [Chinese (Simplified)](./translations/zh/README.md) | [Chinese (Traditional, Hong Kong)](./translations/hk/README.md) | [Chinese (Traditional, Taiwan)](./translations/tw/README.md) | [Japanese](./translations/ja/README.md) | [Korean](./translations/ko/README.md) | [Hindi](./translations/hi/README.md) | [Portuguese (Portugal)](./translations/pt/README.md) | [Polish](./translations/pl/README.md)
 
 ## 🎒 Other Courses
 

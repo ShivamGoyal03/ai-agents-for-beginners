@@ -1,30 +1,30 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "d38387460faaff27512a6b8c91ba9737",
-  "translation_date": "2025-03-28T10:57:49+00:00",
-  "source_file": "08-multi-agent\\solution\\solution.md",
+  "original_hash": "5be7b05ac3220c4fb91e9bd5a37a3794",
+  "translation_date": "2025-05-20T09:11:08+00:00",
+  "source_file": "08-multi-agent/solution/solution.md",
   "language_code": "de"
 }
 -->
-**Agentspezifisch für den Kundensupportprozess**:
+**Agents, die speziell für den Kundenserviceprozess zuständig sind**:
 
-- **Kundenagent**: Dieser Agent repräsentiert den Kunden und ist verantwortlich für die Einleitung des Supportprozesses.
-- **Supportagent**: Dieser Agent repräsentiert den Supportprozess und ist verantwortlich für die Unterstützung des Kunden.
-- **Eskalationsagent**: Dieser Agent repräsentiert den Eskalationsprozess und ist verantwortlich für die Weiterleitung von Problemen an eine höhere Supportebene.
-- **Lösungsagent**: Dieser Agent repräsentiert den Lösungsprozess und ist verantwortlich für die Behebung von Problemen, die während des Supportprozesses auftreten.
-- **Feedbackagent**: Dieser Agent repräsentiert den Feedbackprozess und ist verantwortlich für das Sammeln von Rückmeldungen vom Kunden.
-- **Benachrichtigungsagent**: Dieser Agent repräsentiert den Benachrichtigungsprozess und ist verantwortlich für das Versenden von Benachrichtigungen an den Kunden in verschiedenen Phasen des Supportprozesses.
-- **Analyseagent**: Dieser Agent repräsentiert den Analyseprozess und ist verantwortlich für die Auswertung von Daten im Zusammenhang mit dem Supportprozess.
-- **Auditagent**: Dieser Agent repräsentiert den Auditprozess und ist verantwortlich für die Überprüfung des Supportprozesses, um sicherzustellen, dass er korrekt durchgeführt wird.
-- **Berichtsagent**: Dieser Agent repräsentiert den Berichtsprozess und ist verantwortlich für die Erstellung von Berichten über den Supportprozess.
-- **Wissensagent**: Dieser Agent repräsentiert den Wissensprozess und ist verantwortlich für die Pflege einer Wissensdatenbank mit Informationen zum Supportprozess.
-- **Sicherheitsagent**: Dieser Agent repräsentiert den Sicherheitsprozess und ist verantwortlich für die Gewährleistung der Sicherheit des Supportprozesses.
-- **Qualitätsagent**: Dieser Agent repräsentiert den Qualitätsprozess und ist verantwortlich für die Sicherstellung der Qualität des Supportprozesses.
-- **Compliance-Agent**: Dieser Agent repräsentiert den Compliance-Prozess und ist verantwortlich dafür, dass der Supportprozess den Vorschriften und Richtlinien entspricht.
-- **Schulungsagent**: Dieser Agent repräsentiert den Schulungsprozess und ist verantwortlich für die Schulung von Supportagenten, wie sie Kunden unterstützen können.
+- **Customer agent**: Dieser Agent repräsentiert den Kunden und ist dafür verantwortlich, den Supportprozess zu starten.
+- **Support agent**: Dieser Agent steht für den Supportprozess und ist zuständig dafür, dem Kunden Unterstützung zu bieten.
+- **Escalation agent**: Dieser Agent übernimmt den Eskalationsprozess und ist dafür verantwortlich, Probleme an eine höhere Supportebene weiterzuleiten.
+- **Resolution agent**: Dieser Agent repräsentiert den Lösungsprozess und sorgt dafür, dass auftretende Probleme im Supportprozess behoben werden.
+- **Feedback agent**: Dieser Agent steht für den Feedbackprozess und sammelt Rückmeldungen vom Kunden.
+- **Notification agent**: Dieser Agent übernimmt den Benachrichtigungsprozess und versendet zu verschiedenen Zeitpunkten des Supportprozesses Mitteilungen an den Kunden.
+- **Analytics agent**: Dieser Agent steht für den Analyseprozess und wertet Daten zum Supportprozess aus.
+- **Audit agent**: Dieser Agent repräsentiert den Prüfungsprozess und überwacht den Supportprozess, um sicherzustellen, dass alles korrekt abläuft.
+- **Reporting agent**: Dieser Agent ist für den Berichtswesenprozess zuständig und erstellt Berichte zum Supportprozess.
+- **Knowledge agent**: Dieser Agent verwaltet den Wissensprozess und pflegt eine Wissensdatenbank mit Informationen zum Supportprozess.
+- **Security agent**: Dieser Agent ist für den Sicherheitsprozess zuständig und sorgt für die Sicherheit des Supportprozesses.
+- **Quality agent**: Dieser Agent überwacht den Qualitätsprozess und stellt die Qualität des Supportprozesses sicher.
+- **Compliance agent**: Dieser Agent repräsentiert den Compliance-Prozess und sorgt dafür, dass der Supportprozess den Vorschriften und Richtlinien entspricht.
+- **Training agent**: Dieser Agent steht für den Schulungsprozess und bildet Supportmitarbeiter darin aus, wie sie Kunden am besten unterstützen können.
 
-Das sind einige Agenten – war das mehr oder weniger, als Sie erwartet haben?
+Das sind einige Agents – war das mehr oder weniger, als du erwartet hast?
 
 **Haftungsausschluss**:  
-Dieses Dokument wurde mit dem KI-Übersetzungsdienst [Co-op Translator](https://github.com/Azure/co-op-translator) übersetzt. Obwohl wir uns um Genauigkeit bemühen, beachten Sie bitte, dass automatisierte Übersetzungen Fehler oder Ungenauigkeiten enthalten können. Das Originaldokument in seiner ursprünglichen Sprache sollte als maßgebliche Quelle betrachtet werden. Für kritische Informationen wird eine professionelle menschliche Übersetzung empfohlen. Wir übernehmen keine Haftung für Missverständnisse oder Fehlinterpretationen, die aus der Nutzung dieser Übersetzung entstehen.
+Dieses Dokument wurde mit dem KI-Übersetzungsdienst [Co-op Translator](https://github.com/Azure/co-op-translator) übersetzt. Obwohl wir uns um Genauigkeit bemühen, beachten Sie bitte, dass automatisierte Übersetzungen Fehler oder Ungenauigkeiten enthalten können. Das Originaldokument in seiner Originalsprache gilt als maßgebliche Quelle. Für wichtige Informationen wird eine professionelle menschliche Übersetzung empfohlen. Wir übernehmen keine Haftung für Missverständnisse oder Fehlinterpretationen, die aus der Nutzung dieser Übersetzung entstehen.

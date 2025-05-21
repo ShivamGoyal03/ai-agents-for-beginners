@@ -1,16 +1,110 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3171ed887315c3ddeaccf966e40e9a50",
-  "translation_date": "2025-03-28T09:36:35+00:00",
-  "source_file": "09-metacognition\\README.md",
+  "original_hash": "8cbf460468c802c7994aa62e0e0779c9",
+  "translation_date": "2025-05-20T09:37:25+00:00",
+  "source_file": "09-metacognition/README.md",
   "language_code": "pl"
 }
 -->
 [![Multi-Agent Design](../../../translated_images/lesson-9-thumbnail.8ce3844c60ee3125a381e225d70b4f7cde92ae1cc2b2ca5b83137e68e7c20885.pl.png)](https://youtu.be/His9R6gw6Ec?si=3_RMb8VprNvdLRhX)
 
-> _(Kliknij obrazek powyżej, aby obejrzeć wideo z tej lekcji)_
-# Metakognicja w agentach AI ## Wprowadzenie Witaj w lekcji dotyczącej metakognicji w agentach AI! Ten rozdział jest przeznaczony dla początkujących, którzy chcą dowiedzieć się, jak agenci AI mogą analizować swoje własne procesy myślowe. Po zakończeniu tej lekcji zrozumiesz kluczowe pojęcia i zdobędziesz praktyczne przykłady zastosowania metakognicji w projektowaniu agentów AI. ## Cele nauki Po ukończeniu tej lekcji będziesz w stanie: 1. Zrozumieć znaczenie pętli rozumowania w definicji agentów. 2. Stosować techniki planowania i oceny w celu wspierania agentów samokorygujących się. 3. Tworzyć własnych agentów zdolnych do manipulowania kodem w celu realizacji zadań. ## Wprowadzenie do metakognicji Metakognicja odnosi się do wyższych procesów poznawczych, które polegają na analizowaniu własnego sposobu myślenia. Dla agentów AI oznacza to umiejętność oceny i dostosowywania swoich działań na podstawie samoświadomości i wcześniejszych doświadczeń. Metakognicja, czyli "myślenie o myśleniu", jest ważnym pojęciem w rozwoju systemów agentowych AI. Oznacza, że systemy AI są świadome swoich własnych procesów wewnętrznych i potrafią monitorować, regulować oraz dostosowywać swoje zachowanie. Podobnie jak my, kiedy analizujemy sytuację lub rozwiązujemy problem. Ta samoświadomość może pomóc systemom AI podejmować lepsze decyzje, identyfikować błędy i poprawiać swoją wydajność w czasie – nawiązując do testu Turinga i debaty, czy AI przejmie kontrolę. W kontekście systemów agentowych AI metakognicja może pomóc rozwiązać kilka wyzwań, takich jak: - Przejrzystość: Zapewnienie, że systemy AI mogą wyjaśniać swoje rozumowanie i decyzje. - Rozumowanie: Zwiększenie zdolności systemów AI do syntezowania informacji i podejmowania trafnych decyzji. - Adaptacja: Umożliwienie systemom AI dostosowania się do nowych środowisk i zmieniających się warunków. - Percepcja: Poprawa dokładności systemów AI w rozpoznawaniu i interpretowaniu danych z otoczenia. ### Czym jest metakognicja? Metakognicja, czyli "myślenie o myśleniu", to wyższy proces poznawczy, który obejmuje samoświadomość i samoregulację własnych procesów poznawczych. W obszarze AI metakognicja pozwala agentom oceniać i dostosowywać swoje strategie oraz działania, co prowadzi do lepszego rozwiązywania problemów i podejmowania decyzji. Dzięki zrozumieniu metakognicji możesz projektować agentów AI, którzy są nie tylko bardziej inteligentni, ale także bardziej elastyczni i efektywni. W prawdziwej metakognicji widzielibyśmy, jak AI jawnie rozważa swoje własne rozumowanie. Przykład: „Priorytetowo traktowałem tańsze loty, ponieważ… Mogę pomijać loty bezpośrednie, więc sprawdzę to ponownie.”. Śledzenie, jak i dlaczego wybrał określoną trasę. - Zauważanie błędów wynikających z nadmiernego polegania na preferencjach użytkownika z poprzedniego razu i modyfikowanie swojej strategii decyzyjnej, a nie tylko końcowej rekomendacji. - Diagnozowanie wzorców, takich jak: „Za każdym razem, gdy użytkownik wspomina „zbyt tłoczno”, powinienem nie tylko usuwać określone atrakcje, ale także rozważyć, że moja metoda wyboru „najlepszych atrakcji” jest wadliwa, jeśli zawsze kieruję się popularnością.” ### Znaczenie metakognicji w agentach AI Metakognicja odgrywa kluczową rolę w projektowaniu agentów AI z kilku powodów: ![Znaczenie metakognicji](../../../translated_images/importance-of-metacognition.e351a5983bb745d60a1a60185391a39a6751d033c8c1948ceb6ad04eff7dbeac.pl.png) - Samorefleksja: Agenci mogą oceniać swoje działania i identyfikować obszary wymagające poprawy. - Adaptacja: Agenci mogą modyfikować swoje strategie na podstawie wcześniejszych doświadczeń i zmieniających się warunków. - Korekcja błędów: Agenci mogą autonomicznie wykrywać i poprawiać błędy, co prowadzi do bardziej precyzyjnych wyników. - Zarządzanie zasobami: Agenci mogą optymalizować wykorzystanie zasobów, takich jak czas i moc obliczeniowa, poprzez planowanie i ocenę swoich działań. ## Komponenty agenta AI Zanim zagłębimy się w procesy metakognitywne, ważne jest zrozumienie podstawowych komponentów agenta AI. Agent AI zazwyczaj składa się z: - Persona: Osobowość i cechy agenta, które definiują sposób jego interakcji z użytkownikami. - Narzędzia: Zdolności i funkcje, które agent może wykonywać. - Umiejętności: Wiedza i ekspertyza, którą agent posiada. Te komponenty współpracują, tworząc "jednostkę ekspertyzy", która może realizować określone zadania. **Przykład**: Rozważ agenta podróży, który nie tylko planuje Twoje wakacje, ale także dostosowuje swoją ścieżkę na podstawie danych w czasie rzeczywistym i wcześniejszych doświadczeń klientów. ### Przykład: Metakognicja w serwisie agenta podróży Wyobraź sobie, że projektujesz serwis agenta podróży zasilany AI. Ten agent, "Travel Agent", pomaga użytkownikom w planowaniu ich wakacji. Aby uwzględnić metakognicję, Travel Agent musi oceniać i dostosowywać swoje działania na podstawie samoświadomości i wcześniejszych doświadczeń. Oto jak metakognicja mogłaby odegrać rolę: #### Obecne zadanie Obecnym zadaniem jest pomoc użytkownikowi w zaplanowaniu podróży do Paryża. #### Kroki realizacji zadania 1. **Zbieranie preferencji użytkownika**: Zapytaj użytkownika o daty podróży, budżet, zainteresowania (np. muzea, kuchnia, zakupy) oraz wszelkie szczególne wymagania. 2. **Pobieranie informacji**: Wyszukaj opcje lotów, zakwaterowania, atrakcji i restauracji, które odpowiadają preferencjom użytkownika. 3. **Generowanie rekomendacji**: Zaproponuj spersonalizowany plan podróży zawierający szczegóły lotów, rezerwacje hotelowe i sugerowane aktywności. 4. **Dostosowanie na podstawie opinii**: Poproś użytkownika o opinię na temat rekomendacji i wprowadź niezbędne poprawki. #### Wymagane zasoby - Dostęp do baz danych rezerwacji lotów i hoteli. - Informacje o atrakcjach i restauracjach w Paryżu. - Dane opinii użytkowników z wcześniejszych interakcji. #### Doświadczenie i samorefleksja Travel Agent korzysta z metakognicji, aby ocenić swoje działania i uczyć się na podstawie wcześniejszych doświadczeń. Na przykład: 1. **Analiza opinii użytkownika**: Travel Agent analizuje opinie użytkownika, aby określić, które rekomendacje były dobrze odebrane, a które nie. Odpowiednio dostosowuje swoje przyszłe sugestie. 2. **Adaptacja**: Jeśli użytkownik wcześniej wspomniał o niechęci do zatłoczonych miejsc, Travel Agent unika rekomendowania popularnych atrakcji w godzinach szczytu w przyszłości. 3. **Korekcja błędów**: Jeśli Travel Agent popełnił błąd w poprzedniej rezerwacji, np. sugerując hotel, który był w pełni zarezerwowany, uczy się, aby bardziej dokładnie sprawdzać dostępność przed składaniem rekomendacji. #### Praktyczny przykład dla programistów Oto uproszczony przykład, jak może wyglądać kod Travel Agent uwzględniający metakognicję: ```python
+> _(Kliknij powyższy obraz, aby obejrzeć wideo z tej lekcji)_
+# Metapoznanie w agentach AI
+
+## Wprowadzenie
+
+Witamy na lekcji o metapoznaniu w agentach AI! Ten rozdział jest przeznaczony dla początkujących, którzy są ciekawi, jak agenci AI mogą rozważać własne procesy myślowe. Po zakończeniu tej lekcji zrozumiesz kluczowe pojęcia i będziesz wyposażony w praktyczne przykłady, które pozwolą zastosować metapoznanie w projektowaniu agentów AI.
+
+## Cele nauki
+
+Po ukończeniu tej lekcji będziesz potrafił:
+1. Zrozumieć konsekwencje pętli rozumowania w definicjach agentów.
+2. Wykorzystać techniki planowania i ewaluacji, aby wspierać agentów samokorygujących się.
+3. Stworzyć własnych agentów zdolnych do manipulacji kodem w celu realizacji zadań.
+
+## Wprowadzenie do metapoznania
+
+Metapoznanie odnosi się do wyższych procesów poznawczych, które obejmują myślenie o własnym myśleniu. Dla agentów AI oznacza to zdolność do oceny i dostosowywania swoich działań na podstawie samoświadomości i wcześniejszych doświadczeń.
+
+Metapoznanie, czyli „myślenie o myśleniu”, to ważna koncepcja w rozwoju agentowych systemów AI. Polega na tym, że systemy AI są świadome własnych wewnętrznych procesów i potrafią monitorować, regulować oraz dostosowywać swoje zachowanie. Podobnie jak my, gdy „czytamy sytuację” lub analizujemy problem.
+
+Ta samoświadomość pomaga systemom AI podejmować lepsze decyzje, identyfikować błędy i z czasem poprawiać swoją wydajność — co nawiązuje do testu Turinga i debaty, czy AI przejmie kontrolę.
+
+W kontekście agentowych systemów AI metapoznanie pomaga rozwiązywać kilka wyzwań, takich jak:
+- Transparentność: Zapewnienie, że systemy AI potrafią wyjaśnić swoje rozumowanie i decyzje.
+- Rozumowanie: Zwiększenie zdolności systemów AI do syntezowania informacji i podejmowania trafnych decyzji.
+- Adaptacja: Umożliwienie systemom AI dostosowywania się do nowych środowisk i zmieniających się warunków.
+- Percepcja: Poprawa dokładności systemów AI w rozpoznawaniu i interpretacji danych ze środowiska.
+
+### Czym jest metapoznanie?
+
+Metapoznanie, czyli „myślenie o myśleniu”, to wyższy proces poznawczy obejmujący samoświadomość i samoregulację własnych procesów poznawczych. W dziedzinie AI metapoznanie pozwala agentom oceniać i dostosowywać swoje strategie i działania, co prowadzi do lepszego rozwiązywania problemów i podejmowania decyzji.
+
+Zrozumienie metapoznania pozwala projektować agentów AI, którzy są nie tylko bardziej inteligentni, ale też bardziej elastyczni i efektywni.
+
+W prawdziwym metapoznaniu AI wyraźnie rozważa własne rozumowanie.  
+Przykład: „Wybrałem tańsze loty, ponieważ... mogę jednak tracić bezpośrednie połączenia, więc sprawdzę to jeszcze raz.”  
+Śledzenie, jak i dlaczego wybrał konkretną trasę.  
+- Zauważenie, że popełnił błąd, bo zbytnio polegał na preferencjach użytkownika z poprzedniego razu, więc modyfikuje swoją strategię podejmowania decyzji, a nie tylko końcowe rekomendacje.  
+- Diagnozowanie wzorców, np. „Za każdym razem, gdy użytkownik mówi 'za tłoczno', powinienem nie tylko usuwać niektóre atrakcje, ale także przemyśleć, że moja metoda wyboru 'najlepszych atrakcji' jest błędna, jeśli zawsze oceniam je według popularności.”
+
+### Znaczenie metapoznania w agentach AI
+
+Metapoznanie odgrywa kluczową rolę w projektowaniu agentów AI z kilku powodów:
+
+![Importance of Metacognition](../../../translated_images/importance-of-metacognition.e351a5983bb745d60a1a60185391a39a6751d033c8c1948ceb6ad04eff7dbeac.pl.png)
+
+- Samorefleksja: Agenci mogą oceniać własną wydajność i identyfikować obszary do poprawy.
+- Adaptacyjność: Agenci mogą modyfikować swoje strategie na podstawie wcześniejszych doświadczeń i zmieniających się warunków.
+- Korekta błędów: Agenci potrafią samodzielnie wykrywać i poprawiać błędy, co prowadzi do dokładniejszych wyników.
+- Zarządzanie zasobami: Agenci mogą optymalizować wykorzystanie zasobów, takich jak czas i moc obliczeniowa, poprzez planowanie i ocenę swoich działań.
+
+## Składniki agenta AI
+
+Zanim przejdziemy do procesów metapoznawczych, warto zrozumieć podstawowe elementy agenta AI. Typowy agent AI składa się z:
+- Persona: Osobowość i cechy agenta, które definiują sposób jego interakcji z użytkownikami.
+- Narzędzia: Możliwości i funkcje, które agent może wykonywać.
+- Umiejętności: Wiedza i doświadczenie, które posiada agent.
+
+Te składniki współpracują, tworząc „jednostkę ekspertyzy” zdolną do realizacji określonych zadań.
+
+**Przykład**: Wyobraź sobie agenta podróży, który nie tylko planuje wakacje, ale także dostosowuje trasę na podstawie danych w czasie rzeczywistym i doświadczeń z poprzednich podróży klientów.
+
+### Przykład: Metapoznanie w usłudze agenta podróży
+
+Wyobraź sobie, że projektujesz usługę agenta podróży zasilaną AI. Ten agent, „Travel Agent”, pomaga użytkownikom planować wakacje. Aby wprowadzić metapoznanie, Travel Agent musi oceniać i dostosowywać swoje działania na podstawie samoświadomości i wcześniejszych doświadczeń.
+
+Oto, jak metapoznanie może odegrać rolę:
+
+#### Aktualne zadanie
+
+Aktualnym zadaniem jest pomoc użytkownikowi w zaplanowaniu wycieczki do Paryża.
+
+#### Kroki do wykonania zadania
+
+1. **Zbieranie preferencji użytkownika**: Zapytaj użytkownika o daty podróży, budżet, zainteresowania (np. muzea, kuchnia, zakupy) oraz wszelkie specjalne wymagania.
+2. **Pozyskanie informacji**: Wyszukaj opcje lotów, noclegów, atrakcji i restauracji odpowiadające preferencjom użytkownika.
+3. **Generowanie rekomendacji**: Przedstaw spersonalizowany plan podróży z informacjami o lotach, rezerwacjach hoteli i proponowanych aktywnościach.
+4. **Dostosowanie na podstawie opinii**: Poproś użytkownika o opinię na temat rekomendacji i wprowadź niezbędne zmiany.
+
+#### Wymagane zasoby
+
+- Dostęp do baz danych lotów i hoteli.
+- Informacje o paryskich atrakcjach i restauracjach.
+- Dane zwrotne od użytkowników z poprzednich interakcji.
+
+#### Doświadczenie i samorefleksja
+
+Travel Agent wykorzystuje metapoznanie, aby ocenić swoją skuteczność i uczyć się na podstawie wcześniejszych doświadczeń. Na przykład:
+1. **Analiza opinii użytkowników**: Travel Agent przegląda opinie, aby określić, które rekomendacje były dobrze przyjęte, a które nie. Na tej podstawie dostosowuje przyszłe sugestie.
+2. **Adaptacyjność**: Jeśli użytkownik wcześniej wspomniał, że nie lubi tłocznych miejsc, Travel Agent unika polecania popularnych atrakcji w godzinach szczytu.
+3. **Korekta błędów**: Jeśli Travel Agent popełnił błąd, np. zasugerował hotel, który był już pełny, uczy się dokładniej sprawdzać dostępność przed rekomendacją.
+
+#### Praktyczny przykład dla programisty
+
+Oto uproszczony przykład, jak może wyglądać kod Travel Agent z uwzględnieniem metapoznania:  
+```python
 class Travel_Agent:
     def __init__(self):
         self.user_preferences = {}
@@ -49,7 +143,74 @@ itinerary = travel_agent.generate_recommendations()
 print("Suggested Itinerary:", itinerary)
 feedback = {"liked": ["Louvre Museum"], "disliked": ["Eiffel Tower (too crowded)"]}
 travel_agent.adjust_based_on_feedback(feedback)
-``` #### Dlaczego metakognicja ma znaczenie - **Samorefleksja**: Agenci mogą analizować swoje działania i identyfikować obszary wymagające poprawy. - **Adaptacja**: Agenci mogą modyfikować strategie na podstawie opinii i zmieniających się warunków. - **Korekcja błędów**: Agenci mogą autonomicznie wykrywać i poprawiać błędy. - **Zarządzanie zasobami**: Agenci mogą optymalizować wykorzystanie zasobów, takich jak czas i moc obliczeniowa. Dzięki uwzględnieniu metakognicji Travel Agent może oferować bardziej spersonalizowane i precyzyjne rekomendacje podróżne, poprawiając ogólne doświadczenie użytkownika. --- ## 2. Planowanie w agentach Planowanie jest kluczowym elementem zachowania agentów AI. Polega na określeniu kroków potrzebnych do osiągnięcia celu, z uwzględnieniem obecnego stanu, zasobów i możliwych przeszkód. ### Elementy planowania - **Obecne zadanie**: Jasno zdefiniuj zadanie. - **Kroki realizacji zadania**: Podziel zadanie na możliwe do wykonania kroki. - **Wymagane zasoby**: Określ niezbędne zasoby. - **Doświadczenie**: Wykorzystaj wcześniejsze doświadczenia do informowania planowania. **Przykład**: Oto kroki, które Travel Agent musi podjąć, aby skutecznie pomóc użytkownikowi w planowaniu podróży: ### Kroki dla Travel Agent 1. **Zbieranie preferencji użytkownika** - Zapytaj użytkownika o szczegóły dotyczące dat podróży, budżetu, zainteresowań i wszelkich szczególnych wymagań. - Przykłady: „Kiedy planujesz podróż?” „Jaki jest Twój przedział budżetowy?” „Jakie aktywności lubisz podczas wakacji?” 2. **Pobieranie informacji** - Wyszukaj odpowiednie opcje podróży na podstawie preferencji użytkownika. - **Loty**: Znajdź dostępne loty w ramach budżetu i preferowanych dat podróży użytkownika. - **Zakwaterowanie**: Znajdź hotele lub nieruchomości na wynajem, które odpowiadają preferencjom użytkownika dotyczącym lokalizacji, ceny i udogodnień. - **Atrakcje i restauracje**: Zidentyfikuj popularne atrakcje, aktywności i opcje gastronomiczne zgodne z zainteresowaniami użytkownika. 3. **Generowanie rekomendacji** - Połącz zebrane informacje w spersonalizowany plan podróży. - Podaj szczegóły, takie jak opcje lotów, rezerwacje hotelowe i sugerowane aktywności, dostosowując rekomendacje do preferencji użytkownika. 4. **Przedstawienie planu podróży użytkownikowi** - Udostępnij proponowany plan podróży użytkownikowi do przeglądu. - Przykład: „Oto sugerowany plan podróży do Paryża. Zawiera szczegóły dotyczące lotów, rezerwacji hotelowych oraz listę polecanych aktywności i restauracji. Daj znać, co sądzisz!” 5. **Zbieranie opinii** - Poproś użytkownika o opinię na temat proponowanego planu podróży. - Przykłady: „Czy podobają Ci się opcje lotów?” „Czy hotel odpowiada Twoim potrzebom?” „Czy są jakieś aktywności, które chciałbyś dodać lub usunąć?” 6. **Dostosowanie na podstawie opinii** - Zmień plan podróży na podstawie opinii użytkownika. - Wprowadź niezbędne zmiany w rekomendacjach dotyczących lotów, zakwaterowania i aktywności, aby lepiej odpowiadały preferencjom użytkownika. 7. **Ostateczne potwierdzenie** - Przedstaw zaktualizowany plan podróży użytkownikowi do ostatecznego zatwierdzenia. - Przykład: „Dokonałem zmian na podstawie Twojej opinii. Oto zaktualizowany plan podróży. Czy wszystko wygląda dobrze?” 8. **Rezerwacja i potwierdzenie** - Po zatwierdzeniu planu przez użytkownika, przystąp do rezerwacji lotów, zakwaterowania i wszelkich zaplanowanych aktywności. - Wyślij użytkownikowi szczegóły potwierdzenia. 9. **Zapewnienie wsparcia na bieżąco** - Pozostań dostępny, aby pomóc użytkownikowi w przypadku jakichkolwiek zmian lub dodatkowych próśb przed i w trakcie podróży. - Przykład: „Jeśli potrzebujesz dalszej pomocy podczas podróży, skontaktuj się ze mną w dowolnym momencie!” ### Przykład interakcji ```python
+```
+
+#### Dlaczego metapoznanie ma znaczenie
+
+- **Samorefleksja**: Agenci mogą analizować swoją wydajność i identyfikować obszary do poprawy.  
+- **Adaptacyjność**: Agenci mogą modyfikować strategie na podstawie opinii i zmieniających się warunków.  
+- **Korekta błędów**: Agenci mogą samodzielnie wykrywać i naprawiać błędy.  
+- **Zarządzanie zasobami**: Agenci mogą optymalizować wykorzystanie zasobów, takich jak czas i moc obliczeniowa.
+
+Dzięki metapoznaniu Travel Agent może oferować bardziej spersonalizowane i precyzyjne rekomendacje podróży, co podnosi ogólne doświadczenie użytkownika.
+
+---
+
+## 2. Planowanie w agentach
+
+Planowanie to kluczowy element zachowania agenta AI. Polega na wyznaczeniu kroków potrzebnych do osiągnięcia celu, uwzględniając aktualny stan, zasoby i możliwe przeszkody.
+
+### Elementy planowania
+
+- **Aktualne zadanie**: Jasno określ zadanie.  
+- **Kroki do wykonania zadania**: Podziel zadanie na łatwe do zarządzania etapy.  
+- **Wymagane zasoby**: Zidentyfikuj potrzebne zasoby.  
+- **Doświadczenie**: Wykorzystaj wcześniejsze doświadczenia do planowania.
+
+**Przykład**: Oto kroki, które Travel Agent musi podjąć, aby skutecznie pomóc użytkownikowi w planowaniu podróży:
+
+### Kroki dla Travel Agent
+
+1. **Zbieranie preferencji użytkownika**  
+- Zapytaj o szczegóły dotyczące dat podróży, budżetu, zainteresowań i specjalnych wymagań.  
+- Przykłady: „Kiedy planujesz podróż?” „Jaki masz budżet?” „Jakie aktywności lubisz podczas wakacji?”
+
+2. **Pozyskanie informacji**  
+- Wyszukaj odpowiednie opcje podróży zgodne z preferencjami użytkownika.  
+- **Loty**: Znajdź dostępne loty mieszczące się w budżecie i terminach użytkownika.  
+- **Noclegi**: Znajdź hotele lub wynajmy odpowiadające preferencjom lokalizacji, ceny i udogodnień.  
+- **Atrakcje i restauracje**: Zidentyfikuj popularne atrakcje, aktywności i miejsca do jedzenia zgodne z zainteresowaniami użytkownika.
+
+3. **Generowanie rekomendacji**  
+- Stwórz spersonalizowany plan podróży.  
+- Podaj szczegóły takie jak opcje lotów, rezerwacje hotelowe i proponowane aktywności, dostosowując je do preferencji użytkownika.
+
+4. **Przedstawienie planu użytkownikowi**  
+- Udostępnij plan podróży użytkownikowi do oceny.  
+- Przykład: „Oto proponowany plan Twojej wycieczki do Paryża. Zawiera szczegóły lotów, rezerwacje hoteli oraz listę rekomendowanych atrakcji i restauracji. Daj znać, co myślisz!”
+
+5. **Zbieranie opinii**  
+- Zapytaj użytkownika o opinię na temat planu.  
+- Przykłady: „Czy podobają Ci się opcje lotów?” „Czy hotel spełnia Twoje oczekiwania?” „Czy chcesz dodać lub usunąć jakieś aktywności?”
+
+6. **Dostosowanie na podstawie opinii**  
+- Zmodyfikuj plan zgodnie z uwagami użytkownika.  
+- Wprowadź potrzebne zmiany w rekomendacjach lotów, noclegów i atrakcji, aby lepiej dopasować się do preferencji.
+
+7. **Ostateczne potwierdzenie**  
+- Przedstaw zaktualizowany plan użytkownikowi do ostatecznej akceptacji.  
+- Przykład: „Wprowadziłem zmiany zgodnie z Twoimi uwagami. Oto zaktualizowany plan. Czy wszystko wygląda dobrze?”
+
+8. **Rezerwacja i potwierdzenie**  
+- Po zatwierdzeniu planu przez użytkownika dokonaj rezerwacji lotów, noclegów i zaplanowanych aktywności.  
+- Prześlij użytkownikowi potwierdzenia.
+
+9. **Zapewnienie wsparcia**  
+- Bądź dostępny, aby pomóc użytkownikowi w przypadku zmian lub dodatkowych próśb przed i w trakcie podróży.  
+- Przykład: „Jeśli będziesz potrzebować pomocy podczas podróży, śmiało kontaktuj się ze mną w każdej chwili!”
+
+### Przykładowa interakcja  
+```python
 class Travel_Agent:
     def __init__(self):
         self.user_preferences = {}
@@ -86,38 +247,53 @@ itinerary = travel_agent.generate_recommendations()
 print("Suggested Itinerary:", itinerary)
 feedback = {"liked": ["Louvre Museum"], "disliked": ["Eiffel Tower (too crowded)"]}
 travel_agent.adjust_based_on_feedback(feedback)
-``` ## 3. Korekcyjny system RAG Najpierw zacznijmy od zrozumienia różnicy między narzędziem RAG a wczytywaniem kontekstu zapobiegawczego ![RAG vs Wczytywanie kontekstu](../../../translated_images/rag-vs-context.9bb2b76d17aeba1489ad2a43ddbc9cd20e7ada4e4871cc99c63a498aa0ff70f7.pl.png) ### Retrieval-Augmented Generation (RAG) RAG łączy system wyszukiwania z modelem generatywnym. Gdy zadane jest zapytanie, system wyszukiwania pobiera odpowiednie dokumenty lub dane z zewnętrznego źródła, a pobrane informacje są wykorzystywane do wzbogacenia wejścia dla modelu generatywnego. Dzięki temu model generuje bardziej precyzyjne i kontekstowo odpowiednie odpowiedzi. W systemie RAG agent pobiera odpowiednie informacje z bazy wiedzy i wykorzystuje je do generowania odpowiednich odpowiedzi lub działań. ### Korekcyjne podejście RAG Korekcyjne podejście RAG koncentruje się na wykorzystaniu technik RAG do poprawy błędów i zwiększenia precyzji agentów AI. Obejmuje to: 1. **Technika podpowiedzi**: Użycie konkretnych podpowiedzi, aby kierować agenta w wyszukiwaniu odpowiednich informacji. 2. **Narzędzie**: Implementacja algorytmów i mechanizmów umożliwiających agentowi ocenę trafności pobranych informacji i generowanie precyzyjnych odpowiedzi. 3. **Ocena**: Ciągłe monitorowanie działania agenta i wprowadzanie poprawek w celu zwiększenia jego precyzji i efektywności. ####
-Poprawne RAG w agencie wyszukiwania Rozważ agenta wyszukiwania, który pobiera informacje z internetu, aby odpowiedzieć na zapytania użytkowników. Podejście Corrective RAG może obejmować: 1. **Technika podpowiedzi**: Formułowanie zapytań wyszukiwania na podstawie danych wejściowych użytkownika. 2. **Narzędzie**: Wykorzystanie algorytmów przetwarzania języka naturalnego i uczenia maszynowego do oceniania i filtrowania wyników wyszukiwania. 3. **Ocena**: Analiza opinii użytkowników w celu identyfikacji i poprawy nieścisłości w pobranych informacjach.
+```
 
-### Corrective RAG w agencie podróży Corrective RAG (Retrieval-Augmented Generation) zwiększa zdolność AI do pobierania i generowania informacji, jednocześnie poprawiając wszelkie nieścisłości. Zobaczmy, jak agent podróży może wykorzystać podejście Corrective RAG, aby dostarczać bardziej precyzyjne i odpowiednie rekomendacje podróży. Obejmuje to: - **Technika podpowiedzi:** Używanie konkretnych podpowiedzi, aby kierować agenta w pobieraniu odpowiednich informacji. - **Narzędzie:** Wdrożenie algorytmów i mechanizmów umożliwiających agentowi ocenę trafności pobranych informacji i generowanie precyzyjnych odpowiedzi. - **Ocena:** Ciągła ocena wydajności agenta i wprowadzanie zmian w celu poprawy jego dokładności i efektywności.
+## 3. Korekcyjny system RAG
 
-#### Kroki wdrożenia Corrective RAG w agencie podróży 1. **Początkowa interakcja z użytkownikiem** - Agent podróży zbiera początkowe preferencje użytkownika, takie jak miejsce docelowe, daty podróży, budżet i zainteresowania. - Przykład: ```python
+Na początek zrozummy różnicę między narzędziem RAG a prewencyjnym ładowaniem kontekstu.
+
+![RAG vs Context Loading](../../../translated_images/rag-vs-context.9bb2b76d17aeba1489ad2a43ddbc9cd20e7ada4e4871cc99c63a498aa0ff70f7.pl.png)
+
+### Retrieval-Augmented Generation (RAG)
+
+RAG łączy system wyszukiwania z modelem generatywnym. Gdy pojawia się zapytanie, system wyszukiwania pobiera odpowiednie dokumenty lub dane z zewnętrznego źródła, a te informacje są wykorzystywane do wzbogacenia wejścia dla modelu generatywnego. Dzięki temu model generuje dokładniejsze i bardziej kontekstowo trafne odpowiedzi.
+
+W systemie RAG agent pobiera relewantne informacje z bazy wiedzy i wykorzystuje je do generowania odpowiednich odpowiedzi lub działań.
+
+### Podejście korekcyjne RAG
+
+Podejście korekcyjne RAG skupia się na wykorzystaniu technik RAG do korygowania błędów i poprawy dokładności agentów AI. Obejmuje to:
+1. **Technikę promptowania**: Używanie konkretnych promptów, które pomagają agentowi w wyszukiwaniu relewantnych informacji.
+2. **Narzędzie**: Wdrożenie algorytmów i mechanizmów umożliwiających agentowi ocenę trafności pozyskanych informacji i generowanie precyzyjnych odpowiedzi.
+3. **Ewaluację**: Ciągłe ocenianie wydajności agenta i wprowadzanie korekt w celu zwiększenia jego dokładności i efektywności.
+Przykład: Korekcyjny RAG w Agencie Wyszukiwania Rozważ agenta wyszukiwania, który pobiera informacje z sieci, aby odpowiadać na zapytania użytkowników. Podejście Korekcyjnego RAG może obejmować: 1. **Technika Promptowania**: Formułowanie zapytań wyszukiwania na podstawie danych wejściowych użytkownika. 2. **Narzędzie**: Wykorzystanie przetwarzania języka naturalnego i algorytmów uczenia maszynowego do klasyfikacji i filtrowania wyników wyszukiwania. 3. **Ewaluacja**: Analizę opinii użytkowników w celu identyfikacji i korekty nieścisłości w pobranych informacjach. ### Korekcyjny RAG w Agencie Podróży Korekcyjny RAG (Retrieval-Augmented Generation) zwiększa zdolność AI do pobierania i generowania informacji przy jednoczesnej korekcie wszelkich nieścisłości. Zobaczmy, jak Agent Podróży może wykorzystać podejście Korekcyjnego RAG, aby dostarczać dokładniejsze i bardziej trafne rekomendacje podróżnicze. Obejmuje to: - **Technikę Promptowania:** Używanie konkretnych promptów do kierowania agentem w pobieraniu odpowiednich informacji. - **Narzędzie:** Implementację algorytmów i mechanizmów, które pozwalają agentowi oceniać trafność pobranych informacji i generować precyzyjne odpowiedzi. - **Ewaluację:** Ciągłe ocenianie wydajności agenta i wprowadzanie korekt w celu poprawy jego dokładności i efektywności. #### Kroki wdrażania Korekcyjnego RAG w Agencie Podróży 1. **Początkowa Interakcja z Użytkownikiem** - Agent Podróży zbiera początkowe preferencje użytkownika, takie jak cel podróży, daty wyjazdu, budżet i zainteresowania. - Przykład: ```python
      preferences = {
          "destination": "Paris",
          "dates": "2025-04-01 to 2025-04-10",
          "budget": "moderate",
          "interests": ["museums", "cuisine"]
      }
-     ``` 2. **Pobieranie informacji** - Agent podróży pobiera informacje o lotach, zakwaterowaniu, atrakcjach i restauracjach na podstawie preferencji użytkownika. - Przykład: ```python
+     ``` 2. **Pobieranie Informacji** - Agent Podróży pobiera informacje o lotach, zakwaterowaniu, atrakcjach i restauracjach na podstawie preferencji użytkownika. - Przykład: ```python
      flights = search_flights(preferences)
      hotels = search_hotels(preferences)
      attractions = search_attractions(preferences)
-     ``` 3. **Generowanie początkowych rekomendacji** - Agent podróży wykorzystuje pobrane informacje do stworzenia spersonalizowanego planu podróży. - Przykład: ```python
+     ``` 3. **Generowanie Początkowych Rekomendacji** - Agent Podróży wykorzystuje pobrane informacje do stworzenia spersonalizowanego planu podróży. - Przykład: ```python
      itinerary = create_itinerary(flights, hotels, attractions)
      print("Suggested Itinerary:", itinerary)
-     ``` 4. **Zbieranie opinii użytkownika** - Agent podróży prosi użytkownika o opinię na temat początkowych rekomendacji. - Przykład: ```python
+     ``` 4. **Zbieranie Opinii Użytkownika** - Agent Podróży prosi użytkownika o opinię na temat początkowych rekomendacji. - Przykład: ```python
      feedback = {
          "liked": ["Louvre Museum"],
          "disliked": ["Eiffel Tower (too crowded)"]
      }
-     ``` 5. **Proces Corrective RAG** - **Technika podpowiedzi**: Agent podróży formułuje nowe zapytania wyszukiwania na podstawie opinii użytkownika. - Przykład: ```python
+     ``` 5. **Proces Korekcyjnego RAG** - **Technika Promptowania**: Agent Podróży formułuje nowe zapytania wyszukiwania na podstawie opinii użytkownika. - Przykład: ```python
        if "disliked" in feedback:
            preferences["avoid"] = feedback["disliked"]
-       ``` - **Narzędzie**: Agent podróży używa algorytmów do oceniania i filtrowania nowych wyników wyszukiwania, podkreślając trafność na podstawie opinii użytkownika. - Przykład: ```python
+       ``` - **Narzędzie**: Agent Podróży używa algorytmów do klasyfikacji i filtrowania nowych wyników wyszukiwania, kładąc nacisk na trafność na podstawie opinii użytkownika. - Przykład: ```python
        new_attractions = search_attractions(preferences)
        new_itinerary = create_itinerary(flights, hotels, new_attractions)
        print("Updated Itinerary:", new_itinerary)
-       ``` - **Ocena**: Agent podróży ciągle ocenia trafność i dokładność swoich rekomendacji, analizując opinie użytkowników i wprowadzając niezbędne zmiany. - Przykład: ```python
+       ``` - **Ewaluacja**: Agent Podróży nieustannie ocenia trafność i dokładność swoich rekomendacji, analizując opinie użytkowników i wprowadzając niezbędne poprawki. - Przykład: ```python
        def adjust_preferences(preferences, feedback):
            if "liked" in feedback:
                preferences["favorites"] = feedback["liked"]
@@ -126,9 +302,7 @@ Poprawne RAG w agencie wyszukiwania Rozważ agenta wyszukiwania, który pobiera 
            return preferences
 
        preferences = adjust_preferences(preferences, feedback)
-       ```
-
-#### Praktyczny przykład Oto uproszczony przykład kodu w Pythonie, który wykorzystuje podejście Corrective RAG w agencie podróży: ```python
+       ``` #### Praktyczny Przykład Oto uproszczony przykład kodu w Pythonie, który integruje podejście Korekcyjnego RAG w Agencie Podróży: ```python
 class Travel_Agent:
     def __init__(self):
         self.user_preferences = {}
@@ -168,9 +342,7 @@ print("Suggested Itinerary:", itinerary)
 feedback = {"liked": ["Louvre Museum"], "disliked": ["Eiffel Tower (too crowded)"]}
 new_itinerary = travel_agent.adjust_based_on_feedback(feedback)
 print("Updated Itinerary:", new_itinerary)
-```
-
-### Pre-emptive Context Load Pre-emptive Context Load polega na ładowaniu odpowiedniego kontekstu lub informacji w tle do modelu przed przetwarzaniem zapytania. Oznacza to, że model ma dostęp do tych informacji od początku, co może pomóc w generowaniu bardziej świadomych odpowiedzi bez konieczności pobierania dodatkowych danych podczas procesu. Oto uproszczony przykład, jak może wyglądać pre-emptive context load dla aplikacji agenta podróży w Pythonie: ```python
+``` ### Wstępne Ładowanie Kontekstu Wstępne Ładowanie Kontekstu polega na załadowaniu odpowiedniego kontekstu lub informacji tła do modelu przed przetworzeniem zapytania. Oznacza to, że model ma dostęp do tych informacji od samego początku, co pomaga mu generować bardziej świadome odpowiedzi bez konieczności pobierania dodatkowych danych podczas procesu. Oto uproszczony przykład, jak może wyglądać wstępne ładowanie kontekstu dla aplikacji Agenta Podróży w Pythonie: ```python
 class TravelAgent:
     def __init__(self):
         # Pre-load popular destinations and their information
@@ -193,19 +365,9 @@ class TravelAgent:
 travel_agent = TravelAgent()
 print(travel_agent.get_destination_info("Paris"))
 print(travel_agent.get_destination_info("Tokyo"))
-```
+``` #### Wyjaśnienie 1. **Inicjalizacja (`__init__` method)**: The `TravelAgent` class pre-loads a dictionary containing information about popular destinations such as Paris, Tokyo, New York, and Sydney. This dictionary includes details like the country, currency, language, and major attractions for each destination.
 
-#### Wyjaśnienie 1. **Inicjalizacja (`__init__` method)**: The `TravelAgent` class pre-loads a dictionary containing information about popular destinations such as Paris, Tokyo, New York, and Sydney. This dictionary includes details like the country, currency, language, and major attractions for each destination.
-
-2. **Retrieving Information (`get_destination_info` method)**: When a user queries about a specific destination, the `get_destination_info` metoda pobiera odpowiednie informacje z wstępnie załadowanego słownika kontekstu. Dzięki pre-ładowaniu kontekstu aplikacja agenta podróży może szybko odpowiadać na zapytania użytkowników bez konieczności pobierania tych informacji z zewnętrznego źródła w czasie rzeczywistym. To sprawia, że aplikacja jest bardziej wydajna i responsywna.
-
-### Bootstrapping the Plan with a Goal Before Iterating Bootstrapping planu z celem polega na rozpoczęciu od jasnego celu lub oczekiwanego wyniku. Definiując ten cel z góry, model może wykorzystać go jako zasadę przewodnią podczas procesu iteracyjnego. Pomaga to zapewnić, że każda iteracja zbliża się do osiągnięcia pożądanego rezultatu, czyniąc proces bardziej efektywnym i skoncentrowanym. Oto przykład, jak można bootstrapować plan podróży z celem przed iterowaniem dla agenta podróży w Pythonie:
-
-### Scenariusz Agent podróży chce zaplanować spersonalizowane wakacje dla klienta. Celem jest stworzenie planu podróży, który maksymalizuje zadowolenie klienta na podstawie jego preferencji i budżetu.
-
-### Kroki 1. Zdefiniowanie preferencji klienta i budżetu. 2. Bootstrapowanie początkowego planu na podstawie tych preferencji. 3. Iterowanie w celu udoskonalenia planu, optymalizując zadowolenie klienta.
-
-#### Kod w Pythonie ```python
+2. **Retrieving Information (`get_destination_info` method)**: When a user queries about a specific destination, the `get_destination_info` metoda pobiera odpowiednie informacje ze wstępnie załadowanego słownika kontekstu. Dzięki wstępnemu załadowaniu kontekstu aplikacja Agenta Podróży może szybko odpowiadać na zapytania użytkowników bez konieczności pobierania tych informacji z zewnętrznego źródła w czasie rzeczywistym. To sprawia, że aplikacja jest bardziej wydajna i responsywna. ### Rozpoczynanie Planu z Celem Przed Iteracją Rozpoczynanie planu z celem polega na rozpoczęciu z jasnym celem lub zamierzonym wynikiem. Definiując ten cel z góry, model może używać go jako zasady przewodniej przez cały proces iteracyjny. Pomaga to zapewnić, że każda iteracja przybliża do osiągnięcia pożądanego wyniku, czyniąc proces bardziej efektywnym i ukierunkowanym. Oto przykład, jak można rozpocząć plan podróży z celem przed iteracją dla agenta podróży w Pythonie: ### Scenariusz Agent podróży chce zaplanować spersonalizowane wakacje dla klienta. Celem jest stworzenie planu podróży maksymalizującego satysfakcję klienta na podstawie jego preferencji i budżetu. ### Kroki 1. Zdefiniuj preferencje i budżet klienta. 2. Rozpocznij początkowy plan na podstawie tych preferencji. 3. Iteruj, aby udoskonalić plan, optymalizując satysfakcję klienta. #### Kod w Pythonie ```python
 class TravelAgent:
     def __init__(self, destinations):
         self.destinations = destinations
@@ -255,9 +417,7 @@ print("Initial Plan:", initial_plan)
 
 refined_plan = travel_agent.iterate_plan(initial_plan, preferences, budget)
 print("Refined Plan:", refined_plan)
-```
-
-#### Wyjaśnienie kodu 1. **Inicjalizacja (`__init__` method)**: The `TravelAgent` class is initialized with a list of potential destinations, each having attributes like name, cost, and activity type.
+``` #### Wyjaśnienie Kodu 1. **Inicjalizacja (`__init__` method)**: The `TravelAgent` class is initialized with a list of potential destinations, each having attributes like name, cost, and activity type.
 
 2. **Bootstrapping the Plan (`bootstrap_plan` method)**: This method creates an initial travel plan based on the client's preferences and budget. It iterates through the list of destinations and adds them to the plan if they match the client's preferences and fit within the budget.
 
@@ -265,21 +425,7 @@ print("Refined Plan:", refined_plan)
 
 4. **Iterating the Plan (`iterate_plan` method)**: This method refines the initial plan by trying to replace each destination in the plan with a better match, considering the client's preferences and budget constraints.
 
-5. **Calculating Cost (`calculate_cost` metoda)**: Ta metoda oblicza całkowity koszt bieżącego planu, w tym potencjalne nowe miejsce docelowe.
-
-#### Przykład użycia - **Początkowy plan**: Agent podróży tworzy początkowy plan na podstawie preferencji klienta dotyczących zwiedzania i budżetu wynoszącego 2000 USD. - **Udowodniony plan**: Agent podróży iteruje plan, optymalizując go pod kątem preferencji i budżetu klienta. Bootstrapując plan z jasnym celem (np. maksymalizacja zadowolenia klienta) i iterując w celu jego udoskonalenia, agent podróży może stworzyć spersonalizowany i zoptymalizowany plan podróży dla klienta. Takie podejście zapewnia, że plan podróży od początku odpowiada preferencjom i budżetowi klienta, a następnie jest ulepszany z każdą iteracją.
-
-### Wykorzystanie LLM do ponownego rankingu i oceniania Duże modele językowe (LLM) mogą być wykorzystywane do ponownego rankingu i oceniania, oceniając trafność i jakość pobranych dokumentów lub wygenerowanych odpowiedzi. Oto jak to działa: **Pobieranie:** Pierwszy krok pobierania polega na uzyskaniu zestawu kandydatów dokumentów lub odpowiedzi na podstawie zapytania. **Ponowny ranking:** LLM ocenia tych kandydatów i ponownie ich rangę na podstawie ich trafności i jakości. Ten krok zapewnia, że najbardziej trafne i wysokiej jakości informacje są przedstawiane jako pierwsze. **Ocenianie:** LLM przypisuje oceny każdemu kandydatowi, odzwierciedlając ich trafność i jakość. Pomaga to w wyborze najlepszej odpowiedzi lub dokumentu dla użytkownika. Wykorzystując LLM do ponownego rankingu i oceniania, system może dostarczać bardziej precyzyjne i kontekstowo trafne informacje, poprawiając ogólne doświadczenie użytkownika. Oto przykład, jak agent podróży może wykorzystać duży model językowy (LLM) do ponownego rankingu i oceniania miejsc podróży na podstawie preferencji użytkownika w Pythonie:
-
-#### Scenariusz - Podróż na podstawie preferencji Agent podróży chce polecić najlepsze miejsca podróży klientowi na podstawie jego preferencji. LLM pomoże ponownie rankować i oceniać miejsca, aby zapewnić przedstawienie najbardziej odpowiednich opcji.
-
-#### Kroki: 1. Zbieranie preferencji użytkownika. 2. Pobieranie listy potencjalnych miejsc podróży. 3. Wykorzystanie LLM do ponownego rankingu i oceniania miejsc na podstawie preferencji użytkownika.
-
-Oto jak można zaktualizować poprzedni przykład, aby użyć Azure OpenAI Services:
-
-#### Wymagania 1. Musisz mieć subskrypcję Azure. 2. Utwórz zasób Azure OpenAI i uzyskaj swój klucz API.
-
-#### Kod w Pythonie ```python
+5. **Calculating Cost (`calculate_cost` metoda)**: Ta metoda oblicza całkowity koszt aktualnego planu, wliczając potencjalny nowy cel podróży. #### Przykładowe Użycie - **Plan Początkowy**: Agent podróży tworzy plan na podstawie preferencji klienta dotyczących zwiedzania i budżetu 2000 dolarów. - **Plan Udoskonalony**: Agent podróży iteruje plan, optymalizując go pod kątem preferencji i budżetu klienta. Rozpoczynając plan z jasnym celem (np. maksymalizacja satysfakcji klienta) i iterując w celu udoskonalenia planu, agent podróży może stworzyć spersonalizowany i zoptymalizowany plan podróży dla klienta. Takie podejście zapewnia, że plan podróży jest zgodny z preferencjami i budżetem klienta od samego początku i poprawia się z każdą iteracją. ### Wykorzystanie LLM do Przeklasyfikowania i Oceny Duże Modele Językowe (LLM) mogą być wykorzystywane do przeklasyfikowania i oceniania poprzez ocenę trafności i jakości pobranych dokumentów lub wygenerowanych odpowiedzi. Oto jak to działa: **Pobieranie:** Początkowy krok pobierania zwraca zestaw kandydatów dokumentów lub odpowiedzi na podstawie zapytania. **Przeklasyfikowanie:** LLM ocenia tych kandydatów i przeklasyfikuje ich na podstawie trafności i jakości. Ten krok zapewnia, że najtrafniejsze i najwyższej jakości informacje są prezentowane jako pierwsze. **Ocena:** LLM przypisuje oceny każdemu kandydatowi, odzwierciedlając ich trafność i jakość. Pomaga to w wyborze najlepszej odpowiedzi lub dokumentu dla użytkownika. Wykorzystując LLM do przeklasyfikowania i oceniania, system może dostarczać dokładniejsze i kontekstowo bardziej trafne informacje, poprawiając ogólne doświadczenie użytkownika. Oto przykład, jak agent podróży może wykorzystać Duży Model Językowy (LLM) do przeklasyfikowania i oceniania miejsc podróży na podstawie preferencji użytkownika w Pythonie: #### Scenariusz - Podróż na podstawie preferencji Agent podróży chce polecić klientowi najlepsze miejsca podróży na podstawie jego preferencji. LLM pomoże przeklasyfikować i ocenić miejsca, aby zapewnić prezentację najbardziej trafnych opcji. #### Kroki: 1. Zbierz preferencje użytkownika. 2. Pobierz listę potencjalnych miejsc podróży. 3. Użyj LLM do przeklasyfikowania i ocenienia miejsc na podstawie preferencji użytkownika. Oto, jak można zaktualizować poprzedni przykład, aby korzystać z usług Azure OpenAI: #### Wymagania 1. Musisz mieć subskrypcję Azure. 2. Utwórz zasób Azure OpenAI i uzyskaj swój klucz API. #### Przykładowy kod w Pythonie ```python
 import requests
 import json
 
@@ -336,9 +482,7 @@ recommendations = travel_agent.get_recommendations(preferences, api_key, endpoin
 print("Recommended Destinations:")
 for rec in recommendations:
     print(rec)
-```
-
-#### Wyjaśnienie kodu - Preference Booker 1. **Inicjalizacja**: `TravelAgent` class is initialized with a list of potential travel destinations, each having attributes like name and description.
+``` #### Wyjaśnienie Kodu - Preference Booker 1. **Inicjalizacja**: `TravelAgent` class is initialized with a list of potential travel destinations, each having attributes like name and description.
 
 2. **Getting Recommendations (`get_recommendations` method)**: This method generates a prompt for the Azure OpenAI service based on the user's preferences and makes an HTTP POST request to the Azure OpenAI API to get re-ranked and scored destinations.
 
@@ -348,17 +492,7 @@ for rec in recommendations:
 
 5. **Example Usage**: The travel agent collects user preferences (e.g., interest in sightseeing and diverse culture) and uses the Azure OpenAI service to get re-ranked and scored recommendations for travel destinations.
 
-Make sure to replace `your_azure_openai_api_key` with your actual Azure OpenAI API key and `https://your-endpoint.com/...` z rzeczywistym URL endpointu Twojego wdrożenia Azure OpenAI. Wykorzystując LLM do ponownego rankingu i oceniania, agent podróży może dostarczać bardziej spersonalizowane i trafne rekomendacje podróży klientom, poprawiając ich ogólne doświadczenie.
-
-### RAG: Technika podpowiedzi vs narzędzie Retrieval-Augmented Generation (RAG) może być zarówno techniką podpowiedzi, jak i narzędziem w rozwoju agentów AI. Zrozumienie różnicy między nimi może pomóc w bardziej efektywnym wykorzystaniu RAG w Twoich projektach.
-
-#### RAG jako technika podpowiedzi **Co to jest?** - Jako technika podpowiedzi, RAG polega na formułowaniu konkretnych zapytań lub podpowiedzi w celu kierowania pobieraniem odpowiednich informacji z dużego korpusu lub bazy danych. Te informacje są następnie wykorzystywane do generowania odpowiedzi lub działań. **Jak to działa:** 1. **Formułowanie podpowiedzi**: Tworzenie dobrze skonstruowanych podpowiedzi lub zapytań na podstawie zadania lub danych wejściowych użytkownika. 2. **Pobieranie informacji**: Wykorzystanie podpowiedzi do wyszukiwania odpowiednich danych w istniejącej bazie wiedzy lub zestawie danych. 3. **Generowanie odpowiedzi**: Łączenie pobranych informacji z generatywnymi modelami AI w celu uzyskania kompleksowej i spójnej odpowiedzi. **Przykład w agencie podróży**: - Dane wejściowe użytkownika: "Chcę odwiedzić muzea w Paryżu." - Podpowiedź: "Znajdź najlepsze muzea w Paryżu." - Pobierane informacje: Szczegóły dotyczące Luwru, Musée d'Orsay itp. - Generowana odpowiedź: "Oto kilka najlepszych muzeów w Paryżu: Luwr, Musée d'Orsay i Centrum Pompidou."
-
-#### RAG jako narzędzie **Co to jest?** - Jako narzędzie, RAG jest zintegrowanym systemem, który automatyzuje proces pobierania i generowania, ułatwiając programistom implementację złożonych funkcji AI bez ręcznego tworzenia podpowiedzi dla każdego zapytania. **Jak to działa:** 1. **Integracja**: Wbudowanie RAG w architekturę agenta AI, umożliwiając mu automatyczne obsługiwanie zadań pobierania i generowania. 2. **Automatyzacja**: Narzędzie zarządza całym procesem, od odbierania danych wejściowych użytkownika po generowanie końcowej odpowiedzi, bez konieczności stosowania wyraźnych podpowiedzi dla każdego kroku. 3. **Efektywność**: Zwiększa wydajność agenta, usprawniając proces pobierania i generowania, umożliwiając szybsze i bardziej precyzyjne odpowiedzi. **Przykład w agencie podróży**: - Dane wejściowe użytkownika: "Chcę odwiedzić muzea w Paryżu." - Narzędzie RAG: Automatycznie pobiera informacje o muzeach i generuje odpowiedź. - Generowana odpowiedź: "Oto kilka najlepszych muzeów w Paryżu: Luwr, Musée d'Orsay i Centrum Pompidou."
-
-### Porównanie | Aspekt | Technika podpowiedzi | Narzędzie | |------------------------|-------------------------------------------------------------|-------------------------------------------------------| | **Ręczne vs automatyczne**| Ręczne formułowanie podpowiedzi dla każdego zapytania. | Zautomatyzowany proces pobierania i generowania. | | **Kontrola** | Zapewnia większą kontrolę nad procesem pobierania. | Usprawnia i automatyzuje pobieranie i generowanie.| | **Elastyczność** | Pozwala na dostosowane podpowiedzi w zależności od konkretnych potrzeb. | Bardziej efektywne dla implementacji na dużą skalę. | | **Złożoność** | Wymaga tworzenia i dostosowywania podpowiedzi. | Łatwiejsze do integracji w architekturze agenta AI. |
-
-### Praktyczne przykłady **Przykład techniki podpowiedzi:** ```python
+Make sure to replace `your_azure_openai_api_key` with your actual Azure OpenAI API key and `https://your-endpoint.com/...` z faktycznym URL punktu końcowego twojego wdrożenia Azure OpenAI. Wykorzystując LLM do przeklasyfikowania i oceniania, agent podróży może dostarczać bardziej spersonalizowane i trafne rekomendacje podróży klientom, poprawiając ich ogólne doświadczenie. ### RAG: Technika Promptowania vs Narzędzie Retrieval-Augmented Generation (RAG) może być zarówno techniką promptowania, jak i narzędziem w rozwoju agentów AI. Zrozumienie różnicy między nimi pomoże skuteczniej wykorzystać RAG w twoich projektach. #### RAG jako Technika Promptowania **Czym jest?** - Jako technika promptowania, RAG polega na formułowaniu konkretnych zapytań lub promptów, które kierują pobieraniem odpowiednich informacji z dużego korpusu lub bazy danych. Informacje te są następnie wykorzystywane do generowania odpowiedzi lub działań. **Jak to działa:** 1. **Formułowanie Promptów**: Tworzenie dobrze skonstruowanych promptów lub zapytań na podstawie zadania lub danych wejściowych użytkownika. 2. **Pobieranie Informacji**: Używanie promptów do wyszukiwania odpowiednich danych z istniejącej bazy wiedzy lub zbioru danych. 3. **Generowanie Odpowiedzi**: Łączenie pobranych informacji z modelami generatywnymi AI w celu stworzenia kompleksowej i spójnej odpowiedzi. **Przykład w Agencie Podróży**: - Dane wejściowe użytkownika: "Chcę odwiedzić muzea w Paryżu." - Prompt: "Znajdź najlepsze muzea w Paryżu." - Pobranie informacji: Szczegóły o Luwrze, Musée d'Orsay itd. - Wygenerowana odpowiedź: "Oto najlepsze muzea w Paryżu: Luwr, Musée d'Orsay i Centre Pompidou." #### RAG jako Narzędzie **Czym jest?** - Jako narzędzie, RAG to zintegrowany system, który automatyzuje proces pobierania i generowania, ułatwiając deweloperom implementację złożonych funkcji AI bez konieczności ręcznego tworzenia promptów dla każdego zapytania. **Jak to działa:** 1. **Integracja**: Wbudowanie RAG w architekturę agenta AI, pozwalając mu automatycznie obsługiwać zadania pobierania i generowania. 2. **Automatyzacja**: Narzędzie zarządza całym procesem, od otrzymania danych wejściowych użytkownika po wygenerowanie ostatecznej odpowiedzi, bez potrzeby jawnych promptów na każdym etapie. 3. **Wydajność**: Poprawia wydajność agenta, usprawniając proces pobierania i generowania, umożliwiając szybsze i dokładniejsze odpowiedzi. **Przykład w Agencie Podróży**: - Dane wejściowe użytkownika: "Chcę odwiedzić muzea w Paryżu." - Narzędzie RAG: Automatycznie pobiera informacje o muzeach i generuje odpowiedź. - Wygenerowana odpowiedź: "Oto najlepsze muzea w Paryżu: Luwr, Musée d'Orsay i Centre Pompidou." ### Porównanie | Aspekt | Technika Promptowania | Narzędzie | |------------------------|-------------------------------------------------------------|-------------------------------------------------------| | **Ręczne vs Automatyczne**| Ręczne formułowanie promptów dla każdego zapytania. | Zautomatyzowany proces pobierania i generowania. | | **Kontrola** | Większa kontrola nad procesem pobierania. | Usprawnienie i automatyzacja pobierania i generowania. | | **Elastyczność** | Pozwala na dostosowane prompty według specyficznych potrzeb. | Bardziej efektywne dla dużych implementacji. | | **Złożoność** | Wymaga tworzenia i dostrajania promptów. | Łatwiejsze do integracji w architekturze agenta AI. | ### Praktyczne Przykłady **Przykład Techniki Promptowania:** ```python
 def search_museums_in_paris():
     prompt = "Find top museums in Paris"
     search_results = search_web(prompt)
@@ -366,7 +500,7 @@ def search_museums_in_paris():
 
 museums = search_museums_in_paris()
 print("Top Museums in Paris:", museums)
-``` **Przykład narzędzia:** ```python
+``` **Przykład Narzędzia:** ```python
 class Travel_Agent:
     def __init__(self):
         self.rag_tool = RAGTool()
@@ -379,12 +513,18 @@ class Travel_Agent:
 travel_agent = Travel_Agent()
 museums = travel_agent.get_museums_in_paris()
 print("Top Museums in Paris:", museums)
-```
+``` ### Ocena Trafności Ocena trafności jest kluczowym aspektem wydajności agenta AI. Zapewnia, że informacje pobrane i wygenerowane przez agenta są odpowiednie, dokładne i użyteczne dla użytkownika. Zbadajmy, jak oceniać trafność w agentach AI, włączając praktyczne przykłady i techniki. #### Kluczowe Koncepcje w Oceny Trafności 1. **Świadomość Kontekstu**: - Agent musi rozumieć kontekst zapytania użytkownika, aby pobierać i generować odpowiednie informacje. - Przykład: Jeśli użytkownik pyta o "najlepsze restauracje w Paryżu", agent powinien uwzględnić preferencje użytkownika, takie jak typ kuchni i budżet. 2. **Dokładność**: - Informacje dostarczane przez agenta powinny być faktograficznie poprawne i aktualne. - Przykład: Polecanie aktualnie otwartych restauracji z dobrymi recenzjami, a nie przestarzałych lub zamkniętych miejsc. 3. **Intencja Użytkownika**: -
+Agent powinien wywnioskować intencję użytkownika stojącą za zapytaniem, aby dostarczyć najbardziej istotne informacje.  
+- Przykład: Jeśli użytkownik pyta o „hotele budżetowe”, agent powinien priorytetowo traktować przystępne cenowo opcje.  
 
-### Ocena trafności Ocena trafności jest kluczowym aspektem wydajności agenta AI. Zapewnia, że informacje pobrane i wygenerowane przez agenta są odpowiednie, dokładne i przydatne dla użytkownika. Przyjrzyjmy się, jak oceniać trafność w agentach AI, w tym praktyczne przykłady i techniki.
+4. **Pętla informacji zwrotnej**:  
+- Ciągłe zbieranie i analizowanie opinii użytkowników pomaga agentowi udoskonalić proces oceny trafności.  
+- Przykład: Uwzględnianie ocen i opinii użytkowników na temat wcześniejszych rekomendacji w celu poprawy przyszłych odpowiedzi.  
 
-#### Kluczowe pojęcia w ocenie trafności 1. **Świadomość kontekstu**: - Agent musi rozumieć kontekst zapytania użytkownika, aby pobrać i wygenerować trafne informacje. - Przykład: Jeśli użytkownik pyta o "najlepsze restauracje w Paryżu", agent powinien uwzględnić preferencje użytkownika, takie jak typ kuchni i budżet. 2. **Dokładność**: - Informacje dostarczane przez agenta powinny być faktograficznie poprawne i aktualne. - Przykład: Polecanie obecnie otwartych restauracji z dobrymi opiniami zamiast przestarzałych lub zamkniętych opcji. 3. **Intencja użytkownika**: -
-Agent powinien wnioskować o zamiarach użytkownika na podstawie zapytania, aby dostarczyć najbardziej odpowiednie informacje. - Przykład: Jeśli użytkownik pyta o "tanie hotele", agent powinien priorytetowo traktować opcje przystępne cenowo. 4. **Pętla informacji zwrotnej**: - Ciągłe zbieranie i analizowanie opinii użytkowników pomaga agentowi udoskonalić proces oceny trafności. - Przykład: Uwzględnianie ocen użytkowników i opinii na temat wcześniejszych rekomendacji w celu poprawy przyszłych odpowiedzi. #### Praktyczne techniki oceny trafności 1. **Punktacja trafności**: - Przypisanie wyniku trafności każdemu odzyskanemu elementowi na podstawie tego, jak dobrze odpowiada zapytaniu i preferencjom użytkownika. - Przykład: ```python
+#### Praktyczne techniki oceny trafności  
+1. **Ocena trafności**:  
+- Przypisz każdemu wyszukanemu elementowi ocenę trafności na podstawie tego, jak dobrze odpowiada zapytaniu i preferencjom użytkownika.  
+- Przykład: ```python
      def relevance_score(item, query):
          score = 0
          if item['category'] in query['interests']:
@@ -394,16 +534,28 @@ Agent powinien wnioskować o zamiarach użytkownika na podstawie zapytania, aby 
          if item['location'] == query['destination']:
              score += 1
          return score
-     ``` 2. **Filtrowanie i ranking**: - Wykluczanie nieistotnych elementów i rangowanie pozostałych na podstawie ich wyników trafności. - Przykład: ```python
+     ```  
+
+2. **Filtrowanie i ranking**:  
+- Odfiltruj elementy nieistotne i uszereguj pozostałe według ocen trafności.  
+- Przykład: ```python
      def filter_and_rank(items, query):
          ranked_items = sorted(items, key=lambda item: relevance_score(item, query), reverse=True)
          return ranked_items[:10]  # Return top 10 relevant items
-     ``` 3. **Przetwarzanie języka naturalnego (NLP)**: - Wykorzystywanie technik NLP do zrozumienia zapytania użytkownika i odzyskania istotnych informacji. - Przykład: ```python
+     ```  
+
+3. **Przetwarzanie języka naturalnego (NLP)**:  
+- Wykorzystaj techniki NLP do zrozumienia zapytania użytkownika i wyszukania odpowiednich informacji.  
+- Przykład: ```python
      def process_query(query):
          # Use NLP to extract key information from the user's query
          processed_query = nlp(query)
          return processed_query
-     ``` 4. **Integracja opinii użytkowników**: - Zbieranie opinii użytkowników na temat dostarczonych rekomendacji i wykorzystywanie ich do dostosowania przyszłych ocen trafności. - Przykład: ```python
+     ```  
+
+4. **Integracja informacji zwrotnej od użytkownika**:  
+- Zbieraj opinie użytkowników na temat udzielonych rekomendacji i wykorzystuj je do dostosowywania przyszłych ocen trafności.  
+- Przykład: ```python
      def adjust_based_on_feedback(feedback, items):
          for item in items:
              if item['name'] in feedback['liked']:
@@ -411,7 +563,10 @@ Agent powinien wnioskować o zamiarach użytkownika na podstawie zapytania, aby 
              if item['name'] in feedback['disliked']:
                  item['relevance'] -= 1
          return items
-     ``` #### Przykład: Ocena trafności w Travel Agent Oto praktyczny przykład, jak Travel Agent może oceniać trafność rekomendacji podróżnych: ```python
+     ```  
+
+#### Przykład: Ocena trafności w Travel Agent  
+Oto praktyczny przykład, jak Travel Agent może ocenić trafność rekomendacji podróżniczych: ```python
 class Travel_Agent:
     def __init__(self):
         self.user_preferences = {}
@@ -468,14 +623,38 @@ print("Suggested Itinerary:", itinerary)
 feedback = {"liked": ["Louvre Museum"], "disliked": ["Eiffel Tower (too crowded)"]}
 updated_items = travel_agent.adjust_based_on_feedback(feedback, itinerary['hotels'])
 print("Updated Itinerary with Feedback:", updated_items)
-``` ### Wyszukiwanie z uwzględnieniem intencji Wyszukiwanie z uwzględnieniem intencji polega na zrozumieniu i interpretacji ukrytego celu lub zamierzenia stojącego za zapytaniem użytkownika w celu odzyskania i wygenerowania najbardziej trafnych i użytecznych informacji. Podejście to wykracza poza proste dopasowanie słów kluczowych, koncentrując się na uchwyceniu rzeczywistych potrzeb i kontekstu użytkownika. #### Kluczowe pojęcia w wyszukiwaniu z uwzględnieniem intencji 1. **Zrozumienie intencji użytkownika**: - Intencje użytkownika można podzielić na trzy główne typy: informacyjne, nawigacyjne i transakcyjne. - **Intencja informacyjna**: Użytkownik szuka informacji na temat tematu (np. "Jakie są najlepsze muzea w Paryżu?"). - **Intencja nawigacyjna**: Użytkownik chce przejść do konkretnej strony internetowej lub strony (np. "Oficjalna strona muzeum Luwru"). - **Intencja transakcyjna**: Użytkownik zamierza dokonać transakcji, takiej jak rezerwacja lotu lub dokonanie zakupu (np. "Zarezerwuj lot do Paryża"). 2. **Świadomość kontekstu**: - Analiza kontekstu zapytania użytkownika pomaga w dokładnym określeniu jego intencji. Obejmuje to uwzględnienie wcześniejszych interakcji, preferencji użytkownika i szczegółów bieżącego zapytania. 3. **Przetwarzanie języka naturalnego (NLP)**: - Techniki NLP są wykorzystywane do zrozumienia i interpretacji naturalnych zapytań językowych dostarczonych przez użytkowników. Obejmuje to zadania takie jak rozpoznawanie encji, analiza sentymentu i parsowanie zapytań. 4. **Personalizacja**: - Personalizowanie wyników wyszukiwania na podstawie historii użytkownika, preferencji i opinii zwiększa trafność odzyskanych informacji. #### Praktyczny przykład: Wyszukiwanie z uwzględnieniem intencji w Travel Agent Weźmy Travel Agent jako przykład, aby zobaczyć, jak można wdrożyć wyszukiwanie z uwzględnieniem intencji. 1. **Zbieranie preferencji użytkownika** ```python
+```  
+
+### Wyszukiwanie z intencją  
+Wyszukiwanie z intencją polega na zrozumieniu i interpretacji podstawowego celu lub zamiaru stojącego za zapytaniem użytkownika, aby wyszukać i wygenerować najbardziej trafne i użyteczne informacje. Podejście to wykracza poza proste dopasowanie słów kluczowych i koncentruje się na zrozumieniu rzeczywistych potrzeb i kontekstu użytkownika.  
+
+#### Kluczowe pojęcia w wyszukiwaniu z intencją  
+1. **Zrozumienie intencji użytkownika**:  
+- Intencję użytkownika można podzielić na trzy główne typy: informacyjną, nawigacyjną i transakcyjną.  
+- **Intencja informacyjna**: Użytkownik szuka informacji na dany temat (np. „Jakie są najlepsze muzea w Paryżu?”).  
+- **Intencja nawigacyjna**: Użytkownik chce przejść do konkretnej strony internetowej lub witryny (np. „Oficjalna strona Muzeum Luwru”).  
+- **Intencja transakcyjna**: Użytkownik chce dokonać transakcji, np. zarezerwować lot lub dokonać zakupu (np. „Zarezerwuj lot do Paryża”).  
+
+2. **Świadomość kontekstu**:  
+- Analiza kontekstu zapytania użytkownika pomaga dokładnie określić jego intencję. Obejmuje to uwzględnienie wcześniejszych interakcji, preferencji użytkownika oraz szczegółów bieżącego zapytania.  
+
+3. **Przetwarzanie języka naturalnego (NLP)**:  
+- Techniki NLP są stosowane do rozumienia i interpretacji zapytań w języku naturalnym podawanych przez użytkowników. Obejmuje to zadania takie jak rozpoznawanie bytów, analiza sentymentu oraz parsowanie zapytań.  
+
+4. **Personalizacja**:  
+- Personalizacja wyników wyszukiwania na podstawie historii, preferencji i opinii użytkownika zwiększa trafność wyszukiwanych informacji.  
+
+#### Praktyczny przykład: Wyszukiwanie z intencją w Travel Agent  
+Weźmy na przykład Travel Agent, aby zobaczyć, jak można zaimplementować wyszukiwanie z intencją.  
+1. **Zbieranie preferencji użytkownika** ```python
    class Travel_Agent:
        def __init__(self):
            self.user_preferences = {}
 
        def gather_preferences(self, preferences):
            self.user_preferences = preferences
-   ``` 2. **Zrozumienie intencji użytkownika** ```python
+   ```  
+2. **Zrozumienie intencji użytkownika** ```python
    def identify_intent(query):
        if "book" in query or "purchase" in query:
            return "transactional"
@@ -483,7 +662,8 @@ print("Updated Itinerary with Feedback:", updated_items)
            return "navigational"
        else:
            return "informational"
-   ``` 3. **Świadomość kontekstu** ```python
+   ```  
+3. **Świadomość kontekstu** ```python
    def analyze_context(query, user_history):
        # Combine current query with user history to understand context
        context = {
@@ -491,7 +671,8 @@ print("Updated Itinerary with Feedback:", updated_items)
            "user_history": user_history
        }
        return context
-   ``` 4. **Wyszukiwanie i personalizacja wyników** ```python
+   ```  
+4. **Wyszukiwanie i personalizacja wyników** ```python
    def search_with_intent(query, preferences, user_history):
        intent = identify_intent(query)
        context = analyze_context(query, user_history)
@@ -523,7 +704,8 @@ print("Updated Itinerary with Feedback:", updated_items)
        # Example personalization logic
        personalized = [result for result in results if result not in user_history]
        return personalized[:10]  # Return top 10 personalized results
-   ``` 5. **Przykładowe użycie** ```python
+   ```  
+5. **Przykładowe użycie** ```python
    travel_agent = Travel_Agent()
    preferences = {
        "destination": "Paris",
@@ -534,14 +716,52 @@ print("Updated Itinerary with Feedback:", updated_items)
    query = "best museums in Paris"
    results = search_with_intent(query, preferences, user_history)
    print("Search Results:", results)
-   ``` --- ## 4. Generowanie kodu jako narzędzie Agenci generujący kod wykorzystują modele AI do pisania i wykonywania kodu, rozwiązując złożone problemy i automatyzując zadania. ### Agenci generujący kod Agenci generujący kod wykorzystują generatywne modele AI do pisania i wykonywania kodu. Tacy agenci mogą rozwiązywać złożone problemy, automatyzować zadania i dostarczać cenne spostrzeżenia poprzez generowanie i uruchamianie kodu w różnych językach programowania. #### Praktyczne zastosowania 1. **Automatyczne generowanie kodu**: Generowanie fragmentów kodu dla określonych zadań, takich jak analiza danych, web scraping czy uczenie maszynowe. 2. **SQL jako RAG**: Wykorzystanie zapytań SQL do odzyskiwania i manipulowania danymi z baz danych. 3. **Rozwiązywanie problemów**: Tworzenie i wykonywanie kodu w celu rozwiązania określonych problemów, takich jak optymalizacja algorytmów czy analiza danych. #### Przykład: Agent generujący kod dla analizy danych Wyobraź sobie, że projektujesz agenta generującego kod. Oto jak może działać: 1. **Zadanie**: Analiza zestawu danych w celu identyfikacji trendów i wzorców. 2. **Kroki**: - Załaduj zestaw danych do narzędzia analizy danych. - Generuj zapytania SQL w celu filtrowania i agregowania danych. - Wykonaj zapytania i odzyskaj wyniki. - Użyj wyników do generowania wizualizacji i spostrzeżeń. 3. **Wymagane zasoby**: Dostęp do zestawu danych, narzędzia analizy danych i możliwości SQL. 4. **Doświadczenie**: Wykorzystaj wyniki wcześniejszych analiz w celu poprawy dokładności i trafności przyszłych analiz. ### Przykład: Agent generujący kod dla Travel Agent W tym przykładzie zaprojektujemy agenta generującego kod, Travel Agent, aby pomóc użytkownikom w planowaniu podróży poprzez generowanie i wykonywanie kodu. Ten agent może obsługiwać zadania takie jak pobieranie opcji podróży, filtrowanie wyników i kompilowanie planu podróży za pomocą generatywnej AI. #### Przegląd agenta generującego kod 1. **Zbieranie preferencji użytkownika**: Zbiera dane wejściowe użytkownika, takie jak miejsce docelowe, daty podróży, budżet i zainteresowania. 2. **Generowanie kodu do pobierania danych**: Generuje fragmenty kodu w celu odzyskania danych o lotach, hotelach i atrakcjach. 3. **Wykonywanie wygenerowanego kodu**: Uruchamia wygenerowany kod w celu pobrania informacji w czasie rzeczywistym. 4. **Generowanie planu podróży**: Kompiluje pobrane dane w spersonalizowany plan podróży. 5. **Dostosowywanie na podstawie opinii**: Otrzymuje opinie użytkownika i ponownie generuje kod, jeśli to konieczne, aby udoskonalić wyniki. #### Implementacja krok po kroku 1. **Zbieranie preferencji użytkownika** ```python
+   ```  
+
+---  
+
+## 4. Generowanie kodu jako narzędzie  
+Agenci generujący kod wykorzystują modele AI do pisania i wykonywania kodu, rozwiązując złożone problemy i automatyzując zadania.  
+
+### Agenci generujący kod  
+Agenci generujący kod korzystają z generatywnych modeli AI do pisania i wykonywania kodu. Mogą rozwiązywać złożone problemy, automatyzować zadania oraz dostarczać cenne informacje, generując i uruchamiając kod w różnych językach programowania.  
+
+#### Praktyczne zastosowania  
+1. **Automatyczne generowanie kodu**: Tworzenie fragmentów kodu do konkretnych zadań, takich jak analiza danych, web scraping czy uczenie maszynowe.  
+2. **SQL jako RAG**: Wykorzystanie zapytań SQL do pobierania i manipulowania danymi z baz danych.  
+3. **Rozwiązywanie problemów**: Tworzenie i wykonywanie kodu do rozwiązania określonych problemów, np. optymalizacji algorytmów lub analizy danych.  
+
+#### Przykład: Agent generujący kod do analizy danych  
+Wyobraź sobie, że projektujesz agenta generującego kod. Oto jak może działać:  
+1. **Zadanie**: Analiza zbioru danych w celu identyfikacji trendów i wzorców.  
+2. **Kroki**:  
+- Załaduj zbiór danych do narzędzia analizy danych.  
+- Wygeneruj zapytania SQL do filtrowania i agregowania danych.  
+- Wykonaj zapytania i pobierz wyniki.  
+- Wykorzystaj wyniki do tworzenia wizualizacji i wniosków.  
+3. **Wymagane zasoby**: Dostęp do zbioru danych, narzędzia analizy danych oraz możliwości SQL.  
+4. **Doświadczenie**: Wykorzystaj wcześniejsze wyniki analiz do poprawy dokładności i trafności przyszłych analiz.  
+
+### Przykład: Agent generujący kod dla Travel Agent  
+W tym przykładzie zaprojektujemy agenta generującego kod, Travel Agent, który pomoże użytkownikom planować podróże poprzez generowanie i wykonywanie kodu. Agent ten może obsługiwać zadania takie jak pobieranie opcji podróży, filtrowanie wyników i tworzenie planu podróży z użyciem AI generatywnego.  
+
+#### Przegląd agenta generującego kod  
+1. **Zbieranie preferencji użytkownika**: Zbiera dane wejściowe użytkownika, takie jak cel podróży, daty, budżet i zainteresowania.  
+2. **Generowanie kodu do pobierania danych**: Generuje fragmenty kodu do pobrania informacji o lotach, hotelach i atrakcjach.  
+3. **Wykonywanie wygenerowanego kodu**: Uruchamia wygenerowany kod, aby uzyskać aktualne informacje.  
+4. **Generowanie planu podróży**: Kompiluje pobrane dane w spersonalizowany plan podróży.  
+5. **Dostosowywanie na podstawie opinii**: Otrzymuje opinie użytkownika i w razie potrzeby regeneruje kod, aby udoskonalić wyniki.  
+
+#### Implementacja krok po kroku  
+1. **Zbieranie preferencji użytkownika** ```python
    class Travel_Agent:
        def __init__(self):
            self.user_preferences = {}
 
        def gather_preferences(self, preferences):
            self.user_preferences = preferences
-   ``` 2. **Generowanie kodu do pobierania danych** ```python
+   ```  
+2. **Generowanie kodu do pobierania danych** ```python
    def generate_code_to_fetch_data(preferences):
        # Example: Generate code to search for flights based on user preferences
        code = f"""
@@ -561,7 +781,8 @@ print("Updated Itinerary with Feedback:", updated_items)
            return response.json()
        """
        return code
-   ``` 3. **Wykonywanie wygenerowanego kodu** ```python
+   ```  
+3. **Wykonywanie wygenerowanego kodu** ```python
    def execute_code(code):
        # Execute the generated code using exec
        exec(code)
@@ -585,7 +806,8 @@ print("Updated Itinerary with Feedback:", updated_items)
 
    print("Flight Options:", flights)
    print("Hotel Options:", hotels)
-   ``` 4. **Generowanie planu podróży** ```python
+   ```  
+4. **Generowanie planu podróży** ```python
    def generate_itinerary(flights, hotels, attractions):
        itinerary = {
            "flights": flights,
@@ -597,7 +819,8 @@ print("Updated Itinerary with Feedback:", updated_items)
    attractions = search_attractions(preferences)
    itinerary = generate_itinerary(flights, hotels, attractions)
    print("Suggested Itinerary:", itinerary)
-   ``` 5. **Dostosowywanie na podstawie opinii** ```python
+   ```  
+5. **Dostosowywanie na podstawie opinii** ```python
    def adjust_based_on_feedback(feedback, preferences):
        # Adjust preferences based on user feedback
        if "liked" in feedback:
@@ -618,7 +841,15 @@ print("Updated Itinerary with Feedback:", updated_items)
    
    updated_itinerary = generate_itinerary(updated_flights, updated_hotels, attractions)
    print("Updated Itinerary:", updated_itinerary)
-   ``` ### Wykorzystanie świadomości środowiskowej i rozumowania W oparciu o schemat tabeli można rzeczywiście ulepszyć proces generowania zapytań, wykorzystując świadomość środowiskową i rozumowanie. Oto przykład, jak można to zrobić: 1. **Zrozumienie schematu**: System zrozumie schemat tabeli i wykorzysta te informacje do uzasadnienia generowania zapytań. 2. **Dostosowywanie na podstawie opinii**: System dostosuje preferencje użytkownika na podstawie opinii i rozważy, które pola w schemacie należy zaktualizować. 3. **Generowanie i wykonywanie zapytań**: System wygeneruje i wykona zapytania w celu pobrania zaktualizowanych danych o lotach i hotelach na podstawie nowych preferencji. Oto zaktualizowany przykład kodu w Pythonie, który uwzględnia te koncepcje: ```python
+   ```  
+
+### Wykorzystanie świadomości środowiskowej i rozumowania  
+Wykorzystanie schematu tabeli może rzeczywiście usprawnić proces generowania zapytań poprzez świadomość środowiskową i rozumowanie. Oto przykład, jak można to zrobić:  
+1. **Zrozumienie schematu**: System rozumie schemat tabeli i wykorzystuje tę informację do ugruntowania generowania zapytań.  
+2. **Dostosowywanie na podstawie opinii**: System dostosowuje preferencje użytkownika na podstawie opinii i rozważa, które pola w schemacie należy zaktualizować.  
+3. **Generowanie i wykonywanie zapytań**: System generuje i wykonuje zapytania, aby pobrać zaktualizowane dane o lotach i hotelach na podstawie nowych preferencji.  
+
+Oto zaktualizowany przykład kodu w Pythonie, który uwzględnia te koncepcje: ```python
 def adjust_based_on_feedback(feedback, preferences, schema):
     # Adjust preferences based on user feedback
     if "liked" in feedback:
@@ -675,16 +906,60 @@ updated_hotels = execute_code(updated_hotel_code)
 
 updated_itinerary = generate_itinerary(updated_flights, updated_hotels, feedback["liked"])
 print("Updated Itinerary:", updated_itinerary)
-``` #### Wyjaśnienie - Rezerwacja na podstawie opinii 1. **Świadomość schematu**: Metoda `schema` dictionary defines how preferences should be adjusted based on feedback. It includes fields like `favorites` and `avoid`, with corresponding adjustments.
+```  
+
+#### Wyjaśnienie - Rezerwacja na podstawie opinii  
+1. **Świadomość schematu**: Metoda `schema` dictionary defines how preferences should be adjusted based on feedback. It includes fields like `favorites` and `avoid`, with corresponding adjustments.
 2. **Adjusting Preferences (`adjust_based_on_feedback` method)**: This method adjusts preferences based on user feedback and the schema.
-3. **Environment-Based Adjustments (`adjust_based_on_environment` dostosowuje zmiany na podstawie schematu i opinii. 4. **Generowanie i wykonywanie zapytań**: System generuje kod w celu pobrania zaktualizowanych danych o lotach i hotelach na podstawie dostosowanych preferencji i symuluje wykonanie tych zapytań. 5. **Generowanie planu podróży**: System tworzy zaktualizowany plan podróży na podstawie nowych danych o lotach, hotelach i atrakcjach. Dzięki uczynieniu systemu świadomym środowiska i rozumowaniu opartemu na schemacie, może on generować bardziej dokładne i trafne zapytania, prowadząc do lepszych rekomendacji podróżnych i bardziej spersonalizowanego doświadczenia użytkownika. ### Wykorzystanie SQL jako techniki Retrieval-Augmented Generation (RAG) SQL (Structured Query Language) to potężne narzędzie do interakcji z bazami danych. Wykorzystując SQL jako część podejścia Retrieval-Augmented Generation (RAG), można odzyskiwać odpowiednie dane z baz danych, aby informować i generować odpowiedzi lub działania w agentach AI. Przyjrzyjmy się, jak SQL może być używany jako technika RAG w kontekście Travel Agent. #### Kluczowe pojęcia 1. **Interakcja z bazą danych**: - SQL jest używany do zapytań do baz danych, odzyskiwania istotnych informacji i manipulowania danymi. - Przykład: Pobieranie szczegółów lotów, informacji o hotelach i atrakcjach z bazy danych podróży. 2. **Integracja z RAG**: - Zapytania SQL są generowane na podstawie danych wejściowych i preferencji użytkownika. - Odzyskane dane są następnie wykorzystywane do generowania spersonalizowanych rekomendacji lub działań. 3. **Dynamiczne generowanie zapytań**: - Agent AI generuje dynamiczne zapytania SQL na podstawie kontekstu i potrzeb użytkownika. - Przykład: Dostosowywanie zapytań SQL w celu filtrowania wyników na podstawie budżetu, dat i zainteresowań. #### Zastosowania - **Automatyczne generowanie kodu**: Generowanie fragmentów kodu dla określonych zadań. - **SQL jako RAG**: Wykorzystanie zapytań SQL do manipulowania danymi. - **Rozwiązywanie problemów**: Tworzenie i wykonywanie kodu w celu rozwiązania problemów. **Przykład**: Agent analizy danych: 1. **Zadanie**: Analiza zestawu danych w celu znalezienia trendów. 2. **Kroki**: - Załaduj zestaw danych. - Generuj zapytania SQL w celu filtrowania danych. - Wykonaj zapytania i odzyskaj wyniki. - Generuj wizualizacje i spostrzeżenia. 3. **Zasoby**: Dostęp do zestawu danych, możliwości SQL. 4. **Doświadczenie**: Wykorzystaj wyniki wcześniejszych analiz w celu poprawy przyszłych analiz. #### Praktyczny przykład: Wykorzystanie SQL w Travel Agent 1. **Zbieranie preferencji użytkownika** ```python
+3. **Environment-Based Adjustments (`adjust_based_on_environment` dostosowuje zmiany na podstawie schematu i opinii.  
+4. **Generowanie i wykonywanie zapytań**: System generuje kod do pobrania zaktualizowanych danych o lotach i hotelach na podstawie dostosowanych preferencji i symuluje wykonanie tych zapytań.  
+5. **Generowanie planu podróży**: System tworzy zaktualizowany plan podróży na podstawie nowych danych o lotach, hotelach i atrakcjach.  
+
+Dzięki świadomości środowiskowej i rozumowaniu opartemu na schemacie system może generować dokładniejsze i bardziej trafne zapytania, co prowadzi do lepszych rekomendacji podróżniczych i bardziej spersonalizowanego doświadczenia użytkownika.  
+
+### Wykorzystanie SQL jako techniki Retrieval-Augmented Generation (RAG)  
+SQL (Structured Query Language) jest potężnym narzędziem do interakcji z bazami danych. Wykorzystywany jako część podejścia Retrieval-Augmented Generation (RAG), SQL może pobierać odpowiednie dane z baz, aby informować i generować odpowiedzi lub działania w agentach AI.  
+
+Zobaczmy, jak SQL może być używany jako technika RAG w kontekście Travel Agent.  
+
+#### Kluczowe pojęcia  
+1. **Interakcja z bazą danych**:  
+- SQL służy do zapytań do baz danych, pobierania odpowiednich informacji i manipulowania danymi.  
+- Przykład: Pobieranie informacji o lotach, hotelach i atrakcjach z bazy danych podróży.  
+
+2. **Integracja z RAG**:  
+- Zapytania SQL są generowane na podstawie danych wejściowych i preferencji użytkownika.  
+- Pobierane dane są następnie wykorzystywane do tworzenia spersonalizowanych rekomendacji lub działań.  
+
+3. **Dynamiczne generowanie zapytań**:  
+- Agent AI generuje dynamiczne zapytania SQL na podstawie kontekstu i potrzeb użytkownika.  
+- Przykład: Dostosowywanie zapytań SQL do filtrowania wyników według budżetu, dat i zainteresowań.  
+
+#### Zastosowania  
+- **Automatyczne generowanie kodu**: Tworzenie fragmentów kodu do konkretnych zadań.  
+- **SQL jako RAG**: Wykorzystanie zapytań SQL do manipulacji danymi.  
+- **Rozwiązywanie problemów**: Tworzenie i wykonywanie kodu do rozwiązywania problemów.  
+
+**Przykład**: Agent analizy danych:  
+1. **Zadanie**: Analiza zbioru danych w celu znalezienia trendów.  
+2. **Kroki**:  
+- Załaduj zbiór danych.  
+- Wygeneruj zapytania SQL do filtrowania danych.  
+- Wykonaj zapytania i pobierz wyniki.  
+- Wygeneruj wizualizacje i wnioski.  
+3. **Zasoby**: Dostęp do zbioru danych, możliwości SQL.  
+4. **Doświadczenie**: Wykorzystaj wcześniejsze wyniki do poprawy przyszłych analiz.  
+
+#### Praktyczny przykład: Wykorzystanie SQL w Travel Agent  
+1. **Zbieranie preferencji użytkownika** ```python
    class Travel_Agent:
        def __init__(self):
            self.user_preferences = {}
 
        def gather_preferences(self, preferences):
            self.user_preferences = preferences
-   ``` 2. **Generowanie zapytań SQL** ```python
+   ```  
+2. **Generowanie zapytań SQL** ```python
    def generate_sql_query(table, preferences):
        query = f"SELECT * FROM {table} WHERE "
        conditions = []
@@ -692,7 +967,8 @@ print("Updated Itinerary:", updated_itinerary)
            conditions.append(f"{key}='{value}'")
        query += " AND ".join(conditions)
        return query
-   ``` 3. **Wykonywanie zapytań SQL** ```python
+   ```  
+3. **Wykonywanie zapytań SQL** ```python
    import sqlite3
 
    def execute_sql_query(query, database="travel.db"):
@@ -702,7 +978,8 @@ print("Updated Itinerary:", updated_itinerary)
        results = cursor.fetchall()
        connection.close()
        return results
-   ``` 4. **Generowanie rekomendacji** ```python
+   ```  
+4. **Generowanie rekomendacji** ```python
    def generate_recommendations(preferences):
        flight_query = generate_sql_query("flights", preferences)
        hotel_query = generate_sql_query("hotels", preferences)
@@ -729,13 +1006,34 @@ print("Updated Itinerary:", updated_itinerary)
    travel_agent.gather_preferences(preferences)
    itinerary = generate_recommendations(preferences)
    print("Suggested Itinerary:", itinerary)
-   ``` #### Przykłady zapytań SQL 1. **Zapytanie o loty** ```sql
+   ```  
+
+#### Przykładowe zapytania SQL  
+1. **Zapytanie o loty** ```sql
    SELECT * FROM flights WHERE destination='Paris' AND dates='2025-04-01 to 2025-04-10' AND budget='moderate';
-   ``` 2. **Zapytanie o hotele** ```sql
+   ```  
+2. **Zapytanie o hotele** ```sql
    SELECT * FROM hotels WHERE destination='Paris' AND budget='moderate';
-   ``` 3. **Zapytanie o atrakcje** ```sql
+   ```  
+3. **Zapytanie o atrakcje** ```sql
    SELECT * FROM attractions WHERE destination='Paris' AND interests='museums, cuisine';
-   ``` Wykorzystując SQL jako część techniki Retrieval-Augmented Generation (RAG), agenci AI, tacy jak Travel Agent, mogą dynamicznie odzyskiwać i wykorzystywać istotne dane, aby dostarczać dokładne i spersonalizowane rekomendacje. ### Przykład metakognicji Aby zademonstrować implementację metakognicji, stwórzmy prostego agenta, który *reflektuje nad procesem podejmowania decyzji*, rozwiązując problem. W tym przykładzie zbudujemy system, w którym agent próbuje zoptymalizować wybór hotelu, a następnie ocenia własne rozumowanie i dostosowuje strategię, gdy popełni błędy lub wybory suboptymalne. Zasymulujemy to za pomocą podstawowego przykładu, w którym agent wybiera hotele na podstawie kombinacji ceny i jakości, ale "reflektuje" nad swoimi decyzjami i odpowiednio je dostosowuje. #### Jak to ilustruje metakognicję: 1. **Początkowa decyzja**: Agent wybierze najtańszy hotel, nie rozumiejąc wpływu jakości. 2. **Refleksja i ocena**: Po początkowym wyborze agent sprawdzi, czy hotel był "złym" wyborem na podstawie opinii użytkownika. Jeśli uzna, że jakość hotelu była zbyt niska, reflektuje nad swoim rozumowaniem. 3. **Dostosowanie strategii**: Agent dostosowuje swoją strategię na podstawie refleksji, przechodząc od "najtańszego" do "najwyższej jakości", poprawiając tym samym proces podejmowania decyzji w przyszłych iteracjach. Oto przykład: ```python
+   ```  
+
+Wykorzystując SQL jako część techniki Retrieval-Augmented Generation (RAG), agenci AI tacy jak Travel Agent mogą dynamicznie pobierać i wykorzystywać odpowiednie dane, aby dostarczać dokładne i spersonalizowane rekomendacje.  
+
+### Przykład metapoznania  
+Aby zilustrować implementację metapoznania, stwórzmy prostego agenta, który *reflektuje nad swoim procesem podejmowania decyzji* podczas rozwiązywania problemu.  
+
+W tym przykładzie zbudujemy system, w którym agent stara się zoptymalizować wybór hotelu, a następnie ocenia własne rozumowanie i dostosowuje strategię, gdy popełnia błędy lub dokonuje suboptymalnych wyborów.  
+
+Symulujemy to na prostym przykładzie, gdzie agent wybiera hotele na podstawie kombinacji ceny i jakości, ale będzie „reflektował” nad swoimi decyzjami i odpowiednio się dostosowywał.  
+
+#### Jak to ilustruje metapoznanie:  
+1. **Początkowa decyzja**: Agent wybiera najtańszy hotel, nie rozumiejąc wpływu jakości.  
+2. **Refleksja i ocena**: Po początkowym wyborze agent sprawdza, czy hotel był „złym” wyborem, korzystając z opinii użytkownika. Jeśli jakość hotelu była zbyt niska, agent reflektuje nad swoim rozumowaniem.  
+3. **Dostosowanie strategii**: Agent zmienia strategię na podstawie refleksji, przechodząc z „najtańszego” na „najwyższą jakość”, poprawiając tym samym proces podejmowania decyzji w kolejnych iteracjach.  
+
+Oto przykład: ```python
 class HotelRecommendationAgent:
     def __init__(self):
         self.previous_choices = []  # Stores the hotels chosen previously
@@ -807,8 +1105,18 @@ print(reflection_result)
 # Step 3: The agent recommends again, this time using the adjusted strategy
 adjusted_recommendation = agent.recommend_hotel(hotels, 'highest_quality')
 print(f"Adjusted hotel recommendation (highest_quality): {adjusted_recommendation['name']}")
-``` #### Zdolności metakognicyjne agenta Kluczowe tutaj jest zdolność agenta do: - Oceny swoich wcześniejszych wyborów i procesu podejmowania decyzji. - Dostosowania strategii na podstawie tej refleksji, czyli metakognicji w działaniu. To prosty przykład metakognicji, w którym system jest zdolny do dostosowania procesu rozumowania na podstawie wewnętrznej opinii. ### Wniosek Metakognicja to potężne narzędzie, które może znacząco zwiększyć możliwości agentów AI. Poprzez uwzględnienie metakognicji
-procesy, możesz projektować agentów, którzy są bardziej inteligentni, elastyczni i wydajni. Skorzystaj z dodatkowych zasobów, aby dalej zgłębiać fascynujący świat metapoznania w agentach AI. ## Poprzednia lekcja [Wzorzec projektowy dla wielu agentów](../08-multi-agent/README.md) ## Następna lekcja [Agenci AI w produkcji](../10-ai-agents-production/README.md)
+```  
+
+#### Zdolności metapoznawcze agenta  
+Kluczowa jest tutaj zdolność agenta do:  
+- Oceny swoich wcześniejszych wyborów i procesu podejmowania decyzji.  
+- Dostosowania strategii na podstawie tej refleksji, czyli metapoznania w praktyce.  
+
+To prosty przykład metapoznania, gdzie system jest w stanie dostosować swój proces rozumowania na podstawie wewnętrznej informacji zwrotnej.  
+
+### Podsumowanie  
+Metapoznanie jest potężnym narzędziem, które może znacząco zwiększyć możliwości agentów AI. Poprzez włączenie metapoznawczych
+procesy, możesz projektować agentów, którzy są bardziej inteligentni, elastyczni i wydajni. Wykorzystaj dodatkowe zasoby, aby dalej zgłębiać fascynujący świat metapoznania w agentach AI. ## Poprzednia lekcja [Wzorzec projektowy multi-agenta](../08-multi-agent/README.md) ## Następna lekcja [Agenci AI w produkcji](../10-ai-agents-production/README.md)
 
 **Zastrzeżenie**:  
-Ten dokument został przetłumaczony za pomocą usługi tłumaczeniowej AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż staramy się zapewnić dokładność, prosimy mieć na uwadze, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego rodzimym języku powinien być uznawany za wiarygodne źródło. W przypadku kluczowych informacji zaleca się skorzystanie z profesjonalnego tłumaczenia ludzkiego. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z użycia tego tłumaczenia.
+Niniejszy dokument został przetłumaczony przy użyciu automatycznej usługi tłumaczeniowej AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dokładamy starań, aby tłumaczenie było jak najdokładniejsze, prosimy mieć na uwadze, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w języku źródłowym należy uważać za wiarygodne źródło informacji. W przypadku istotnych informacji zalecane jest skorzystanie z profesjonalnego tłumaczenia wykonanego przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z korzystania z tego tłumaczenia.

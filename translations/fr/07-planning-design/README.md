@@ -1,64 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "8dd9a05d4dc18d3ff510e68e3798a080",
-  "translation_date": "2025-03-28T10:31:59+00:00",
-  "source_file": "07-planning-design\\README.md",
+  "original_hash": "e4e06d3b5d6207459a019c05fee5eb4b",
+  "translation_date": "2025-05-20T07:50:42+00:00",
+  "source_file": "07-planning-design/README.md",
   "language_code": "fr"
 }
 -->
-[![Conception de la Planification](../../../translated_images/lesson-7-thumbnail.9769baaa68d1d81ee422d8aa15bd66461ac9f3e38cfaf0ee966cfe4ff20f75ee.fr.png)](https://youtu.be/kPfJ2BrBCMY?si=9pYpPXp0sSbK91Dr)
+pour un aperçu rapide.
 
-> _(Cliquez sur l'image ci-dessus pour voir la vidéo de cette leçon)_
-
-# Conception de la Planification
-
-## Introduction
-
-Cette leçon couvrira :
-
-* Définir un objectif global clair et décomposer une tâche complexe en tâches gérables.
-* Exploiter des sorties structurées pour des réponses plus fiables et lisibles par machine.
-* Appliquer une approche événementielle pour gérer des tâches dynamiques et des entrées inattendues.
-
-## Objectifs d'apprentissage
-
-Après avoir terminé cette leçon, vous comprendrez :
-
-* Comment identifier et définir un objectif global pour un agent IA, afin qu'il sache clairement ce qu'il doit accomplir.
-* Comment décomposer une tâche complexe en sous-tâches gérables et les organiser dans une séquence logique.
-* Comment équiper les agents des bons outils (par exemple, outils de recherche ou d'analyse de données), décider quand et comment les utiliser, et gérer les situations imprévues qui se présentent.
-* Comment évaluer les résultats des sous-tâches, mesurer les performances et itérer les actions pour améliorer le résultat final.
-
-## Définir l'objectif global et décomposer une tâche
-
-![Définir les objectifs et les tâches](../../../translated_images/defining-goals-tasks.dcc1181bbdb194704ae0fb3363371562949e8b03fd2fadc256218aaadf84a9f4.fr.png)
-
-La plupart des tâches du monde réel sont trop complexes pour être abordées en une seule étape. Un agent IA a besoin d'un objectif concis pour guider sa planification et ses actions. Par exemple, considérez l'objectif suivant :
-
-    "Créer un itinéraire de voyage de 3 jours."
-
-Bien que cet objectif soit simple à énoncer, il nécessite encore des précisions. Plus l'objectif est clair, mieux l'agent (et tout collaborateur humain) pourra se concentrer sur l'obtention du bon résultat, comme créer un itinéraire complet avec des options de vol, des recommandations d'hôtel et des suggestions d'activités.
-
-### Décomposition des tâches
-
-Les tâches importantes ou complexes deviennent plus faciles à gérer lorsqu'elles sont divisées en sous-tâches orientées vers un objectif.
-Pour l'exemple de l'itinéraire de voyage, vous pourriez décomposer l'objectif en :
-
-* Réservation de vol
-* Réservation d'hôtel
-* Location de voiture
-* Personnalisation
-
-Chaque sous-tâche peut alors être prise en charge par des agents ou des processus dédiés. Un agent pourrait se spécialiser dans la recherche des meilleures offres de vol, un autre dans la réservation d'hôtel, et ainsi de suite. Un agent coordonnateur ou "en aval" peut ensuite compiler ces résultats en un itinéraire cohérent pour l'utilisateur final.
-
-Cette approche modulaire permet également des améliorations progressives. Par exemple, vous pourriez ajouter des agents spécialisés pour les recommandations gastronomiques ou les suggestions d'activités locales et affiner l'itinéraire au fil du temps.
-
-### Sortie structurée
-
-Les modèles de langage avancés (LLMs) peuvent générer des sorties structurées (par exemple, en JSON) qui sont plus faciles à analyser et à traiter pour des agents ou des services en aval. Cela est particulièrement utile dans un contexte multi-agent, où ces tâches peuvent être exécutées après réception de la sortie de planification. Consultez ceci pour un aperçu rapide.
-
-Le snippet Python suivant illustre un agent de planification simple décomposant un objectif en sous-tâches et générant un plan structuré :
+L'extrait Python suivant montre un agent de planification simple qui décompose un objectif en sous-tâches et génère un plan structuré :
 
 ```python
 from pydantic import BaseModel
@@ -149,14 +100,15 @@ pprint(json.loads(response_content))
 
 ### Agent de planification avec orchestration multi-agent
 
-Dans cet exemple, un agent routeur sémantique reçoit une demande utilisateur (par exemple, "J'ai besoin d'un plan hôtelier pour mon voyage.").
+Dans cet exemple, un Semantic Router Agent reçoit une demande utilisateur (par exemple, "J'ai besoin d'un plan hôtelier pour mon voyage.").
 
 Le planificateur :
 
-* Reçoit le plan hôtelier : Le planificateur prend le message de l'utilisateur et, sur la base d'un prompt système (incluant les détails des agents disponibles), génère un plan de voyage structuré.
-* Liste les agents et leurs outils : Le registre des agents contient une liste d'agents (par exemple, pour les vols, les hôtels, la location de voiture et les activités) ainsi que les fonctions ou outils qu'ils proposent.
-* Route le plan vers les agents concernés : En fonction du nombre de sous-tâches, le planificateur envoie soit directement le message à un agent dédié (pour les scénarios de tâche unique), soit coordonne via un gestionnaire de chat de groupe pour une collaboration multi-agent.
-* Résume le résultat : Enfin, le planificateur résume le plan généré pour plus de clarté.
+* Reçoit le plan hôtelier : le planificateur prend le message de l'utilisateur et, basé sur une invite système (incluant les détails des agents disponibles), génère un plan de voyage structuré.
+* Liste les agents et leurs outils : le registre des agents contient une liste d'agents (par exemple pour les vols, hôtels, location de voiture, et activités) ainsi que les fonctions ou outils qu'ils offrent.
+* Oriente le plan vers les agents respectifs : selon le nombre de sous-tâches, le planificateur envoie soit directement le message à un agent dédié (pour les scénarios à tâche unique), soit coordonne via un gestionnaire de chat de groupe pour la collaboration multi-agent.
+* Résume le résultat : enfin, le planificateur résume le plan généré pour plus de clarté.
+
 Le code Python suivant illustre ces étapes :
 
 ```python
@@ -232,7 +184,7 @@ if response_content is None:
 pprint(json.loads(response_content))
 ```
 
-Voici la sortie du code précédent que vous pouvez ensuite utiliser pour diriger vers `assigned_agent` et résumer le plan de voyage à l'utilisateur final.
+Ce qui suit est la sortie du code précédent et vous pouvez ensuite utiliser cette sortie structurée pour l'orienter vers `assigned_agent` et résumer le plan de voyage à l'utilisateur final.
 
 ```json
 {
@@ -263,15 +215,15 @@ Voici la sortie du code précédent que vous pouvez ensuite utiliser pour dirige
 }
 ```
 
-Un notebook avec l'exemple de code précédent est disponible [ici](../../../07-planning-design/07-autogen.ipynb).
+Un notebook d'exemple avec le code précédent est disponible [ici](../../../07-planning-design/07-autogen.ipynb).
 
 ### Planification itérative
 
-Certaines tâches nécessitent un aller-retour ou une re-planification, où le résultat d'une sous-tâche influence la suivante. Par exemple, si l'agent découvre un format de données inattendu lors de la réservation de vols, il pourrait devoir adapter sa stratégie avant de passer à la réservation d'hôtel.
+Certaines tâches nécessitent des allers-retours ou une re-planification, où le résultat d'une sous-tâche influence la suivante. Par exemple, si l'agent découvre un format de données inattendu lors de la réservation des vols, il peut devoir adapter sa stratégie avant de passer aux réservations d'hôtel.
 
-De plus, les retours de l'utilisateur (par exemple, un humain décidant qu'il préfère un vol plus tôt) peuvent déclencher une re-planification partielle. Cette approche dynamique et itérative garantit que la solution finale s'aligne sur les contraintes du monde réel et les préférences évolutives de l'utilisateur.
+De plus, les retours utilisateurs (par exemple, un humain décidant qu'il préfère un vol plus tôt) peuvent déclencher une re-planification partielle. Cette approche dynamique et itérative garantit que la solution finale s'aligne sur les contraintes réelles et les préférences évolutives de l'utilisateur.
 
-Exemple de code :
+ex. code d'exemple
 
 ```python
 from autogen_core.models import UserMessage, SystemMessage, AssistantMessage
@@ -292,23 +244,27 @@ messages = [
 # .. re-plan and send the tasks to respective agents
 ```
 
-Pour une planification plus complète, consultez Magnetic One pour résoudre des tâches complexes.
+Pour une planification plus complète, consultez Magnetic One
+
+pour résoudre des tâches complexes.
 
 ## Résumé
 
-Dans cet article, nous avons examiné un exemple de création d'un planificateur capable de sélectionner dynamiquement les agents disponibles définis. La sortie du planificateur décompose les tâches et assigne les agents afin qu'elles puissent être exécutées. Il est supposé que les agents ont accès aux fonctions/outils nécessaires pour accomplir la tâche. En plus des agents, vous pouvez inclure d'autres modèles comme la réflexion, le résumé et le chat en alternance pour une personnalisation supplémentaire.
+Dans cet article, nous avons vu un exemple de création d'un planificateur capable de sélectionner dynamiquement les agents disponibles définis. La sortie du planificateur décompose les tâches et assigne les agents pour qu'elles puissent être exécutées. On suppose que les agents ont accès aux fonctions/outils nécessaires pour accomplir la tâche. En plus des agents, vous pouvez inclure d'autres modèles comme la réflexion, le résumé, et le chat en tour de rôle pour personnaliser davantage.
 
 ## Ressources supplémentaires
 
-* AutoGen Magnetic One - Un système multi-agent généraliste pour résoudre des tâches complexes, qui a obtenu des résultats impressionnants sur plusieurs benchmarks d'agents difficiles. Référence : . Dans cette implémentation, l'orchestrateur crée un plan spécifique à la tâche et délègue ces tâches aux agents disponibles. En plus de la planification, l'orchestrateur utilise également un mécanisme de suivi pour surveiller l'avancement de la tâche et re-planifier si nécessaire.
+* AutoGen Magnetic One - Un système multi-agent généraliste pour résoudre des tâches complexes, ayant obtenu des résultats impressionnants sur plusieurs benchmarks agentiques exigeants. Référence :
+
+. Dans cette implémentation, l'orchestrateur crée un plan spécifique à la tâche et délègue ces tâches aux agents disponibles. En plus de la planification, l'orchestrateur utilise également un mécanisme de suivi pour surveiller l'avancement de la tâche et re-planifie si nécessaire.
 
 ## Leçon précédente
 
-[Construire des agents IA fiables](../06-building-trustworthy-agents/README.md)
+[Créer des agents IA fiables](../06-building-trustworthy-agents/README.md)
 
 ## Leçon suivante
 
 [Modèle de conception multi-agent](../08-multi-agent/README.md)
 
 **Avertissement** :  
-Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction professionnelle effectuée par un humain. Nous ne sommes pas responsables des malentendus ou des interprétations erronées résultant de l'utilisation de cette traduction.
+Ce document a été traduit à l’aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d’assurer l’exactitude, veuillez noter que les traductions automatiques peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d’origine doit être considéré comme la source faisant foi. Pour les informations critiques, une traduction professionnelle réalisée par un humain est recommandée. Nous déclinons toute responsabilité en cas de malentendus ou de mauvaises interprétations résultant de l’utilisation de cette traduction.

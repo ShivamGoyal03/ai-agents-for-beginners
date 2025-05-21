@@ -1,123 +1,122 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "4d215d159f2f3b96644fd62657988d23",
-  "translation_date": "2025-03-28T09:24:57+00:00",
-  "source_file": "05-agentic-rag\\README.md",
+  "original_hash": "7622aa72f9e676e593339f5f694ecd7d",
+  "translation_date": "2025-05-20T09:33:08+00:00",
+  "source_file": "05-agentic-rag/README.md",
   "language_code": "pl"
 }
 -->
 [![Agentic RAG](../../../translated_images/lesson-5-thumbnail.1bab9551989766fa0dbea97c250a68c41e0f36ed9b02d3aa8ee8fdcc62596981.pl.png)](https://youtu.be/WcjAARvdL7I?si=BCgwjwFb2yCkEhR9)
 
-> _(Kliknij na obrazek powyżej, aby obejrzeć wideo z tej lekcji)_
+> _(Kliknij powyższy obraz, aby obejrzeć wideo z tej lekcji)_
 
 # Agentic RAG
 
-Ta lekcja przedstawia szczegółowy przegląd Agentic Retrieval-Augmented Generation (Agentic RAG), nowego paradygmatu AI, w którym modele językowe (LLM) samodzielnie planują kolejne kroki, jednocześnie pozyskując informacje z zewnętrznych źródeł. W przeciwieństwie do statycznych wzorców „wyszukiwanie-odczyt”, Agentic RAG obejmuje iteracyjne wywołania LLM, przeplatane użyciem narzędzi lub funkcji oraz strukturalnymi wynikami. System ocenia rezultaty, udoskonala zapytania, wywołuje dodatkowe narzędzia, jeśli jest to konieczne, i kontynuuje ten cykl, aż osiągnie satysfakcjonujące rozwiązanie.
+Ta lekcja przedstawia kompleksowy przegląd Agentic Retrieval-Augmented Generation (Agentic RAG), nowatorskiego paradygmatu AI, w którym duże modele językowe (LLM) samodzielnie planują kolejne kroki, jednocześnie pozyskując informacje z zewnętrznych źródeł. W przeciwieństwie do statycznych wzorców „pobierz i przeczytaj”, Agentic RAG obejmuje iteracyjne wywołania LLM, przeplatane wywołaniami narzędzi lub funkcji oraz generowaniem ustrukturyzowanych wyników. System ocenia wyniki, udoskonala zapytania, w razie potrzeby korzysta z dodatkowych narzędzi i kontynuuje ten cykl, aż zostanie osiągnięte zadowalające rozwiązanie.
 
 ## Wprowadzenie
 
 W tej lekcji omówimy:
 
-- **Zrozumienie Agentic RAG:** Poznaj nowy paradygmat AI, w którym modele językowe (LLM) samodzielnie planują kolejne kroki, pozyskując informacje z zewnętrznych źródeł danych.
-- **Iteracyjny styl Maker-Checker:** Zrozum proces iteracyjnych wywołań LLM, przeplatanych użyciem narzędzi lub funkcji oraz strukturalnymi wynikami, zaprojektowany w celu poprawy dokładności i radzenia sobie z błędnymi zapytaniami.
-- **Praktyczne zastosowania:** Zidentyfikuj scenariusze, w których Agentic RAG się wyróżnia, takie jak środowiska z naciskiem na poprawność, złożone interakcje z bazami danych i rozbudowane procesy robocze.
+- **Poznanie Agentic RAG:** Dowiedz się o nowym paradygmacie AI, w którym duże modele językowe (LLM) samodzielnie planują kolejne kroki, pozyskując informacje z zewnętrznych źródeł danych.
+- **Zrozumienie iteracyjnego stylu Maker-Checker:** Pojmij pętlę iteracyjnych wywołań LLM, przeplatanych wywołaniami narzędzi lub funkcji oraz generowaniem ustrukturyzowanych wyników, mających na celu poprawę poprawności i obsługę błędnych zapytań.
+- **Poznanie praktycznych zastosowań:** Zidentyfikuj scenariusze, w których Agentic RAG sprawdza się najlepiej, takie jak środowiska nastawione na poprawność, złożone interakcje z bazami danych oraz rozbudowane procesy.
 
 ## Cele nauki
 
-Po ukończeniu tej lekcji będziesz wiedzieć, jak/zrozumiesz:
+Po ukończeniu tej lekcji będziesz potrafił/zrozumiesz:
 
-- **Zrozumienie Agentic RAG:** Poznaj nowy paradygmat AI, w którym modele językowe (LLM) samodzielnie planują kolejne kroki, pozyskując informacje z zewnętrznych źródeł danych.
-- **Iteracyjny styl Maker-Checker:** Zrozum koncepcję pętli iteracyjnych wywołań LLM, przeplatanych użyciem narzędzi lub funkcji oraz strukturalnymi wynikami, zaprojektowaną w celu poprawy dokładności i radzenia sobie z błędnymi zapytaniami.
-- **Przejęcie procesu rozumowania:** Zrozum zdolność systemu do samodzielnego podejmowania decyzji dotyczących sposobu rozwiązywania problemów bez polegania na z góry określonych ścieżkach.
-- **Proces roboczy:** Zrozum, jak model agentowy samodzielnie decyduje o pozyskiwaniu raportów o trendach rynkowych, identyfikowaniu danych o konkurencji, korelowaniu wewnętrznych metryk sprzedaży, syntezowaniu wyników i ocenie strategii.
-- **Iteracyjne pętle, integracja narzędzi i pamięć:** Poznaj zależność systemu od wzorca interakcji w pętli, utrzymywanie stanu i pamięci w kolejnych krokach, aby unikać powtarzalnych pętli i podejmować świadome decyzje.
-- **Radzenie sobie z trybami awarii i autokorekta:** Zbadaj solidne mechanizmy autokorekty systemu, w tym iteracje i ponowne zapytania, korzystanie z narzędzi diagnostycznych oraz powrót do nadzoru ludzkiego.
-- **Granice autonomii:** Zrozum ograniczenia Agentic RAG, koncentrując się na autonomii specyficznej dla domeny, zależności od infrastruktury i przestrzeganiu wytycznych.
-- **Praktyczne przypadki użycia i wartość:** Zidentyfikuj scenariusze, w których Agentic RAG się wyróżnia, takie jak środowiska z naciskiem na poprawność, złożone interakcje z bazami danych i rozbudowane procesy robocze.
-- **Zarządzanie, przejrzystość i zaufanie:** Dowiedz się o znaczeniu zarządzania i przejrzystości, w tym wyjaśnialnego rozumowania, kontroli uprzedzeń i nadzoru ludzkiego.
+- **Zrozumienie Agentic RAG:** Poznasz nowy paradygmat AI, w którym duże modele językowe (LLM) samodzielnie planują kolejne kroki, pozyskując informacje z zewnętrznych źródeł danych.
+- **Iteracyjny styl Maker-Checker:** Pojmiesz koncepcję pętli iteracyjnych wywołań LLM, przeplatanych wywołaniami narzędzi lub funkcji oraz generowaniem ustrukturyzowanych wyników, mających na celu poprawę poprawności i obsługę błędnych zapytań.
+- **Posiadanie procesu rozumowania:** Zrozumiesz zdolność systemu do samodzielnego prowadzenia procesu rozumowania, podejmowania decyzji, jak podejść do problemów, bez polegania na z góry ustalonych ścieżkach.
+- **Przebieg pracy:** Poznasz, jak model agentic samodzielnie decyduje o pobieraniu raportów o trendach rynkowych, identyfikacji danych konkurencji, korelacji wewnętrznych wskaźników sprzedaży, syntezie wniosków oraz ocenie strategii.
+- **Iteracyjne pętle, integracja narzędzi i pamięć:** Dowiesz się o oparciu systemu na wzorcu interakcji w pętli, utrzymując stan i pamięć między krokami, aby unikać powtarzających się pętli i podejmować świadome decyzje.
+- **Obsługa trybów awarii i samokorekta:** Poznasz mechanizmy samokorekty systemu, w tym iteracje i ponowne zapytania, korzystanie z narzędzi diagnostycznych oraz wsparcie nadzoru ludzkiego.
+- **Granice autonomii:** Zrozumiesz ograniczenia Agentic RAG, skupiając się na autonomii specyficznej dla domeny, zależności od infrastruktury oraz przestrzeganiu reguł bezpieczeństwa.
+- **Praktyczne zastosowania i wartość:** Zidentyfikujesz scenariusze, w których Agentic RAG jest szczególnie przydatny, takie jak środowiska nastawione na poprawność, złożone interakcje z bazami danych oraz rozbudowane procesy.
+- **Zarządzanie, przejrzystość i zaufanie:** Poznasz znaczenie zarządzania i przejrzystości, w tym wyjaśnialnego rozumowania, kontroli uprzedzeń i nadzoru ludzkiego.
 
-## Co to jest Agentic RAG?
+## Czym jest Agentic RAG?
 
-Agentic Retrieval-Augmented Generation (Agentic RAG) to nowy paradygmat AI, w którym modele językowe (LLM) samodzielnie planują kolejne kroki, jednocześnie pozyskując informacje z zewnętrznych źródeł. W przeciwieństwie do statycznych wzorców „wyszukiwanie-odczyt”, Agentic RAG obejmuje iteracyjne wywołania LLM, przeplatane użyciem narzędzi lub funkcji oraz strukturalnymi wynikami. System ocenia rezultaty, udoskonala zapytania, wywołuje dodatkowe narzędzia, jeśli jest to konieczne, i kontynuuje ten cykl, aż osiągnie satysfakcjonujące rozwiązanie. Ten iteracyjny styl „maker-checker” poprawia dokładność, radzi sobie z błędnymi zapytaniami i zapewnia wysoką jakość wyników.
+Agentic Retrieval-Augmented Generation (Agentic RAG) to nowy paradygmat AI, w którym duże modele językowe (LLM) samodzielnie planują kolejne kroki, pozyskując informacje z zewnętrznych źródeł. W przeciwieństwie do statycznych wzorców „pobierz i przeczytaj”, Agentic RAG obejmuje iteracyjne wywołania LLM, przeplatane wywołaniami narzędzi lub funkcji oraz generowaniem ustrukturyzowanych wyników. System ocenia wyniki, udoskonala zapytania, korzysta z dodatkowych narzędzi, jeśli to konieczne, i kontynuuje ten cykl, aż zostanie osiągnięte zadowalające rozwiązanie. Ten iteracyjny styl „maker-checker” poprawia poprawność, obsługuje błędne zapytania i zapewnia wysoką jakość wyników.
 
-System aktywnie przejmuje proces rozumowania, poprawiając nieudane zapytania, wybierając różne metody wyszukiwania i integrując wiele narzędzi—takich jak wyszukiwanie wektorowe w Azure AI Search, bazy danych SQL czy niestandardowe API—zanim sfinalizuje swoją odpowiedź. Charakterystyczną cechą systemu agentowego jest jego zdolność do przejęcia procesu rozumowania. Tradycyjne implementacje RAG opierają się na z góry określonych ścieżkach, podczas gdy system agentowy samodzielnie decyduje o kolejności kroków na podstawie jakości znalezionych informacji.
+System aktywnie prowadzi swój proces rozumowania, przepisując nieudane zapytania, wybierając różne metody pozyskiwania informacji oraz integrując wiele narzędzi — takich jak wyszukiwanie wektorowe w Azure AI Search, bazy danych SQL czy niestandardowe API — zanim sfinalizuje odpowiedź. Kluczową cechą systemu agentic jest jego zdolność do samodzielnego prowadzenia procesu rozumowania. Tradycyjne implementacje RAG opierają się na z góry ustalonych ścieżkach, natomiast system agentic samodzielnie decyduje o kolejności kroków na podstawie jakości znalezionych informacji.
 
 ## Definicja Agentic Retrieval-Augmented Generation (Agentic RAG)
 
-Agentic Retrieval-Augmented Generation (Agentic RAG) to nowy paradygmat w rozwoju AI, w którym modele językowe (LLM) nie tylko pozyskują informacje z zewnętrznych źródeł danych, ale także samodzielnie planują kolejne kroki. W przeciwieństwie do statycznych wzorców „wyszukiwanie-odczyt” czy starannie zaprojektowanych sekwencji promptów, Agentic RAG obejmuje pętlę iteracyjnych wywołań LLM, przeplatanych użyciem narzędzi lub funkcji oraz strukturalnymi wynikami. Na każdym etapie system ocenia uzyskane wyniki, decyduje, czy należy udoskonalić zapytania, wywołuje dodatkowe narzędzia, jeśli jest to konieczne, i kontynuuje ten cykl, aż osiągnie satysfakcjonujące rozwiązanie.
+Agentic Retrieval-Augmented Generation (Agentic RAG) to nowy paradygmat w rozwoju AI, w którym LLM nie tylko pobierają informacje z zewnętrznych źródeł danych, ale również samodzielnie planują kolejne kroki. W przeciwieństwie do statycznych wzorców „pobierz i przeczytaj” lub starannie zaplanowanych sekwencji promptów, Agentic RAG polega na pętli iteracyjnych wywołań LLM, przeplatanych wywołaniami narzędzi lub funkcji oraz generowaniem ustrukturyzowanych wyników. Na każdym etapie system ocenia uzyskane wyniki, decyduje, czy należy udoskonalić zapytania, korzysta z dodatkowych narzędzi w razie potrzeby i kontynuuje ten cykl, aż osiągnie zadowalające rozwiązanie.
 
-Ten iteracyjny styl „maker-checker” jest zaprojektowany w celu poprawy dokładności, radzenia sobie z błędnymi zapytaniami do baz danych strukturalnych (np. NL2SQL) i zapewnienia zrównoważonych, wysokiej jakości wyników. Zamiast polegać wyłącznie na starannie zaprojektowanych łańcuchach promptów, system aktywnie przejmuje proces rozumowania. Może poprawiać nieudane zapytania, wybierać różne metody wyszukiwania i integrować wiele narzędzi—takich jak wyszukiwanie wektorowe w Azure AI Search, bazy danych SQL czy niestandardowe API—zanim sfinalizuje swoją odpowiedź. To eliminuje potrzebę stosowania zbyt skomplikowanych frameworków orkiestracji. Zamiast tego stosunkowo prosta pętla „wywołanie LLM → użycie narzędzia → wywołanie LLM → …” może prowadzić do zaawansowanych i dobrze ugruntowanych wyników.
+Ten iteracyjny styl „maker-checker” ma na celu poprawę poprawności, obsługę błędnych zapytań do ustrukturyzowanych baz danych (np. NL2SQL) oraz zapewnienie zrównoważonych, wysokiej jakości wyników. Zamiast polegać wyłącznie na starannie zaprojektowanych łańcuchach promptów, system aktywnie prowadzi swój proces rozumowania. Może przepisywać nieudane zapytania, wybierać różne metody pozyskiwania informacji oraz integrować wiele narzędzi — takich jak wyszukiwanie wektorowe w Azure AI Search, bazy danych SQL czy niestandardowe API — zanim sfinalizuje odpowiedź. Dzięki temu nie jest potrzebne stosowanie skomplikowanych frameworków orkiestracji. Zamiast tego stosunkowo prosta pętla „wywołanie LLM → użycie narzędzia → wywołanie LLM → …” może generować zaawansowane i dobrze ugruntowane wyniki.
 
 ![Agentic RAG Core Loop](../../../translated_images/agentic-rag-core-loop.2224925a913fb3439f518bda61a40096ddf6aa432a11c9b5bba8d0d625e47b79.pl.png)
 
-## Przejęcie procesu rozumowania
+## Prowadzenie procesu rozumowania
 
-Charakterystyczną cechą systemu „agentowego” jest jego zdolność do przejęcia procesu rozumowania. Tradycyjne implementacje RAG często zależą od ludzi, którzy z góry definiują ścieżkę dla modelu: ciąg rozumowania określający, co pozyskać i kiedy. Jednak gdy system jest naprawdę agentowy, sam decyduje, jak podejść do problemu. Nie wykonuje tylko skryptu; autonomicznie określa kolejność kroków na podstawie jakości znalezionych informacji. 
+Cechą wyróżniającą system „agentic” jest jego zdolność do samodzielnego prowadzenia procesu rozumowania. Tradycyjne implementacje RAG często polegają na tym, że ludzie z góry definiują ścieżkę dla modelu: łańcuch myślenia określający, co i kiedy pobrać.
+Jednak gdy system jest naprawdę agentic, sam decyduje, jak podejść do problemu. Nie wykonuje tylko skryptu; autonomicznie ustala kolejność kroków na podstawie jakości znalezionych informacji.
+Na przykład, jeśli zostanie poproszony o stworzenie strategii wprowadzenia produktu na rynek, nie polega wyłącznie na promptcie opisującym cały proces badawczy i decyzyjny. Zamiast tego model agentic samodzielnie decyduje o:
 
-Na przykład, jeśli poprosimy go o stworzenie strategii wprowadzenia produktu na rynek, nie polega wyłącznie na promptach, które określają cały proces badawczy i decyzyjny. Zamiast tego model agentowy samodzielnie decyduje o:
+1. Pobranie aktualnych raportów o trendach rynkowych za pomocą Bing Web Grounding
+2. Identyfikacja istotnych danych konkurencji z wykorzystaniem Azure AI Search
+3. Korelacja historycznych wewnętrznych wskaźników sprzedaży przy użyciu Azure SQL Database
+4. Synteza wniosków w spójną strategię zarządzaną przez Azure OpenAI Service
+5. Ocena strategii pod kątem luk lub niespójności, z kolejnym etapem pobierania danych w razie potrzeby
 
-1. Pozyskaniu raportów o aktualnych trendach rynkowych za pomocą Bing Web Grounding.
-2. Zidentyfikowaniu odpowiednich danych o konkurencji za pomocą Azure AI Search.
-3. Korelowaniu historycznych wewnętrznych metryk sprzedaży za pomocą Azure SQL Database.
-4. Syntezie wyników w spójną strategię, zarządzaną przez Azure OpenAI Service.
-5. Oceny strategii pod kątem luk lub niespójności, co może skutkować kolejną rundą pozyskiwania danych.
-
-Wszystkie te kroki—udoskonalanie zapytań, wybór źródeł, iteracja aż do uzyskania „satysfakcjonującej” odpowiedzi—są podejmowane przez model, a nie wcześniej zaplanowane przez człowieka.
+Wszystkie te kroki — udoskonalanie zapytań, wybór źródeł, iteracje aż do uzyskania „zadowalającej” odpowiedzi — są podejmowane przez model, a nie wcześniej zaprogramowane przez człowieka.
 
 ## Iteracyjne pętle, integracja narzędzi i pamięć
 
 ![Tool Integration Architecture](../../../translated_images/tool-integration.7b05a923e3278bf1fd2972faa228fb2ac725f166ed084362b031a24bffd26287.pl.png)
 
-System agentowy opiera się na wzorcu interakcji w pętli:
+System agentic opiera się na wzorcu interakcji w pętli:
 
-- **Pierwsze wywołanie:** Cel użytkownika (tzw. prompt użytkownika) jest przedstawiany LLM.
-- **Wywołanie narzędzia:** Jeśli model identyfikuje brakujące informacje lub niejasne instrukcje, wybiera narzędzie lub metodę pozyskiwania—np. zapytanie do bazy danych wektorowych (np. Azure AI Search Hybrid search na prywatnych danych) lub strukturalne zapytanie SQL—aby uzyskać więcej kontekstu.
-- **Ocena i udoskonalenie:** Po przeanalizowaniu zwróconych danych model decyduje, czy informacje są wystarczające. Jeśli nie, udoskonala zapytanie, próbuje innego narzędzia lub dostosowuje swoje podejście.
-- **Powtarzanie aż do satysfakcji:** Cykl trwa, aż model uzna, że ma wystarczającą jasność i dowody, aby dostarczyć ostateczną, dobrze uzasadnioną odpowiedź.
-- **Pamięć i stan:** Ponieważ system utrzymuje stan i pamięć w kolejnych krokach, może przypominać sobie poprzednie próby i ich wyniki, unikając powtarzalnych pętli i podejmując bardziej świadome decyzje w miarę postępu.
+- **Początkowe wywołanie:** Cel użytkownika (czyli prompt użytkownika) jest przekazywany do LLM.
+- **Wywołanie narzędzia:** Jeśli model wykryje brakujące informacje lub niejasne instrukcje, wybiera narzędzie lub metodę pozyskiwania danych — np. zapytanie do bazy wektorowej (np. hybrydowe wyszukiwanie w Azure AI Search po danych prywatnych) lub ustrukturyzowane wywołanie SQL — aby zebrać więcej kontekstu.
+- **Ocena i udoskonalenie:** Po przejrzeniu zwróconych danych model decyduje, czy informacje są wystarczające. Jeśli nie, udoskonala zapytanie, próbuje innego narzędzia lub zmienia podejście.
+- **Powtarzaj aż do satysfakcji:** Cykl trwa, aż model uzna, że ma wystarczającą jasność i dowody, aby dostarczyć ostateczną, dobrze uzasadnioną odpowiedź.
+- **Pamięć i stan:** Ponieważ system utrzymuje stan i pamięć między krokami, może przypominać sobie poprzednie próby i ich wyniki, unikając powtarzających się pętli i podejmując bardziej świadome decyzje w trakcie działania.
 
-Z czasem tworzy to poczucie ewoluującego rozumienia, umożliwiając modelowi poruszanie się po złożonych, wieloetapowych zadaniach bez konieczności ciągłej interwencji lub zmiany promptu przez człowieka.
+Z czasem tworzy to poczucie rozwijającego się zrozumienia, pozwalając modelowi radzić sobie z złożonymi, wieloetapowymi zadaniami bez konieczności ciągłej interwencji człowieka lub modyfikowania promptu.
 
-## Radzenie sobie z trybami awarii i autokorekta
+## Obsługa trybów awarii i samokorekta
 
-Autonomia Agentic RAG obejmuje również solidne mechanizmy autokorekty. Gdy system napotyka problemy—np. pozyskuje nieistotne dokumenty lub napotyka błędne zapytania—może:
+Autonomia Agentic RAG obejmuje również solidne mechanizmy samokorekty. Gdy system napotyka ślepe zaułki — takie jak pobieranie nieistotnych dokumentów lub błędne zapytania — może:
 
-- **Iteracja i ponowne zapytanie:** Zamiast zwracać odpowiedzi o niskiej wartości, model próbuje nowych strategii wyszukiwania, poprawia zapytania do bazy danych lub analizuje alternatywne zestawy danych.
-- **Użycie narzędzi diagnostycznych:** System może wywoływać dodatkowe funkcje zaprojektowane, aby pomóc mu debugować kroki rozumowania lub potwierdzić poprawność pozyskanych danych. Narzędzia takie jak Azure AI Tracing będą kluczowe dla zapewnienia solidnej obserwowalności i monitorowania.
-- **Powrót do nadzoru ludzkiego:** W scenariuszach o wysokim ryzyku lub powtarzających się awariach model może zgłaszać niepewność i prosić o pomoc człowieka. Gdy człowiek dostarczy korekty, model może uwzględnić tę lekcję w przyszłości.
+- **Iterować i ponownie pytać:** Zamiast zwracać niskowartościowe odpowiedzi, model podejmuje nowe strategie wyszukiwania, przepisuje zapytania do bazy danych lub sprawdza alternatywne zestawy danych.
+- **Korzystać z narzędzi diagnostycznych:** System może wywoływać dodatkowe funkcje pomagające debugować kroki rozumowania lub potwierdzać poprawność pobranych danych. Narzędzia takie jak Azure AI Tracing są ważne dla zapewnienia solidnej obserwowalności i monitoringu.
+- **Wspierać się nadzorem ludzkim:** W sytuacjach o wysokim ryzyku lub przy powtarzających się błędach model może zgłaszać niepewność i prosić o wskazówki od człowieka. Po otrzymaniu korekty model może uwzględnić tę lekcję w dalszej pracy.
 
-To iteracyjne i dynamiczne podejście pozwala modelowi na ciągłe doskonalenie, zapewniając, że nie jest to system jednorazowy, lecz taki, który uczy się na swoich błędach w trakcie sesji.
+To iteracyjne i dynamiczne podejście pozwala modelowi na ciągłą poprawę, zapewniając, że nie jest to system jednorazowy, lecz taki, który uczy się na błędach podczas danej sesji.
 
 ![Self Correction Mechanism](../../../translated_images/self-correction.3d42c31baf4a476bb89313cec58efb196b0e97959c04d7439cc23d27ef1242ac.pl.png)
 
 ## Granice autonomii
 
-Pomimo swojej autonomii w ramach zadania, Agentic RAG nie jest odpowiednikiem sztucznej inteligencji ogólnej. Jego zdolności „agentowe” są ograniczone do narzędzi, źródeł danych i polityk dostarczonych przez ludzkich programistów. Nie może tworzyć własnych narzędzi ani wychodzić poza granice domeny, które zostały ustalone. Zamiast tego doskonale radzi sobie z dynamiczną orkiestracją dostępnych zasobów.
+Pomimo autonomii w ramach zadania, Agentic RAG nie jest odpowiednikiem sztucznej inteligencji ogólnej (AGI). Jego „agentic” możliwości są ograniczone do narzędzi, źródeł danych i zasad ustalonych przez ludzi. Nie może wymyślać własnych narzędzi ani wykraczać poza granice domeny, które zostały ustalone. Zamiast tego doskonale radzi sobie z dynamiczną orkiestracją dostępnych zasobów.
+Kluczowe różnice w porównaniu z bardziej zaawansowanymi formami AI to:
 
-Główne różnice w porównaniu z bardziej zaawansowanymi formami AI obejmują:
+1. **Autonomia specyficzna dla domeny:** Systemy Agentic RAG koncentrują się na realizacji celów zdefiniowanych przez użytkownika w znanej domenie, stosując strategie takie jak przepisywanie zapytań czy wybór narzędzi w celu poprawy wyników.
+2. **Zależność od infrastruktury:** Możliwości systemu zależą od narzędzi i danych zintegrowanych przez deweloperów. Nie może przekraczać tych granic bez ingerencji człowieka.
+3. **Poszanowanie reguł bezpieczeństwa:** Wytyczne etyczne, zasady zgodności i polityki biznesowe są bardzo ważne. Wolność agenta jest zawsze ograniczona przez mechanizmy bezpieczeństwa i nadzoru (oby tak było).
 
-1. **Autonomia specyficzna dla domeny:** Systemy Agentic RAG koncentrują się na osiąganiu celów zdefiniowanych przez użytkownika w znanej domenie, stosując strategie takie jak poprawianie zapytań czy wybór narzędzi w celu poprawy wyników.
-2. **Zależność od infrastruktury:** Zdolności systemu zależą od narzędzi i danych zintegrowanych przez programistów. Nie może przekroczyć tych granic bez interwencji człowieka.
-3. **Poszanowanie wytycznych:** Wytyczne etyczne, zasady zgodności i polityki biznesowe pozostają bardzo ważne. Wolność agenta zawsze jest ograniczona przez mechanizmy bezpieczeństwa i nadzoru (przynajmniej tak powinno być).
+## Praktyczne zastosowania i wartość
 
-## Praktyczne przypadki użycia i wartość
+Agentic RAG sprawdza się w scenariuszach wymagających iteracyjnego udoskonalania i precyzji:
 
-Agentic RAG wyróżnia się w scenariuszach wymagających iteracyjnego udoskonalania i precyzji:
-
-1. **Środowiska z naciskiem na poprawność:** W analizach zgodności, badaniach regulacyjnych czy badaniach prawnych model agentowy może wielokrotnie weryfikować fakty, konsultować się z wieloma źródłami i poprawiać zapytania, aż do uzyskania dokładnie zweryfikowanej odpowiedzi.
-2. **Złożone interakcje z bazami danych:** Przy pracy z danymi strukturalnymi, gdzie zapytania często zawodzą lub wymagają korekty, system może samodzielnie poprawiać zapytania za pomocą Azure SQL lub Microsoft Fabric OneLake, zapewniając, że końcowy wynik odpowiada zamiarom użytkownika.
-3. **Rozbudowane procesy robocze:** Dłuższe sesje mogą ewoluować w miarę pojawiania się nowych informacji. Agentic RAG może stale uwzględniać nowe dane, zmieniając strategie w miarę zdobywania wiedzy o problemie.
+1. **Środowiska nastawione na poprawność:** W kontrolach zgodności, analizach regulacyjnych czy badaniach prawnych model agentic może wielokrotnie weryfikować fakty, konsultować wiele źródeł i przepisywać zapytania, aż uzyska w pełni zweryfikowaną odpowiedź.
+2. **Złożone interakcje z bazami danych:** W przypadku pracy z ustrukturyzowanymi danymi, gdzie zapytania często zawodzą lub wymagają korekt, system może samodzielnie udoskonalać zapytania za pomocą Azure SQL lub Microsoft Fabric OneLake, zapewniając, że ostateczne wyniki odpowiadają intencjom użytkownika.
+3. **Rozbudowane procesy:** Dłuższe sesje mogą ewoluować wraz z pojawianiem się nowych informacji. Agentic RAG może nieustannie integrować nowe dane, zmieniając strategie w miarę zdobywania wiedzy o problemie.
 
 ## Zarządzanie, przejrzystość i zaufanie
 
-W miarę jak te systemy stają się bardziej autonomiczne w swoim rozumowaniu, zarządzanie i przejrzystość stają się kluczowe:
+W miarę jak systemy te stają się bardziej autonomiczne w rozumowaniu, zarządzanie i przejrzystość są kluczowe:
 
-- **Wyjaśnialne rozumowanie:** Model może dostarczyć ścieżkę audytu zapytań, które wykonał, źródeł, które skonsultował, i kroków rozumowania, które podjął, aby dojść do swojego wniosku. Narzędzia takie jak Azure AI Content Safety i Azure AI Tracing / GenAIOps mogą pomóc w utrzymaniu przejrzystości i ograniczeniu ryzyka.
-- **Kontrola uprzedzeń i zrównoważone pozyskiwanie:** Programiści mogą dostosować strategie pozyskiwania, aby zapewnić uwzględnienie zrównoważonych, reprezentatywnych źródeł danych oraz regularnie audytować wyniki w celu wykrycia uprzedzeń lub schematów odchylenia, używając niestandardowych modeli dla zaawansowanych organizacji zajmujących się nauką o danych, korzystających z Azure Machine Learning.
-- **Nadzór ludzki i zgodność:** W przypadku zadań wrażliwych nadzór ludzki pozostaje niezbędny. Agentic RAG nie zastępuje ludzkiego osądu w decyzjach o wysokiej stawce—wzmacnia go, dostarczając bardziej dokładnie zweryfikowane opcje.
+- **Wyjaśnialne rozumowanie:** Model może dostarczać ścieżkę audytu zapytań, źródeł, z których korzystał, oraz kroków rozumowania prowadzących do wniosku. Narzędzia takie jak Azure AI Content Safety oraz Azure AI Tracing / GenAIOps pomagają utrzymać przejrzystość i ograniczać ryzyka.
+- **Kontrola uprzedzeń i zrównoważone pozyskiwanie danych:** Deweloperzy mogą dostosowywać strategie pozyskiwania danych, aby zapewnić uwzględnienie zrównoważonych, reprezentatywnych źródeł oraz regularnie audytować wyniki pod kątem uprzedzeń lub zniekształceń, korzystając z niestandardowych modeli dla zaawansowanych organizacji zajmujących się data science przy użyciu Azure Machine Learning.
+- **Nadzór ludzki i zgodność:** W zadaniach wrażliwych przegląd ludzki pozostaje niezbędny. Agentic RAG nie zastępuje ludzkiego osądu w decyzjach o wysokim ryzyku — wspomaga go, dostarczając bardziej zweryfikowane opcje.
 
-Posiadanie narzędzi, które dostarczają wyraźny zapis działań, jest kluczowe. Bez nich debugowanie procesu wieloetapowego może być bardzo trudne. Zobacz poniższy przykład od Literal AI (firma stojąca za Chainlit) dotyczący działania agenta:
+Posiadanie narzędzi umożliwiających jasne rejestrowanie działań jest niezbędne. Bez nich debugowanie wieloetapowego procesu może być bardzo trudne. Zobacz poniższy przykład od Literal AI (firma stojąca za Chainlit) przedstawiający przebieg działania agenta:
 
 ![AgentRunExample](../../../translated_images/AgentRunExample.27e2df23ad898772d1b3e7a3e3cd4615378e10dfda87ae8f06b4748bf8eea97d.pl.png)
 
@@ -125,7 +124,7 @@ Posiadanie narzędzi, które dostarczają wyraźny zapis działań, jest kluczow
 
 ## Podsumowanie
 
-Agentic RAG reprezentuje naturalną ewolucję w sposobie, w jaki systemy AI radzą sobie ze złożonymi, intensywnymi danymi zadaniami. Dzięki zastosowaniu wzorca interakcji
+Agentic RAG to naturalna ewolucja w sposobie, w jaki systemy AI radzą sobie ze złożonymi, intensywnymi w dane zadaniami. Dzięki zastosowaniu wzorca interakcji w pętli,
 
 **Zastrzeżenie**:  
-Ten dokument został przetłumaczony za pomocą usługi tłumaczenia AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dokładamy wszelkich starań, aby zapewnić dokładność, prosimy mieć na uwadze, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego rodzimym języku powinien być uznawany za wiarygodne źródło. W przypadku kluczowych informacji zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z użycia tego tłumaczenia.
+Niniejszy dokument został przetłumaczony przy użyciu usługi tłumaczenia AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dokładamy starań, aby tłumaczenie było jak najdokładniejsze, prosimy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub niedokładności. Oryginalny dokument w języku źródłowym powinien być uznawany za autorytatywne źródło. W przypadku informacji krytycznych zaleca się skorzystanie z profesjonalnego tłumaczenia wykonanego przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z korzystania z tego tłumaczenia.

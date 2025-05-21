@@ -1,84 +1,84 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "44013a98d980c8b92d4b814dc49b545d",
-  "translation_date": "2025-03-28T09:44:34+00:00",
-  "source_file": "10-ai-agents-production\\README.md",
+  "original_hash": "1ad5de6a6388d02c145a92dd04358bab",
+  "translation_date": "2025-05-20T09:39:05+00:00",
+  "source_file": "10-ai-agents-production/README.md",
   "language_code": "pl"
 }
 -->
 [![AI Agents In Production](../../../translated_images/lesson-10-thumbnail.0b68f4240618b3d5b26693b78cf2cf0a8b36131b50bb08daf91d548cecc87424.pl.png)](https://youtu.be/l4TP6IyJxmQ?si=IvCW3cbw0NJ2mUMV)
 
-> _(Kliknij obrazek powyżej, aby obejrzeć wideo z tej lekcji)_
-# Agenci AI w produkcji
+> _(Kliknij powyższy obraz, aby obejrzeć wideo z tej lekcji)_
+# AI Agents w produkcji
 
 ## Wprowadzenie
 
-W tej lekcji omówimy:
+Ta lekcja obejmie:
 
-- Jak skutecznie zaplanować wdrożenie swojego agenta AI do produkcji.
-- Typowe błędy i problemy, które mogą pojawić się podczas wdrażania agenta AI do produkcji.
-- Jak zarządzać kosztami, jednocześnie utrzymując wydajność swojego agenta AI.
+- Jak skutecznie zaplanować wdrożenie swojego AI Agenta do produkcji.
+- Typowe błędy i problemy, które możesz napotkać podczas wdrażania AI Agenta do produkcji.
+- Jak zarządzać kosztami, jednocześnie utrzymując wydajność AI Agenta.
 
 ## Cele nauki
 
-Po ukończeniu tej lekcji będziesz wiedzieć/jednocześnie rozumieć:
+Po ukończeniu tej lekcji będziesz wiedzieć/jak rozumieć:
 
-- Techniki poprawy wydajności, kosztów i efektywności systemu produkcyjnego agenta AI.
-- Co i jak oceniać w przypadku swoich agentów AI.
-- Jak kontrolować koszty podczas wdrażania agentów AI do produkcji.
+- Techniki poprawy wydajności, kosztów i efektywności systemu AI Agenta w produkcji.
+- Co i jak oceniać w swoich AI Agentach.
+- Jak kontrolować koszty podczas wdrażania AI Agentów do produkcji.
 
-Ważne jest, aby wdrażać agentów AI, którym można zaufać. Sprawdź lekcję „Budowanie godnych zaufania agentów AI”.
+Ważne jest, aby wdrażać AI Agentów, którym można zaufać. Sprawdź także lekcję „Building Trustworthy AI Agents”.
 
-## Ocena agentów AI
+## Ocena AI Agentów
 
-Przed, w trakcie i po wdrożeniu agentów AI kluczowe jest posiadanie odpowiedniego systemu oceny swoich agentów AI. Dzięki temu upewnisz się, że system jest zgodny z celami Twoimi i Twoich użytkowników.
+Przed, w trakcie i po wdrożeniu AI Agentów kluczowe jest posiadanie odpowiedniego systemu oceny AI Agentów. Dzięki temu upewnisz się, że system jest zgodny z Twoimi i użytkowników celami.
 
-Aby ocenić agenta AI, ważne jest, aby mieć możliwość oceny nie tylko wyników agenta, ale także całego systemu, w którym działa agent AI. Obejmuje to między innymi:
+Aby ocenić AI Agenta, ważne jest, aby mieć możliwość oceny nie tylko wyników agenta, ale także całego systemu, w którym działa AI Agent. Obejmuje to, ale nie ogranicza się do:
 
-- Początkowe zapytanie do modelu.
-- Zdolność agenta do identyfikacji intencji użytkownika.
-- Zdolność agenta do wybrania odpowiedniego narzędzia do wykonania zadania.
-- Odpowiedź narzędzia na zapytanie agenta.
-- Zdolność agenta do interpretacji odpowiedzi narzędzia.
-- Informację zwrotną użytkownika na odpowiedź agenta.
+- Początkowego zapytania do modelu.
+- Zdolności agenta do rozpoznania intencji użytkownika.
+- Zdolności agenta do wyboru odpowiedniego narzędzia do wykonania zadania.
+- Odpowiedzi narzędzia na zapytanie agenta.
+- Zdolności agenta do interpretacji odpowiedzi narzędzia.
+- Informacji zwrotnej użytkownika na odpowiedź agenta.
 
-Dzięki temu możesz zidentyfikować obszary wymagające poprawy w bardziej modułowy sposób. Następnie możesz monitorować efekty zmian w modelach, promptach, narzędziach i innych komponentach z większą efektywnością.
+Daje to możliwość identyfikacji obszarów do poprawy w bardziej modułowy sposób. Możesz wtedy efektywniej monitorować wpływ zmian w modelach, promptach, narzędziach i innych komponentach.
 
-## Typowe problemy i możliwe rozwiązania dotyczące agentów AI
+## Typowe problemy i potencjalne rozwiązania z AI Agentami
 
-| **Problem**                                   | **Możliwe rozwiązanie**                                                                                                                                                                                                     |
-| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Agent AI nie wykonuje zadań konsekwentnie     | - Popraw prompt podawany agentowi AI; wyraźnie określ cele.<br>- Zidentyfikuj, gdzie podział zadań na podzadania i obsługa ich przez wielu agentów może pomóc.                                                               |
-| Agent AI wpada w ciągłe pętle                 | - Upewnij się, że masz jasno określone warunki zakończenia procesu, aby agent wiedział, kiedy zatrzymać proces.<br>- W przypadku złożonych zadań wymagających rozumowania i planowania użyj większego modelu specjalizującego się w takich zadaniach. |
-| Wywołania narzędzi przez agenta AI są nieskuteczne | - Przetestuj i zweryfikuj odpowiedzi narzędzia poza systemem agenta.<br>- Popraw zdefiniowane parametry, prompty i nazwy narzędzi.                                                                                            |
-| System wieloagentowy działa niespójnie        | - Popraw prompty podawane każdemu agentowi, aby były specyficzne i wyraźnie różniły się od siebie.<br>- Zbuduj hierarchiczny system wykorzystujący agenta „routingowego” lub kontrolującego do określenia, który agent jest właściwy. |
+| **Problem**                                     | **Potencjalne rozwiązanie**                                                                                                                                                                                                  |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AI Agent nie wykonuje zadań konsekwentnie       | - Doprecyzuj prompt podany AI Agentowi; jasno określ cele.<br>- Zidentyfikuj, gdzie podział zadań na podzadania i obsługa ich przez wielu agentów może pomóc.                                                                 |
+| AI Agent wpada w pętle ciągłe                    | - Upewnij się, że masz jasne warunki zakończenia, aby Agent wiedział, kiedy zatrzymać proces.<br>- W przypadku zadań wymagających rozumowania i planowania, użyj większego modelu specjalizującego się w takich zadaniach.       |
+| Wywołania narzędzi AI Agenta działają słabo      | - Testuj i weryfikuj wyniki narzędzi poza systemem agenta.<br>- Doprecyzuj parametry, prompty i nazewnictwo narzędzi.                                                                                                         |
+| System Multi-Agent nie działa spójnie            | - Doprecyzuj prompty dla każdego agenta, aby były konkretne i różniły się od siebie.<br>- Zbuduj system hierarchiczny z użyciem agenta „routingowego” lub kontrolera, który zdecyduje, który agent jest właściwy.              |
 
 ## Zarządzanie kosztami
 
-Oto kilka strategii zarządzania kosztami wdrożenia agentów AI do produkcji:
+Oto kilka strategii zarządzania kosztami wdrażania AI Agentów do produkcji:
 
-- **Buforowanie odpowiedzi** - Identyfikacja typowych zapytań i zadań oraz dostarczanie odpowiedzi przed przejściem przez system agentów to dobry sposób na zmniejszenie liczby podobnych zapytań. Możesz nawet wdrożyć przepływ, który identyfikuje, jak bardzo dane zapytanie jest podobne do zapytań w buforze, wykorzystując bardziej podstawowe modele AI.
+- **Buforowanie odpowiedzi** – Identyfikowanie typowych zapytań i zadań oraz dostarczanie odpowiedzi zanim trafią do systemu agentowego to dobry sposób na zmniejszenie liczby podobnych zapytań. Możesz nawet wdrożyć mechanizm oceniający podobieństwo zapytania do buforowanych odpowiedzi, wykorzystując prostsze modele AI.
 
-- **Używanie mniejszych modeli** - Małe modele językowe (SLM) mogą dobrze sprawdzać się w przypadku niektórych zastosowań agentów i znacząco obniżyć koszty. Jak wspomniano wcześniej, zbudowanie systemu oceny w celu określenia i porównania wydajności względem większych modeli to najlepszy sposób, aby zrozumieć, jak dobrze SLM sprawdzi się w Twoim przypadku.
+- **Używanie mniejszych modeli** – Małe modele językowe (SLM) mogą dobrze sprawdzać się w niektórych zastosowaniach agentowych i znacząco obniżyć koszty. Jak wspomniano wcześniej, najlepszym sposobem jest budowa systemu oceny, który pozwoli porównać wydajność SLM z większymi modelami w Twoim przypadku użycia.
 
-- **Używanie modelu routingowego** - Podobną strategią jest wykorzystanie różnorodności modeli i ich rozmiarów. Możesz użyć LLM/SLM lub funkcji serverless do kierowania zapytań w zależności od ich złożoności do modeli najlepiej dopasowanych. Dzięki temu możesz również obniżyć koszty, jednocześnie zapewniając wydajność w odpowiednich zadaniach.
+- **Używanie modelu routera** – Podobną strategią jest stosowanie różnorodnych modeli i rozmiarów. Możesz użyć LLM/SLM lub funkcji serverless do kierowania zapytań na odpowiednie modele w zależności od złożoności. To także pomaga obniżyć koszty, zapewniając jednocześnie wydajność na właściwych zadaniach.
 
 ## Gratulacje
 
-To jest obecnie ostatnia lekcja kursu „Agenci AI dla początkujących”.
+To obecnie ostatnia lekcja z serii „AI Agents for Beginners”.
 
-Planujemy dodawać kolejne lekcje na podstawie opinii i zmian w tej dynamicznie rozwijającej się branży, więc zajrzyj ponownie w najbliższej przyszłości.
+Planujemy dodawać kolejne lekcje na podstawie opinii i zmian w tej szybko rozwijającej się branży, więc zaglądaj do nas ponownie w niedalekiej przyszłości.
 
-Jeśli chcesz kontynuować naukę i budowanie z agentami AI, dołącz do <a href="https://discord.gg/kzRShWzttr" target="_blank">Azure AI Community Discord</a>.
+Jeśli chcesz kontynuować naukę i budowę z AI Agentami, dołącz do <a href="https://discord.gg/kzRShWzttr" target="_blank">Azure AI Community Discord</a>.
 
-Organizujemy tam warsztaty, dyskusje społecznościowe i sesje „zapytaj mnie o wszystko”.
+Organizujemy tam warsztaty, spotkania społecznościowe i sesje „zapytaj mnie o cokolwiek”.
 
-Mamy również kolekcję materiałów edukacyjnych, które mogą pomóc Ci rozpocząć budowanie agentów AI w produkcji.
+Mamy również kolekcję Learn z dodatkowymi materiałami, które pomogą Ci zacząć budować AI Agentów w produkcji.
 
 ## Poprzednia lekcja
 
 [Metacognition Design Pattern](../09-metacognition/README.md)
 
 **Zastrzeżenie**:  
-Ten dokument został przetłumaczony przy użyciu usługi tłumaczeniowej AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż staramy się zapewnić dokładność, należy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego rodzimym języku powinien być uznawany za wiarygodne źródło. W przypadku informacji krytycznych zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z korzystania z tego tłumaczenia.
+Niniejszy dokument został przetłumaczony przy użyciu automatycznej usługi tłumaczeniowej AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dążymy do dokładności, prosimy mieć na uwadze, że tłumaczenia automatyczne mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego języku źródłowym powinien być traktowany jako autorytatywne źródło. W przypadku informacji o kluczowym znaczeniu zaleca się skorzystanie z profesjonalnego tłumaczenia wykonanego przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z korzystania z tego tłumaczenia.

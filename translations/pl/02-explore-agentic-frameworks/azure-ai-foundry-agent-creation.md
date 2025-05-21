@@ -1,51 +1,51 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "664afc6dd1bf275b0eafd126b71da420",
-  "translation_date": "2025-03-28T09:15:22+00:00",
-  "source_file": "02-explore-agentic-frameworks\\azure-ai-foundry-agent-creation.md",
+  "original_hash": "7e92870dc0843e13d4dabc620c09d2d9",
+  "translation_date": "2025-05-20T09:29:51+00:00",
+  "source_file": "02-explore-agentic-frameworks/azure-ai-foundry-agent-creation.md",
   "language_code": "pl"
 }
 -->
-# Tworzenie usługi Azure AI Agent
+# Azure AI Agent Service Development
 
-W tym ćwiczeniu użyjesz narzędzi usługi Azure AI Agent dostępnych w [portalu Azure AI Foundry](https://ai.azure.com/?WT.mc_id=academic-105485-koreyst), aby stworzyć agenta do rezerwacji lotów. Agent będzie mógł wchodzić w interakcje z użytkownikami i udzielać informacji o lotach.
+W tym ćwiczeniu użyjesz narzędzi usługi Azure AI Agent dostępnych w [portalu Azure AI Foundry](https://ai.azure.com/?WT.mc_id=academic-105485-koreyst), aby stworzyć agenta do rezerwacji lotów. Agent będzie mógł komunikować się z użytkownikami i udzielać informacji o lotach.
 
 ## Wymagania wstępne
 
 Aby ukończyć to ćwiczenie, potrzebujesz:
-1. Konta Azure z aktywną subskrypcją. [Utwórz konto za darmo](https://azure.microsoft.com/free/?WT.mc_id=academic-105485-koreyst).
-2. Uprawnień do tworzenia huba Azure AI Foundry lub dostępu do już utworzonego.
-    - Jeśli Twoja rola to Contributor lub Owner, możesz postępować zgodnie z krokami w tym tutorialu.
+1. Konta Azure z aktywną subskrypcją. [Załóż konto za darmo](https://azure.microsoft.com/free/?WT.mc_id=academic-105485-koreyst).
+2. Uprawnień do utworzenia hubu Azure AI Foundry lub dostępu do już istniejącego.
+    - Jeśli Twoja rola to Contributor lub Owner, możesz postępować zgodnie z krokami w tym samouczku.
 
-## Tworzenie huba Azure AI Foundry
+## Utwórz hub Azure AI Foundry
 
-> **Note:** Azure AI Foundry wcześniej znane było jako Azure AI Studio.
+> **Note:** Azure AI Foundry wcześniej nazywał się Azure AI Studio.
 
-1. Postępuj zgodnie z wytycznymi z [blogu Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/?WT.mc_id=academic-105485-koreyst), aby utworzyć hub Azure AI Foundry.
-2. Po utworzeniu projektu zamknij wszystkie wyświetlane wskazówki i przejrzyj stronę projektu w portalu Azure AI Foundry, która powinna wyglądać podobnie do poniższego obrazu:
+1. Postępuj zgodnie z wytycznymi z wpisu na blogu [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/?WT.mc_id=academic-105485-koreyst) dotyczącymi tworzenia hubu Azure AI Foundry.
+2. Po utworzeniu projektu zamknij wszystkie wyświetlane podpowiedzi i przejrzyj stronę projektu w portalu Azure AI Foundry, która powinna wyglądać podobnie do poniższego obrazu:
 
-    ![Projekt Azure AI Foundry](../../../translated_images/azure-ai-foundry.8a2b56713298fd09de77022ab1ba07ebc681ea4cd4438a46c4a6fc6b6f077962.pl.png)
+    ![Azure AI Foundry Project](../../../translated_images/azure-ai-foundry.8a2b56713298fd09de77022ab1ba07ebc681ea4cd4438a46c4a6fc6b6f077962.pl.png)
 
-## Wdrażanie modelu
+## Wdróż model
 
-1. W panelu po lewej stronie projektu, w sekcji **My assets**, wybierz stronę **Models + endpoints**.
-2. Na stronie **Models + endpoints**, w zakładce **Model deployments**, w menu **+ Deploy model**, wybierz **Deploy base model**.
-3. Wyszukaj model `gpt-4o-mini` na liście, a następnie wybierz go i potwierdź.
+1. W panelu po lewej stronie w Twoim projekcie, w sekcji **My assets**, wybierz stronę **Models + endpoints**.
+2. Na stronie **Models + endpoints**, na karcie **Model deployments**, w menu **+ Deploy model** wybierz **Deploy base model**.
+3. Wyszukaj model `gpt-4o-mini` na liście, następnie wybierz go i potwierdź.
 
-    > **Note**: Zmniejszenie TPM pomaga uniknąć nadmiernego wykorzystania dostępnego limitu w subskrypcji.
+    > **Note**: Zmniejszenie TPM pomaga uniknąć nadmiernego wykorzystania dostępnego limitu w Twojej subskrypcji.
 
-    ![Model wdrożony](../../../translated_images/model-deployment.4adf429ebdf42103d7a759087fe0da91aeb70d2204cc8bdca70cc6c53c627938.pl.png)
+    ![Model Deployed](../../../translated_images/model-deployment.4adf429ebdf42103d7a759087fe0da91aeb70d2204cc8bdca70cc6c53c627938.pl.png)
 
-## Tworzenie agenta
+## Utwórz agenta
 
-Po wdrożeniu modelu możesz utworzyć agenta. Agent to model AI do rozmów, który można wykorzystać do interakcji z użytkownikami.
+Teraz, gdy wdrożyłeś model, możesz stworzyć agenta. Agent to konwersacyjny model AI, który może służyć do interakcji z użytkownikami.
 
-1. W panelu po lewej stronie projektu, w sekcji **Build & Customize**, wybierz stronę **Agents**.
+1. W panelu po lewej stronie w Twoim projekcie, w sekcji **Build & Customize**, wybierz stronę **Agents**.
 2. Kliknij **+ Create agent**, aby utworzyć nowego agenta. W oknie dialogowym **Agent Setup**:
-    - Wprowadź nazwę agenta, na przykład `FlightAgent`.
-    - Upewnij się, że wybrano wdrożenie modelu `gpt-4o-mini`, które utworzyłeś wcześniej.
-    - Ustaw **Instructions** zgodnie z poleceniem, które ma realizować agent. Oto przykład:
+    - Wprowadź nazwę agenta, np. `FlightAgent`.
+    - Upewnij się, że wybrany jest wcześniej wdrożony model `gpt-4o-mini`.
+    - Ustaw **Instructions** zgodnie z poleceniem, które chcesz, aby agent realizował. Oto przykład:
     ```
     You are FlightAgent, a virtual assistant specialized in handling flight-related queries. Your role includes assisting users with searching for flights, retrieving flight details, checking seat availability, and providing real-time flight status. Follow the instructions below to ensure clarity and effectiveness in your responses:
 
@@ -73,42 +73,41 @@ Po wdrożeniu modelu możesz utworzyć agenta. Agent to model AI do rozmów, kt�
     
     ```
 > [!NOTE]
-> Aby uzyskać szczegółowe polecenie, możesz sprawdzić [to repozytorium](https://github.com/ShivamGoyal03/RoamMind) dla dodatkowych informacji.
-    
-> Ponadto możesz dodać **Knowledge Base** i **Actions**, aby zwiększyć możliwości agenta w zakresie udzielania informacji i wykonywania zadań automatycznych na podstawie żądań użytkownika. W tym ćwiczeniu możesz pominąć te kroki.
-    
-![Konfiguracja agenta](../../../translated_images/agent-setup.68a0c72f47bd1383584c52f14d694b54ea96c56c49660222409f83451b8220a8.pl.png)
+> Szczegółowe polecenie możesz znaleźć w [tym repozytorium](https://github.com/ShivamGoyal03/RoamMind).
 
-3. Aby utworzyć nowego agenta multi-AI, po prostu kliknij **New Agent**. Nowo utworzony agent zostanie wyświetlony na stronie Agents.
+> Ponadto możesz dodać **Knowledge Base** i **Actions**, aby rozszerzyć możliwości agenta o dodatkowe informacje i automatyzację zadań na podstawie zapytań użytkownika. W tym ćwiczeniu możesz pominąć te kroki.
 
+![Agent Setup](../../../translated_images/agent-setup.68a0c72f47bd1383584c52f14d694b54ea96c56c49660222409f83451b8220a8.pl.png)
 
-## Testowanie agenta
+3. Aby utworzyć nowego agenta multi-AI, po prostu kliknij **New Agent**. Nowo utworzony agent pojawi się na stronie Agents.
 
-Po utworzeniu agenta możesz go przetestować, aby sprawdzić, jak reaguje na zapytania użytkowników w portalu Azure AI Foundry.
+## Przetestuj agenta
+
+Po utworzeniu agenta możesz go przetestować, aby sprawdzić, jak reaguje na zapytania użytkowników w portalu Azure AI Foundry w trybie playground.
 
 1. Na górze panelu **Setup** dla Twojego agenta wybierz **Try in playground**.
-2. W panelu **Playground** możesz wchodzić w interakcje z agentem, wpisując zapytania w oknie czatu. Na przykład możesz poprosić agenta o wyszukanie lotów z Seattle do Nowego Jorku na 28 dzień miesiąca.
+2. W panelu **Playground** możesz rozmawiać z agentem, wpisując zapytania w oknie czatu. Na przykład możesz poprosić agenta o wyszukanie lotów z Seattle do Nowego Jorku na 28 dzień miesiąca.
 
-    > **Note**: Agent może nie udzielać dokładnych odpowiedzi, ponieważ w tym ćwiczeniu nie są wykorzystywane dane w czasie rzeczywistym. Celem jest przetestowanie zdolności agenta do rozumienia i odpowiadania na zapytania użytkownika zgodnie z podanymi instrukcjami.
+    > **Note**: Agent może nie udzielać dokładnych odpowiedzi, ponieważ w tym ćwiczeniu nie korzysta się z danych w czasie rzeczywistym. Celem jest przetestowanie zdolności agenta do rozumienia i odpowiadania na zapytania użytkownika na podstawie podanych instrukcji.
 
     ![Agent Playground](../../../translated_images/agent-playground.847acb21209744353080ead65ec9326b917a6b90121d4b63f6f412a4d65af2a0.pl.png)
 
-3. Po przetestowaniu agenta możesz dalej go dostosowywać, dodając więcej intencji, danych treningowych i akcji, aby zwiększyć jego możliwości.
+3. Po przetestowaniu agenta możesz dalej go dostosowywać, dodając więcej intencji, danych treningowych i działań, aby zwiększyć jego możliwości.
 
-## Czyszczenie zasobów
+## Sprzątanie zasobów
 
-Po zakończeniu testowania agenta możesz go usunąć, aby uniknąć dodatkowych kosztów.
-1. Otwórz [portal Azure](https://portal.azure.com) i wyświetl zawartość grupy zasobów, w której wdrożono zasoby hubu używane w tym ćwiczeniu.
+Po zakończeniu testów agenta możesz go usunąć, aby uniknąć dodatkowych kosztów.
+1. Otwórz [portal Azure](https://portal.azure.com) i przejdź do grupy zasobów, w której wdrożyłeś zasoby hubu używane w tym ćwiczeniu.
 2. Na pasku narzędzi wybierz **Delete resource group**.
-3. Wprowadź nazwę grupy zasobów i potwierdź, że chcesz ją usunąć.
+3. Wprowadź nazwę grupy zasobów i potwierdź chęć jej usunięcia.
 
 ## Zasoby
 
-- [Dokumentacja Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/?WT.mc_id=academic-105485-koreyst)
-- [Portal Azure AI Foundry](https://ai.azure.com/?WT.mc_id=academic-105485-koreyst)
-- [Pierwsze kroki z Azure AI Studio](https://techcommunity.microsoft.com/blog/educatordeveloperblog/getting-started-with-azure-ai-studio/4095602?WT.mc_id=academic-105485-koreyst)
-- [Podstawy agentów AI na Azure](https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/?WT.mc_id=academic-105485-koreyst)
+- [Azure AI Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-studio/?WT.mc_id=academic-105485-koreyst)
+- [Azure AI Foundry portal](https://ai.azure.com/?WT.mc_id=academic-105485-koreyst)
+- [Getting Started with Azure AI Studio](https://techcommunity.microsoft.com/blog/educatordeveloperblog/getting-started-with-azure-ai-studio/4095602?WT.mc_id=academic-105485-koreyst)
+- [Fundamentals of AI agents on Azure](https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/?WT.mc_id=academic-105485-koreyst)
 - [Azure AI Discord](https://aka.ms/AzureAI/Discord)
 
 **Zastrzeżenie**:  
-Ten dokument został przetłumaczony za pomocą usługi tłumaczeniowej AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dokładamy wszelkich starań, aby tłumaczenie było precyzyjne, należy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego rodzimym języku powinien być uznawany za wiarygodne źródło. W przypadku informacji o kluczowym znaczeniu zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za nieporozumienia lub błędne interpretacje wynikające z korzystania z tego tłumaczenia.
+Niniejszy dokument został przetłumaczony za pomocą usługi tłumaczenia AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dążymy do dokładności, prosimy mieć na uwadze, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w języku źródłowym powinien być uważany za źródło wiarygodne. W przypadku informacji o kluczowym znaczeniu zalecane jest skorzystanie z profesjonalnego tłumaczenia wykonanego przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z korzystania z tego tłumaczenia.

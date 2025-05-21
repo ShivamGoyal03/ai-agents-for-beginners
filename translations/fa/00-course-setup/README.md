@@ -1,123 +1,179 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "366bc6709dd95b8a32ec7c705b0f179c",
-  "translation_date": "2025-03-28T09:12:44+00:00",
-  "source_file": "00-course-setup\\README.md",
+  "original_hash": "49fa13c21a816ffcc7740ab17ba024a9",
+  "translation_date": "2025-05-20T09:17:35+00:00",
+  "source_file": "00-course-setup/README.md",
   "language_code": "fa"
 }
 -->
-# راه‌اندازی دوره
+اکنون باید نسخه فورک‌شده خود از این دوره را در لینک زیر داشته باشید:
 
-## مقدمه
+![Forked Repo](../../../translated_images/forked-repo.eea246a73044cc984a1e462349e36e7336204f00785e3187b7399905feeada07.fa.png)
 
-این درس نحوه اجرای نمونه کدهای این دوره را پوشش خواهد داد.
+## اجرای کد
 
-## الزامات
+این دوره شامل مجموعه‌ای از نوت‌بوک‌های Jupyter است که می‌توانید آن‌ها را اجرا کنید تا تجربه عملی در ساخت عامل‌های هوش مصنوعی کسب کنید.
 
-- حساب کاربری GitHub
-- پایتون نسخه 3.12 یا بالاتر
-- اشتراک Azure
-- حساب کاربری Azure AI Foundry
+نمونه‌های کد از یکی از موارد زیر استفاده می‌کنند:
 
-## کلون یا فورک کردن این مخزن
+**نیازمند حساب GitHub - رایگان**:
 
-برای شروع، لطفاً مخزن GitHub را کلون یا فورک کنید. این کار نسخه‌ای از محتوای دوره را برای شما ایجاد می‌کند تا بتوانید کدها را اجرا، آزمایش و تغییر دهید!
+1) چارچوب Semantic Kernel Agent به همراه بازار مدل‌های GitHub. با عنوان (semantic-kernel.ipynb)
+2) چارچوب AutoGen به همراه بازار مدل‌های GitHub. با عنوان (autogen.ipynb)
 
-این کار را می‌توانید با کلیک بر روی لینک زیر انجام دهید:
+**نیازمند اشتراک Azure**:
+3) Azure AI Foundry به همراه سرویس Azure AI Agent. با عنوان (azureaiagent.ipynb)
 
-![مخزن فورک‌شده](../../../translated_images/forked-repo.eea246a73044cc984a1e462349e36e7336204f00785e3187b7399905feeada07.fa.png)
+ما شما را تشویق می‌کنیم تا هر سه نوع مثال را امتحان کنید تا ببینید کدام یک برای شما بهتر کار می‌کند.
 
-## دریافت توکن دسترسی شخصی GitHub (PAT)
+هر گزینه‌ای که انتخاب کنید، مراحل راه‌اندازی مربوط به آن را باید در ادامه دنبال کنید:
 
-در حال حاضر، این دوره از بازار مدل‌های GitHub استفاده می‌کند تا دسترسی رایگان به مدل‌های زبان بزرگ (LLMs) که برای ایجاد عوامل هوش مصنوعی استفاده می‌شوند، فراهم کند.
+## پیش‌نیازها
+
+- Python 3.12 یا بالاتر
+- حساب GitHub - برای دسترسی به بازار مدل‌های GitHub
+- اشتراک Azure - برای دسترسی به Azure AI Foundry
+- حساب Azure AI Foundry - برای دسترسی به سرویس Azure AI Agent
+
+فایلی به نام `requirements.txt` در ریشه این مخزن قرار داده‌ایم که شامل تمام بسته‌های پایتون مورد نیاز برای اجرای نمونه‌های کد است.
+
+می‌توانید آن‌ها را با اجرای دستور زیر در ترمینال خود در ریشه مخزن نصب کنید:
+
+```bash
+pip install -r requirements.txt
+```
+توصیه می‌کنیم برای جلوگیری از هرگونه تداخل و مشکل، یک محیط مجازی پایتون ایجاد کنید.
+
+## راه‌اندازی برای نمونه‌هایی که از مدل‌های GitHub استفاده می‌کنند
+
+### مرحله ۱: دریافت توکن دسترسی شخصی GitHub (PAT)
+
+در حال حاضر، این دوره از بازار مدل‌های GitHub برای ارائه دسترسی رایگان به مدل‌های زبان بزرگ (LLM) استفاده می‌کند که برای ایجاد عامل‌های هوش مصنوعی به کار می‌روند.
 
 برای دسترسی به این سرویس، باید یک توکن دسترسی شخصی GitHub ایجاد کنید.
 
-این کار را می‌توانید با رفتن به حساب کاربری GitHub خود انجام دهید.
+این کار را می‌توانید با ورود به حساب GitHub خود انجام دهید.
 
-گزینه `Fine-grained tokens` را در سمت چپ صفحه انتخاب کنید.
+گزینه `Fine-grained tokens` option on the left side of your screen.
 
-سپس `Generate new token` را انتخاب کنید.
+Then select `Generate new token`.
 
-![ایجاد توکن](../../../translated_images/generate-token.361ec40abe59b84ac68d63c23e2b6854d6fad82bd4e41feb98fc0e6f030e8ef7.fa.png)
+![Generate Token](../../../translated_images/generate-token.361ec40abe59b84ac68d63c23e2b6854d6fad82bd4e41feb98fc0e6f030e8ef7.fa.png)
 
-توکن جدیدی که ایجاد کرده‌اید را کپی کنید. حالا باید این توکن را به فایل `.env` که در این دوره وجود دارد اضافه کنید.
+You will be prompted to enter a name for your token, select the expiration date (Recommended: 30 Days), and select the scopes for your token (Public Repositories).
 
-## افزودن به متغیرهای محیطی
+Copy your new token that you have just created. You will now add this to your `.env` file included in this course. 
 
-برای ایجاد فایل `.env` دستور زیر را در ترمینال اجرا کنید:
+
+### Step 2: Create Your `.env` File
+
+To create your `.env` را انتخاب کنید و دستور زیر را در ترمینال خود اجرا کنید.
 
 ```bash
 cp .env.example .env
 ```
 
-این دستور فایل نمونه را کپی کرده و یک فایل `.env` در دایرکتوری شما ایجاد می‌کند. مقادیر متغیرهای محیطی را پر کنید. می‌توانید مقادیر هر متغیر محیطی را در مکان‌های زیر در پورتال [Azure AI Foundry](https://ai.azure.com?WT.mc_id=academic-105485-koreyst) پیدا کنید:
+این کار فایل نمونه را کپی کرده و یک فایل `.env` in your directory and where you fill in the values for the environment variables.
 
-فایل را باز کرده و توکنی که ایجاد کرده‌اید را در `GITHUB_TOKEN=` field of the .env file. 
-- `AZURE_SUBSCRIPTION_ID` - On the **Overview** page of your project within **Project details**.
-- `AZURE_AI_PROJECT_NAME` - At the top of the **Overview** page for your project.
-- `AZURE_OPENAI_RESOURCE_GROUP` - On the **Overview** page of the **Management Center** within **Project properties**.
-- `AZURE_OPENAI_SERVICE` - On the **Overview** page of your project in the **Included capabilities** tab for **Azure OpenAI Service**.
-- `AZURE_OPENAI_API_VERSION` - On the [API version lifecycle](https://learn.microsoft.com/azure/ai-services/openai/api-version-deprecation#latest-ga-api-release?WT.mc_id=academic-105485-koreyst) webpage within the **Latest GA API release** section.
-- `AZURE_OPENAI_ENDPOINT` قرار دهید - در تب **Details** در بخش **Endpoint** مدل شما (مثلاً **Target URI**)
+With your token copied, open the `.env` file in your favorite text editor and paste your token into the `GITHUB_TOKEN` field.
 
-## نصب بسته‌های مورد نیاز
+You should now be able to run the code samples of this course.
 
-برای اطمینان از اینکه تمام بسته‌های مورد نیاز پایتون را برای اجرای کد دارید، دستور زیر را در ترمینال اجرا کنید.
+## Set Up for Samples using Azure AI Foundry and Azure AI Agent Service
 
-توصیه می‌کنیم یک محیط مجازی پایتون ایجاد کنید تا از هرگونه تعارض و مشکل جلوگیری شود.
+### Step 1: Retrieve Your Azure Project Connection String
+
+Follow the steps to creating a project and agent in Azure AI Foundry found here: [Create a project in Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=ai-foundry-portal?WT.mc_id=academic-105485-koreyst)
+
+Once you have created your project, you will need to retrieve the connection string for your project.
+
+This can be done by going to the **Overview** page of your project in the Azure AI Foundry portal.
+
+![Project Connection String](../../../translated_images/project-connection-string.8a2c7c804a33d53df14011e583d0c3fe0f79d9eb52b72e3c7d7d2f68f828c8aa.fa.png)
+
+### Step 2: Create Your `.env` File
+
+To create your `.env` ایجاد می‌کند. دستور زیر را در ترمینال خود اجرا کنید.
 
 ```bash
-pip install -r requirements.txt
+cp .env.example .env
 ```
 
-این دستور باید بسته‌های پایتون مورد نیاز را نصب کند.
+این کار فایل نمونه را کپی کرده و یک فایل `.env` in your directory and where you fill in the values for the environment variables.
 
-# ورود به Azure
+With your token copied, open the `.env` file in your favorite text editor and paste your token into the `PROJECT_CONNECTION_STRING` field.
 
-به عنوان یک بهترین روش امنیتی، از [احراز هویت بدون کلید](https://learn.microsoft.com/azure/developer/ai/keyless-connections?tabs=csharp%2Cazure-cli?WT.mc_id=academic-105485-koreyst) برای احراز هویت در Azure OpenAI با Microsoft Entra ID استفاده خواهیم کرد. قبل از انجام این کار، ابتدا باید **Azure CLI** را طبق [دستورالعمل نصب](https://learn.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=academic-105485-koreyst) برای سیستم‌عامل خود نصب کنید.
+### Step 3: Sign in to Azure
 
-سپس، یک ترمینال باز کرده و دستور `az login` to sign in to your Azure account.
+As a security best practice, we'll use [keyless authentication](https://learn.microsoft.com/azure/developer/ai/keyless-connections?tabs=csharp%2Cazure-cli?WT.mc_id=academic-105485-koreyst) to authenticate to Azure OpenAI with Microsoft Entra ID. Before you can do so, you'll first need to install the **Azure CLI** per the [installation instructions](https://learn.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=academic-105485-koreyst) for your operating system.
 
-## Sign in to Azure
-
-Login with your Azure AI account used to provision the Azure resources.
-
-Open a new terminal and enter the following command and follow the instructions in the terminal:
-
-`az login --use-device-code`
+Next, open a terminal and run `az login --use-device-code` to sign in to your Azure account.
 
 Once you've logged in, select your subscription in the terminal.
 
-## Access the environment variables.
 
-We'll import `os` and `load_dotenv` را اجرا کنید تا بتوانید به متغیرهای محیطی دسترسی پیدا کنید.
+## Additional Envionment Variables - Azure Search and Azure OpenAI 
 
-```python
-import os
-from dotenv import load_dotenv
+For the Agentic RAG Lesson - Lesson 5 - there are samples that use Azure Search and Azure OpenAI.
 
-load_dotenv()
-```
+If you want to run these samples, you will need to add the following environment variables to your `.env` file:
 
-## راه‌اندازی احراز هویت بدون کلید
+### Overview Page (Project)
 
-به جای سخت‌کد کردن اطلاعات ورود، از یک اتصال بدون کلید با Azure OpenAI استفاده خواهیم کرد. برای انجام این کار، تابع `DefaultAzureCredential` and later call the `DefaultAzureCredential` را برای دریافت اطلاعات احراز هویت وارد می‌کنیم.
+- `AZURE_SUBSCRIPTION_ID` - Check **Project details** on the **Overview** page of your project.
+
+- `AZURE_AI_PROJECT_NAME` - Look at the top of the **Overview** page for your project.
+
+- `AZURE_OPENAI_SERVICE` - Find this in the **Included capabilities** tab for **Azure OpenAI Service** on the **Overview** page.
+
+### Management Center
+
+- `AZURE_OPENAI_RESOURCE_GROUP` - Go to **Project properties** on the **Overview** page of the **Management Center**.
+
+- `GLOBAL_LLM_SERVICE` - Under **Connected resources**, find the **Azure AI Services** connection name. If not listed, check the **Azure portal** under your resource group for the AI Services resource name.
+
+### Models + Endpoints Page
+
+- `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME` - Select your embedding model (e.g., `text-embedding-ada-002`) and note the **Deployment name** from the model details.
+
+- `AZURE_OPENAI_CHAT_DEPLOYMENT_NAME` - Select your chat model (e.g., `gpt-4o-mini`) and note the **Deployment name** from the model details.
+
+### Azure Portal
+
+- `AZURE_OPENAI_ENDPOINT` - Look for **Azure AI services**, click on it, then go to **Resource Management**, **Keys and Endpoint**, scroll down to the "Azure OpenAI endpoints", and copy the one that says "Language APIs".
+
+- `AZURE_OPENAI_API_KEY` - From the same screen, copy KEY 1 or KEY 2.
+
+- `AZURE_SEARCH_SERVICE_ENDPOINT` - Find your **Azure AI Search** resource, click it, and see **Overview**.
+
+- `AZURE_SEARCH_API_KEY` - Then go to **Settings** and then **Keys** to copy the primary or secondary admin key.
+
+### External Webpage
+
+- `AZURE_OPENAI_API_VERSION` - Visit the [API version lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-deprecation#latest-ga-api-release) page under **Latest GA API release**.
+
+### Setup keyless authentication
+
+Rather than hardcode your credentials, we'll use a keyless connection with Azure OpenAI. To do so, we'll import `DefaultAzureCredential` and later call the `DefaultAzureCredential` را برای دریافت اعتبارنامه اجرا کنید.
 
 ```python
 from azure.identity import DefaultAzureCredential, InteractiveBrowserCredential
 ```
 
-اکنون آماده اجرای کدهای این دوره هستید. از یادگیری بیشتر درباره دنیای عوامل هوش مصنوعی لذت ببرید!
+## گیر کرده‌اید؟
 
-اگر در اجرای این تنظیمات مشکلی داشتید، وارد بخش 
+اگر در اجرای این راه‌اندازی به مشکلی برخوردید، به کانال ما در
 
-یا 
+یا
+
+مراجعه کنید.
 
 ## درس بعدی
 
-[مقدمه‌ای بر عوامل هوش مصنوعی و موارد استفاده از عوامل](../01-intro-to-ai-agents/README.md)
+اکنون آماده‌اید تا کد این دوره را اجرا کنید، از یادگیری بیشتر درباره دنیای عامل‌های هوش مصنوعی لذت ببرید!
+
+[مقدمه‌ای بر عامل‌های هوش مصنوعی و موارد استفاده از عامل‌ها](../01-intro-to-ai-agents/README.md)
 
 **سلب مسئولیت**:  
-این سند با استفاده از سرویس ترجمه هوش مصنوعی [Co-op Translator](https://github.com/Azure/co-op-translator) ترجمه شده است. در حالی که ما تلاش می‌کنیم دقت ترجمه را حفظ کنیم، لطفاً توجه داشته باشید که ترجمه‌های خودکار ممکن است شامل اشتباهات یا نواقص باشند. سند اصلی به زبان اصلی باید به عنوان منبع معتبر در نظر گرفته شود. برای اطلاعات حساس، توصیه می‌شود از ترجمه حرفه‌ای انسانی استفاده کنید. ما هیچ مسئولیتی در قبال سوء تفاهم‌ها یا تفسیرهای نادرست ناشی از استفاده از این ترجمه نداریم.
+این سند با استفاده از سرویس ترجمه هوش مصنوعی [Co-op Translator](https://github.com/Azure/co-op-translator) ترجمه شده است. در حالی که ما در تلاش برای دقت هستیم، لطفاً توجه داشته باشید که ترجمه‌های خودکار ممکن است حاوی خطاها یا نواقصی باشند. سند اصلی به زبان بومی آن باید به عنوان منبع معتبر در نظر گرفته شود. برای اطلاعات حیاتی، ترجمه حرفه‌ای انسانی توصیه می‌شود. ما مسئول هیچ گونه سوءتفاهم یا برداشت نادرستی که ناشی از استفاده از این ترجمه باشد، نیستیم.
